@@ -1,8 +1,13 @@
 # Use the official Node.js 16 image as a parent image
 FROM node:18-slim
 
+# Install git
+RUN apt-get update && apt-get install -y git
+
 # Set the working directory to /workspace
 WORKDIR /workspace
+
+# Now that git is installed, you can use it to update submodules
 RUN git submodule update --init --recursive
 
 # Copy package.json and package-lock.json for all submodules
