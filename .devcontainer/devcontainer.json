@@ -17,7 +17,6 @@
     "runArgs": [
         "-u", "node",
         "--env", "NODE_ENV=development",
-        // Add additional environment variables here in the format "--env", "KEY=value",
         "--network", "sera_net"
     ],
     "service": {
@@ -31,7 +30,6 @@
             "environment": {
                 "MONGO_INITDB_ROOT_USERNAME": "admin",
                 "MONGO_INITDB_ROOT_PASSWORD": "password"
-                // Set your MongoDB environment variables here
             }
         }
     },
