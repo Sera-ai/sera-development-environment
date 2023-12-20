@@ -12,7 +12,7 @@
         "esbenp.prettier-vscode"
     ],
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017],
-    "postCreateCommand": "",
+    "postCreateCommand": "git submodule update --init --recursive",
     "remoteUser": "node",
     "runArgs": [
         "-u", "node",
