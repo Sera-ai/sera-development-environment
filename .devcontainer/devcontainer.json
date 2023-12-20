@@ -13,25 +13,5 @@
     ],
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017],
     "postCreateCommand": "git submodule update --init --recursive",
-    "remoteUser": "node",
-    "runArgs": [
-        "-u", "node",
-        "--env", "NODE_ENV=development",
-        "--network", "sera_net"
-    ],
-    "service": {
-        "mongo": {
-            "image": "mongo",
-            "ports": ["27017:27017"],
-            "volumes": [
-                "mongo-data:/data/db"
-            ],
-            "restart": "on-failure",
-            "environment": {
-                "MONGO_INITDB_ROOT_USERNAME": "admin",
-                "MONGO_INITDB_ROOT_PASSWORD": "password"
-            }
-        }
-    },
     "shutdownAction": "stopCompose"
 }
