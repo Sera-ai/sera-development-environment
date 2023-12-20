@@ -3,6 +3,7 @@ FROM node:18-slim
 
 # Set the working directory to /workspace
 WORKDIR /workspace
+RUN git submodule update --init --recursive
 
 # Copy package.json and package-lock.json for all submodules
 COPY fe_Builder/package*.json ./fe_Builder/
