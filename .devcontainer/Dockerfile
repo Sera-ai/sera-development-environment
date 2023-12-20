@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y git
 # Set the working directory to /workspace
 WORKDIR /workspace
 
+RUN find / -mindepth 2 -maxdepth 2 -type d
 # Now that git is installed, you can use it to update submodules
 RUN git submodule update --init --recursive
 
