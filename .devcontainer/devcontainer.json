@@ -1,21 +1,42 @@
 {
-  "name": "My Microservice Dev Environment",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "..",
-    "args": {
-      "VARIANT": "14",
-      "INSTALL_NODE": "true"
-    }
-  },
-  "settings": { 
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
-  ],
-  "forwardPorts": [3000],
-  "postCreateCommand": "npm install",
-  "remoteUser": "node"
+    "name": "Sera AI Microservices Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017],
+    "postCreateCommand": "sh ./setup-submodules.sh",
+    "remoteUser": "node",
+    "runArgs": [
+        "-u", "node",
+        "--env", "NODE_ENV=development",
+        // Add additional environment variables here in the format "--env", "KEY=value",
+        "--network", "sera_net"
+    ],
+    "service": {
+        "mongo": {
+            "image": "mongo",
+            "ports": ["27017:27017"],
+            "volumes": [
+                "mongo-data:/data/db"
+            ],
+            "restart": "on-failure",
+            "environment": {
+                "MONGO_INITDB_ROOT_USERNAME": "admin",
+                "MONGO_INITDB_ROOT_PASSWORD": "password"
+                // Set your MongoDB environment variables here
+            }
+        }
+    },
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "shutdownAction": "stopCompose"
 }
