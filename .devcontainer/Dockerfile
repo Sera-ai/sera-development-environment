@@ -15,12 +15,12 @@ RUN git submodule update --init --recursive
 RUN npm install -g nodemon eslint prettier
 
 # Install dependencies in each submodule
-RUN npm install --prefix ./fe_Builder && npm start dev \
-    && npm install --prefix ./fe_Catalog && npm start dev \
-    && npm install --prefix ./be_Builder && nodemon index.js \
-    && npm install --prefix ./be_Socket && nodemon index.js \
-    && npm install --prefix ./be_Router && nodemon index.js \
-    && npm install --prefix ./be_Sequencer && nodemon index.js
+RUN npm install --prefix ./fe_Builder && npm --prefix ./fe_Builder start dev \
+    && npm install --prefix ./fe_Catalog && npm --prefix ./fe_Catalog start dev \
+    && npm install --prefix ./be_Builder && cd ./be_Builder && nodemon index.js && cd ../ \
+    && npm install --prefix ./be_Socket && cd ./be_Socket && nodemon index.js && cd ../ \
+    && npm install --prefix ./be_Router && cd ./be_Router && nodemon index.js && cd ../ \
+    && npm install --prefix ./be_Sequencer && cd ./be_Sequencer && nodemon index.js
 
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
