@@ -2,9 +2,6 @@ FROM mongo-express:latest
 
 WORKDIR /workspace
 
-# Install Git
-RUN apt update && apt install -y git 
-
 # Copy the entire repository context
 COPY . .
 
