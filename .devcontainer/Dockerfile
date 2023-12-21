@@ -12,7 +12,7 @@ RUN apt-get update \
 # Install Node.js
 # Replace "setup_14.x" with "setup_18.x" for Node.js 18 or the version you need
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-    && apt-get install -y nodejs
+    && apt-get install -y nodejs npm
 
 # Create the MongoDB data directory
 RUN mkdir -p /data/db
