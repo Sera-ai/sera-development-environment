@@ -3,6 +3,10 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
+        "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."  // Ensure this context includes your entire project including submodules
+    },
     "settings": { 
         "terminal.integrated.shell.linux": "/bin/bash"
     },
