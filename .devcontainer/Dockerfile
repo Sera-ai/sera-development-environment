@@ -3,7 +3,7 @@ FROM node:18-slim
 WORKDIR /workspace
 
 # Install Git and MongoDB tools
-RUN apt-get update && apt-get install -y git mongodb-clients
+RUN apt-get update && apt-get install -y git
 
 # Copy the entire repository context
 COPY . .
