@@ -1,18 +1,17 @@
 {
     "name": "Sera AI Microservices Development Environment",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": ".."
-    },
-    "settings": {
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "settings": { 
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-azuretools.vscode-docker"
+        "esbenp.prettier-vscode"
     ],
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017],
     "postCreateCommand": "git submodule update --init --recursive",
-    "shutdownAction": "stopCompose"
+    "shutdownAction": "stopCompose",
+    "runServices": ["app", "mongo"]
 }
