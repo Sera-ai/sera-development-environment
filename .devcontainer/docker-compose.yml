@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "12020:12020"
+      - "12010:12010"
+      - "12030:12030"
+      - "12040:12040"
+      - "12000:12000"
+      - "12050:12050"
+    volumes:
+      - .:/workspace
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
