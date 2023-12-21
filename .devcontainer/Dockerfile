@@ -22,7 +22,7 @@ RUN mkdir -p /data/db
 # Set the working directory for the Node app
 WORKDIR /workspace
 
-RUN apt-get update && apt-get install -y git 
+RUN apt-get update && apt-get install -y git libcurl4
 
 # Copy the rest of the application's source code
 COPY . .
