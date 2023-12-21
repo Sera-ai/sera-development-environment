@@ -5,6 +5,8 @@ WORKDIR /workspace
 # Copy the entire repository context
 COPY . .
 
+RUN git submodule update --init --recursive
+
 # Install dependencies in each submodule
 RUN npm install --prefix ./fe_Builder \
     && npm install --prefix ./fe_Catalog \
