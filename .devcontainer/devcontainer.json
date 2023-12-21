@@ -5,7 +5,19 @@
     "workspaceFolder": "/workspace",
         "build": {
         "dockerfile": "Dockerfile",
-        "context": ".."  // Ensure this context includes your entire project including submodules
+        "context": ".."
+    },
+    "containerEnv": {
+        "DB_HOST": "mongodb://127.0.0.1:27017",
+        "BE_ROUTER_PORT": "12000",
+        "FE_CATALOG_PORT": "12010",
+        "FE_BUILDER_PORT": "12020",
+        "BE_BUILDER_PORT": "12030",
+        "BE_SOCKET_PORT": "12040",
+        "BE_SEQUENCER_PORT": "12050",
+        "SERA_INSTANCE_BE_BUILDER_SERVICE_HOST": "127.0.0.1",
+        "SERA_INSTANCE_BE_SEQUENCER_SERVICE_HOST" : "127.0.0.1",
+        "SERA_INSTANCE_BE_SOCKET_SERVICE_HOST" : "127.0.0.1"
     },
     "settings": { 
         "terminal.integrated.shell.linux": "/bin/bash"
