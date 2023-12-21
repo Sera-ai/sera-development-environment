@@ -14,7 +14,7 @@ COPY . .
 RUN git submodule update --init --recursive
 
 # Start MongoDB and import the backup
-RUN service mongodb start \
+RUN service mongod start \
     && mongorestore /workspace/sera-db-mongo
     
 # Install global packages & tools
