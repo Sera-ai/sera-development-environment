@@ -20,13 +20,9 @@ COPY --from=mongodb /usr/bin/mongo /usr/bin/mongo
 RUN mkdir -p /data/db
 
 # Set the working directory for the Node app
-WORKDIR /app
+WORKDIR /workspace
 
-# Copy package.json and package-lock.json (if available)
-COPY package*.json ./
-
-# Install Node.js dependencies
-RUN npm install
+RUN apt-get update && apt-get install -y git 
 
 # Copy the rest of the application's source code
 COPY . .
