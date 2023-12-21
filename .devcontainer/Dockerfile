@@ -1,17 +1,34 @@
-# Start from the Node.js 18 (or any version you prefer) slim image
-FROM node:18-slim
-# Install MongoDB (example with MongoDB 4.2)
+# Stage 1: Install MongoDB in a separate stage
+FROM debian:buster-slim as mongodb
+
+# Add MongoDB to the sources list and install it
 RUN apt-get update \
     && apt-get install -y gnupg wget \
     && wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add - \
     && echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | tee /etc/apt/sources.list.d/mongodb-org-4.2.list \
     && apt-get update \
-    && apt-get install -y mongodb-org \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y mongodb-org
 
-WORKDIR /workspace
+# Stage 2: Set up the Node.js environment
+FROM node:18-slim
 
-# Copy the entire repository context
+# Copy MongoDB binaries from the first stage
+COPY --from=mongodb /usr/bin/mongod /usr/bin/mongod
+COPY --from=mongodb /usr/bin/mongo /usr/bin/mongo
+
+# Create the MongoDB data directory
+RUN mkdir -p /data/db
+
+# Set the working directory for the Node app
+WORKDIR /app
+
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install Node.js dependencies
+RUN npm install
+
+# Copy the rest of the application's source code
 COPY . .
 
 # Initialize and update submodules
