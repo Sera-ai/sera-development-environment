@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM mongo-express:latest
 
 WORKDIR /workspace
 
