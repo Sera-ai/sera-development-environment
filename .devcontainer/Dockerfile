@@ -2,9 +2,13 @@ FROM node:18-slim
 
 WORKDIR /workspace
 
+# Install Git and MongoDB tools
+RUN apt-get update && apt-get install -y git mongodb-clients
+
 # Copy the entire repository context
 COPY . .
 
+# Initialize and update submodules
 RUN git submodule update --init --recursive
 
 # Install dependencies in each submodule
@@ -17,9 +21,6 @@ RUN npm install --prefix ./fe_Builder \
 
 # Install global packages & tools
 RUN npm install -g nodemon eslint prettier
-
-# Install MongoDB tools
-RUN apt-get update && apt-get install -y mongodb-clients
 
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
