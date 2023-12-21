@@ -2,7 +2,7 @@
 FROM node:18-slim
 
 # Set environment variables for MongoDB
-ENV MONGO_DB_VERSION 4.4
+ENV MONGO_DB_VERSION 5.0
 
 # Add MongoDB to the sources list
 RUN apt-get update && apt-get install -y wget gnupg \
