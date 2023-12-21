@@ -3,6 +3,10 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
     "containerEnv": {
         "DB_HOST": "mongodb://127.0.0.1:27017",
         "BE_ROUTER_PORT": "12000",
