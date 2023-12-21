@@ -9,12 +9,10 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y mongodb-org
 
-# Stage 2: Set up the Node.js environment
-FROM node:18-slim
-
-# Copy MongoDB binaries from the first stage
-COPY --from=mongodb /usr/bin/mongod /usr/bin/mongod
-COPY --from=mongodb /usr/bin/mongo /usr/bin/mongo
+# Install Node.js
+# Replace "setup_14.x" with "setup_18.x" for Node.js 18 or the version you need
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+    && apt-get install -y nodejs
 
 # Create the MongoDB data directory
 RUN mkdir -p /data/db
