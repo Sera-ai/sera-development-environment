@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Array of target directories
-TARGET_DIRS=( "/be_Builder" "/be_Router" "/be_Socket" "/be_Sequencer" "/fe_Catalog" "/fe_Builder" )
+TARGET_DIRS=( "./be_Builder" "./be_Router" "./be_Socket" "./be_Sequencer" "./fe_Catalog" "./fe_Builder" )
 
 # Function to generate SSL certificate in a specified directory
 generate_ssl_certificate() {
