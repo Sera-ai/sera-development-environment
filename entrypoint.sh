@@ -5,7 +5,7 @@ set -e
 mongod --fork --logpath /var/log/mongod.log --bind_ip_all
 
 # Restore from dump
-mongorestore ./sera-db-mongo/
+mongorestore --db Sera ./sera-db-mongo/Sera
 
 # Stop the background MongoDB
 mongod --shutdown
