@@ -72,6 +72,24 @@
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {
+            "label": "Start All Submodules",
+            "dependsOn": ["Start fe_Builder", "Start fe_Catalog", "Start be_Builder", "Start be_Socket", "Start be_Router", "Start be_Sequencer"],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Front-end",
+            "dependsOn": ["Start fe_Builder", "Start fe_Catalog"],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Back-end",
+            "dependsOn": ["Start be_Builder", "Start be_Socket", "Start be_Router", "Start be_Sequencer"],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
         }
     ]
 }
