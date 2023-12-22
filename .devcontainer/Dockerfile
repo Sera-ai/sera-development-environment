@@ -9,10 +9,14 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y mongodb-org
 
-# Install Node.js
-# Replace "setup_14.x" with "setup_18.x" for Node.js 18 or the version you need
-RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs npm
+# Install dependencies
+RUN apt-get update && apt-get install -y curl xz-utils
+
+# Download and install Node.js v20.5.1
+RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1
+
+# Update npm to version 9.8.0
+RUN npm install -g npm@9.8.0
 
 # Create the MongoDB data directory
 RUN mkdir -p /data/db
@@ -21,8 +25,6 @@ RUN mkdir -p /data/db
 WORKDIR /workspace
 
 RUN apt-get update && apt-get install -y git libcurl4
-
-RUN npm install -g npm@latest
 
 # Copy the rest of the application's source code
 COPY . .
