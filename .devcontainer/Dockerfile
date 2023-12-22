@@ -45,3 +45,5 @@ RUN rm -rf /var/lib/apt/lists/*
 ENV NODE_ENV=development
 
 EXPOSE 12020 12010 12030 12040 12000 12050
+
+CMD ["./entrypoint.sh"]
