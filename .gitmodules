@@ -1,6 +1,3 @@
-[submodule "fe_Builder"]
-	path = fe_Builder
-	url = https://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@github.com/Sera-ai/fe_Builder.git
 [submodule "fe_Catalog"]
 	path = fe_Catalog
 	url = https://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@github.com/Sera-ai/fe_Catalog.git
