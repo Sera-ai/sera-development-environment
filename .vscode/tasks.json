@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "npm run dev",
             "options": {
-                "cwd": "${workspaceFolder}/fe_Builder"
+                "cwd": "${workspaceFolder}/fe_Catalog/src/builder"
             },
             "presentation": {
                 "reveal": "always",
