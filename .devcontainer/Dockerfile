@@ -36,8 +36,7 @@ RUN git submodule update --init --recursive
 RUN npm install -g nodemon eslint prettier
 
 # Install dependencies in each submodule
-RUN npm install --prefix ./fe_Builder \
-    && npm install --prefix ./fe_Catalog \
+RUN npm install --prefix ./fe_Catalog \
     && npm install --prefix ./be_Builder \
     && npm install --prefix ./be_Socket \
     && npm install --prefix ./be_Router \
