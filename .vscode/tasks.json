@@ -77,7 +77,10 @@
             "label": "Start All Submodules",
             "dependsOn": ["Start fe_Builder", "Start fe_Catalog", "Start be_Builder", "Start be_Socket", "Start be_Router", "Start be_Sequencer"],
             "dependsOrder": "parallel",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
         },
         {
             "label": "Start Front-end",
