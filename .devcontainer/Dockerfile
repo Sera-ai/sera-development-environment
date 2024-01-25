@@ -37,6 +37,7 @@ RUN npm install -g nodemon eslint prettier
 
 # Install dependencies in each submodule
 RUN npm install --prefix ./fe_Catalog \
+    && npm install --prefix ./fe_Catalog/src/builder \
     && npm install --prefix ./be_Builder \
     && npm install --prefix ./be_Socket \
     && npm install --prefix ./be_Router \
