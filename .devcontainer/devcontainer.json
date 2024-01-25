@@ -38,5 +38,11 @@
     "runServices": ["app", "mongo"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+    },
+    "portsAttributes": {
+        "12000": {
+            "label": "Router: 12000",
+            "protocol": "https"
+        }
     }
 }
