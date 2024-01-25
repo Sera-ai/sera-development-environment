@@ -14,6 +14,7 @@
     ],
     "containerEnv": {
         "DB_HOST": "mongodb://127.0.0.1:27017",
+        "DOMAIN_NAME": "",
         "BE_ROUTER_PORT": "12000",
         "FE_CATALOG_PORT": "12010",
         "FE_BUILDER_PORT": "12020",
