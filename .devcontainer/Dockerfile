@@ -42,6 +42,8 @@ RUN npm install --prefix ./fe_Catalog \
     && npm install --prefix ./be_Router \
     && npm install --prefix ./be_Sequencer
 
+RUN echo "127.0.0.1       sera.local" | tee -a /etc/hosts
+
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
 
