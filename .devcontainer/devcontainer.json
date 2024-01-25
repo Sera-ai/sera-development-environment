@@ -10,7 +10,8 @@
         }
     },
     "runArgs": [
-        "--add-host=sera.local:127.0.0.1"
+        "--add-host=sera.local:127.0.0.1",
+        "--add-host=sera.test:127.0.0.1"
     ],
     "containerEnv": {
         "DB_HOST": "mongodb://127.0.0.1:27017",
