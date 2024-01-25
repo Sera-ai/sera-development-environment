@@ -4,7 +4,10 @@
     "workspaceFolder": "/workspace",
     "build": {
         "dockerfile": "Dockerfile",
-        "context": ".."
+        "context": "..",
+        "args": {
+          "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
+        }
     },
     "containerEnv": {
         "DB_HOST": "mongodb://127.0.0.1:27017",
@@ -29,5 +32,8 @@
     "postCreateCommand": "git submodule update --init --recursive",
     "postStartCommand": "mongod --fork --logpath /var/log/mongod.log --bind_ip_all",
     "shutdownAction": "stopCompose",
-    "runServices": ["app", "mongo"]
+    "runServices": ["app", "mongo"],
+    "remoteEnv": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+    }
 }
