@@ -9,6 +9,9 @@
           "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
         }
     },
+    "runArgs": [
+        "--add-host=sera.local:127.0.0.1"
+    ],
     "containerEnv": {
         "DB_HOST": "mongodb://127.0.0.1:27017",
         "BE_ROUTER_PORT": "12000",
