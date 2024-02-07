@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y git libcurl4
 COPY . .
 
 # Initialize and update submodules
-RUN git submodule update --init --recursive
+RUN git submodule update --init --recursive --remote
 
 # Install global packages & tools
 RUN npm install -g nodemon eslint prettier
