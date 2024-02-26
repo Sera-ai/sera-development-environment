@@ -6,8 +6,7 @@
         "dockerfile": "Dockerfile",
         "context": "..",
         "args": {
-            "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}",
-            "DB_HOST": "${{ secrets.MONGO_HOST }}"
+            "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
         }
     },
     "runArgs": [
@@ -39,8 +38,7 @@
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],
     "remoteEnv": {
-        "GITHUB_TOKEN": "${GITHUB_TOKEN}",
-        "DB_HOST": "${DB_HOST}"
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
     "portsAttributes": {
         "12000": {
