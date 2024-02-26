@@ -6,6 +6,7 @@
         "dockerfile": "Dockerfile",
         "context": "..",
         "args": {
+            "DB_HOST": "${{ secrets.MONGO_HOST }}",
           "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
         }
     },
@@ -14,7 +15,6 @@
         "--add-host=sera.test:127.0.0.1"
     ],
     "containerEnv": {
-        "DB_HOST": "${{ secrets.MONGO_HOST }}",
         "DOMAIN_NAME": "",
         "BE_ROUTER_PORT": "12000",
         "FE_CATALOG_PORT": "12010",
