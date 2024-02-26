@@ -7,7 +7,7 @@
         "context": "..",
         "args": {
             "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}",
-            "DB_HOST": "${{ secrets.MONGO_HOST }}"
+            "DB_HOST2": "${{ secrets.MONGO_HOST }}"
         }
     },
     "runArgs": [
@@ -39,7 +39,8 @@
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],
     "remoteEnv": {
-        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}",
+        "DB_HOST3": "${DB_HOST2}"
     },
     "portsAttributes": {
         "12000": {
