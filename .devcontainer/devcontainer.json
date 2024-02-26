@@ -40,7 +40,7 @@
     "runServices": ["app", "mongo"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}",
-        "DB_HOST": "${{ MONGO_HOST }}"
+        "DB_HOST": "${MONGO_HOST}"
     },
     "portsAttributes": {
         "12000": {
