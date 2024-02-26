@@ -47,6 +47,6 @@ RUN npm install --prefix ./fe_Catalog \
 RUN rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=development
-ENV DB_HOST=$DB_HOST
+ENV DB_HOST=$DB_HOST2
 
 EXPOSE 12020 12010 12030 12040 12000 12050
