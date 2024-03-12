@@ -2,18 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Start fe_Builder",
-            "type": "shell",
-            "command": "npm run dev",
-            "options": {
-                "cwd": "${workspaceFolder}/fe_Catalog/src/builder"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
             "label": "Start fe_Catalog",
             "type": "shell",
             "command": "npm run dev",
@@ -75,24 +63,46 @@
         },
         {
             "label": "Start All Submodules",
-            "dependsOn": ["Start fe_Builder", "Start fe_Catalog", "Start be_Builder", "Start be_Socket", "Start be_Router", "Start be_Sequencer"],
+            "dependsOn": [
+                "Start fe_Catalog",
+                "Start be_Builder",
+                "Start be_Socket",
+                "Start be_Router",
+                "Start be_Sequencer"
+            ],
             "dependsOrder": "parallel",
             "problemMatcher": [],
             "runOptions": {
                 "runOn": "folderOpen"
-            },
+            }
         },
         {
             "label": "Start Front-end",
-            "dependsOn": ["Start fe_Builder", "Start fe_Catalog"],
+            "dependsOn": [
+                "Start fe_Catalog"
+            ],
             "dependsOrder": "parallel",
             "problemMatcher": []
         },
         {
             "label": "Start Back-end",
-            "dependsOn": ["Start be_Builder", "Start be_Socket", "Start be_Router", "Start be_Sequencer"],
+            "dependsOn": [
+                "Start be_Builder",
+                "Start be_Socket",
+                "Start be_Router",
+                "Start be_Sequencer"
+            ],
             "dependsOrder": "parallel",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "fe_Catalog",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build - fe_Catalog",
+            "detail": "vite build"
         }
     ]
 }
