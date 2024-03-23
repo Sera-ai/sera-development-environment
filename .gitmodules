@@ -1,7 +1,7 @@
 [submodule "fe_Catalog"]
 	path = fe_Catalog
 	url = https://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@github.com/Sera-ai/fe_Catalog.git
-	branch = main
+	branch = dev-test-for-workspaces
 [submodule "be_Builder"]
 	path = be_Builder
 	url = https://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@github.com/Sera-ai/be_Builder.git
