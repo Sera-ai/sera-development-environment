@@ -32,11 +32,11 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
-    "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017],
+    "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017, 6379],
     "postCreateCommand": "git submodule update --init --recursive",
     "postStartCommand": "mongod --fork --logpath /var/log/mongod.log --bind_ip_all",
     "shutdownAction": "stopCompose",
-    "runServices": ["app", "mongo"],
+    "runServices": ["app", "mongo", "redis"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
