@@ -25,9 +25,6 @@ services:
       - "12000:12000"
       - "12050:12050"
     extra_hosts:
-      - "sera.local:127.0.0.1"
-      - "sera.test:127.0.0.1"
-  redis:
-    image: "redis:alpine"
-    ports:
-      - "6379:6379"
+      - "local.sera:127.0.0.1"
+      - "test.sera:127.0.0.1"
+      - "dns.sera:127.0.0.1"

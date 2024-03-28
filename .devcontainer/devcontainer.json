@@ -10,8 +10,9 @@
         }
     },
     "runArgs": [
-        "--add-host=sera.local:127.0.0.1",
-        "--add-host=sera.test:127.0.0.1"
+        "--add-host=local.sera:127.0.0.1",
+        "--add-host=test.sera:127.0.0.1",
+        "--add-host=dns.sera:127.0.0.1"
     ],
     "containerEnv": {
         "DOMAIN_NAME": "",
@@ -36,7 +37,7 @@
     "postCreateCommand": "git submodule update --init --recursive",
     "postStartCommand": "mongod --fork --logpath /var/log/mongod.log --bind_ip_all",
     "shutdownAction": "stopCompose",
-    "runServices": ["app", "mongo", "redis"],
+    "runServices": ["app", "mongo"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
