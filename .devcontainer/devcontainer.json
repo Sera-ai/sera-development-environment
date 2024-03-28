@@ -1,14 +1,8 @@
 {
-    "name": "Sera AI Microservices Development Environment",
+    "name": "Sera AI Development Environment",
     "service": "app",
     "workspaceFolder": "/workspace",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": "..",
-        "args": {
-            "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
-        }
-    },
+    "dockerComposeFile": "docker-compose.yml",
     "runArgs": [
         "--add-host=sera.local:127.0.0.1",
         "--add-host=sera.test:127.0.0.1"
@@ -34,9 +28,8 @@
     ],
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017, 6379],
     "postCreateCommand": "git submodule update --init --recursive",
-    "postStartCommand": "mongod --fork --logpath /var/log/mongod.log --bind_ip_all",
     "shutdownAction": "stopCompose",
-    "runServices": ["app", "mongo", "redis"],
+    "runServices": ["sera", "redis"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
