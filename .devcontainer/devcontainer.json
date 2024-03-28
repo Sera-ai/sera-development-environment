@@ -29,7 +29,7 @@
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017, 6379],
     "postCreateCommand": "git submodule update --init --recursive",
     "shutdownAction": "stopCompose",
-    "runServices": ["sera", "redis"],
+    "runServices": ["sera"],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
