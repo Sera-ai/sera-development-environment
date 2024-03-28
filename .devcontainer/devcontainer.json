@@ -1,6 +1,6 @@
 {
     "name": "Sera AI Microservices Development Environment",
-    "service": "app",
+    "service": "sera",
     "workspaceFolder": "/workspace",
     "dockerComposeFile": "docker-compose.yml",
     "runArgs": [
