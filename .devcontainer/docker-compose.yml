@@ -1,5 +1,33 @@
 version: '3.8'
 services:
+  app:
+    image: node:20
+    command: /bin/bash -c "apt-get update && apt-get install -y git"
+    volumes:
+      - .:/workspace
+    environment:
+      DOMAIN_NAME: ""
+      BE_ROUTER_PORT: "12000"
+      FE_CATALOG_PORT: "12010"
+      FE_BUILDER_PORT: "12020"
+      BE_BUILDER_PORT: "12030"
+      BE_SOCKET_PORT: "12040"
+      BE_SEQUENCER_PORT: "12050"
+      SERA_INSTANCE_BE_BUILDER_SERVICE_HOST: "127.0.0.1"
+      SERA_INSTANCE_BE_SEQUENCER_SERVICE_HOST: "127.0.0.1"
+      SERA_INSTANCE_BE_SOCKET_SERVICE_HOST: "127.0.0.1"
+      GITHUB_TOKEN: "${GITHUB_TOKEN}"
+    ports:
+      - "12020:12020"
+      - "12010:12010"
+      - "12030:12030"
+      - "12040:12040"
+      - "12000:12000"
+      - "12050:12050"
+    extra_hosts:
+      - "sera.local:127.0.0.1"
+      - "sera.test:127.0.0.1"
+
   mongo:
     build:
       context: ./sera-db-mongo
@@ -7,6 +35,7 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+
   redis:
     image: "redis:alpine"
     ports:
