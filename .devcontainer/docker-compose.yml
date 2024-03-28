@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  app:
+  sera:
     image: node:20
     command: /bin/bash -c "apt-get update && apt-get install -y git"
     volumes:
@@ -27,15 +27,6 @@ services:
     extra_hosts:
       - "sera.local:127.0.0.1"
       - "sera.test:127.0.0.1"
-
-  mongo:
-    build:
-      context: ./sera-db-mongo
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongo-data:/data/db
-
   redis:
     image: "redis:alpine"
     ports:
