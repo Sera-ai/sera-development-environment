@@ -28,7 +28,6 @@
     ],
     "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017, 6379],
     "postCreateCommand": "git submodule update --init --recursive",
-    "postStartCommand": "docker-compose exec app mongod --fork --logpath /var/log/mongod.log --bind_ip_all",  
     "shutdownAction": "stopCompose",
     "runServices": ["app", "sera", "redis"],
     "remoteEnv": {
