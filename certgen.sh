@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Array of target directories
 TARGET_DIRS=( "./be_Builder" "./be_Router" "./be_Socket" "./be_Sequencer" "./fe_Catalog" "./fe_Builder" )
 
