@@ -46,5 +46,6 @@ RUN npm install --prefix ./fe_Catalog \
 RUN rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=development
+ENV DB_HOST=ENV DB_HOST=mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net
 
 EXPOSE 12020 12010 12030 12040 12000 12050
