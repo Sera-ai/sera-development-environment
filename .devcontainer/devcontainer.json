@@ -24,7 +24,8 @@
         "BE_SEQUENCER_PORT": "12050",
         "SERA_INSTANCE_BE_BUILDER_SERVICE_HOST": "127.0.0.1",
         "SERA_INSTANCE_BE_SEQUENCER_SERVICE_HOST" : "127.0.0.1",
-        "SERA_INSTANCE_BE_SOCKET_SERVICE_HOST" : "127.0.0.1"
+        "SERA_INSTANCE_BE_SOCKET_SERVICE_HOST" : "127.0.0.1",
+        "DB_HOST": "mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net"
     },
     "settings": { 
         "terminal.integrated.shell.linux": "/bin/bash"

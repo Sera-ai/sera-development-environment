@@ -1,24 +1,24 @@
 [submodule "fe_Catalog"]
 	path = fe_Catalog
-	url = https://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@github.com/Sera-ai/fe_Catalog.git
+	url = https://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@github.com/Sera-ai/fe_Catalog.git
 	branch = main
 [submodule "be_Builder"]
 	path = be_Builder
-	url = https://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@github.com/Sera-ai/be_Builder.git
+	url = https://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@github.com/Sera-ai/be_Builder.git
 	branch = main
 [submodule "be_Socket"]
 	path = be_Socket
-	url = https://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@github.com/Sera-ai/be_Socket.git
+	url = https://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@github.com/Sera-ai/be_Socket.git
 	branch = main
 [submodule "be_Router"]
 	path = be_Router
-	url = https://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@github.com/Sera-ai/be_Router.git
+	url = https://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@github.com/Sera-ai/be_Router.git
 	branch = main
 [submodule "be_Sequencer"]
 	path = be_Sequencer
-	url = https://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@github.com/Sera-ai/be_Sequencer.git
+	url = https://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@github.com/Sera-ai/be_Sequencer.git
 	branch = main
 [submodule "sera-db-mongo"]
 	path = sera-db-mongo
-	url = https://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@github.com/Sera-ai/sera-db-mongo.git
+	url = https://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@github.com/Sera-ai/sera-db-mongo.git
 	branch = main
