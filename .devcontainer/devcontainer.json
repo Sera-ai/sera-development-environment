@@ -18,13 +18,9 @@
         "DOMAIN_NAME": "",
         "BE_ROUTER_PORT": "12000",
         "FE_CATALOG_PORT": "12010",
-        "FE_BUILDER_PORT": "12020",
         "BE_BUILDER_PORT": "12030",
         "BE_SOCKET_PORT": "12040",
         "BE_SEQUENCER_PORT": "12050",
-        "SERA_INSTANCE_BE_BUILDER_SERVICE_HOST": "127.0.0.1",
-        "SERA_INSTANCE_BE_SEQUENCER_SERVICE_HOST" : "127.0.0.1",
-        "SERA_INSTANCE_BE_SOCKET_SERVICE_HOST" : "127.0.0.1",
         "DB_HOST": "mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net"
     },
     "settings": { 
@@ -34,7 +30,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
-    "forwardPorts": [12020, 12010, 12030, 12040, 12000, 12050, 27017, 6379],
+    "forwardPorts": [12010, 12030, 12040, 12000, 12050, 27017, 6379],
     "postCreateCommand": "git submodule update --init --recursive",
     "postStartCommand": "mongod --fork --logpath /var/log/mongod.log --bind_ip_all",
     "shutdownAction": "stopCompose",
