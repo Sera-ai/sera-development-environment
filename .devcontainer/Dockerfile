@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get install -y mongodb-org
 
 # Install dependencies
-RUN apt-get update && apt-get install -y curl xz-utils openssl git libcurl4 nginx
+RUN apt-get update && apt-get install -y curl xz-utils openssl git libcurl4 nginx gettext
 
 # Download and install Node.js v20.5.1
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1
@@ -53,7 +53,11 @@ RUN mkdir -p /etc/nginx/certs \
         -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
 
 # Copy the Nginx configuration file from the parent folder
-COPY ./.devcontainer/nginx.conf /etc/nginx/nginx.conf
+
+
+COPY ./.devcontainer/nginx.conf /etc/nginx/nginx.conf.template
+
+RUN envsubst < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
 
 ENV NODE_ENV=development
 ENV DB_HOST=mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net
