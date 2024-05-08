@@ -53,7 +53,7 @@ RUN mkdir -p /etc/nginx/certs \
         -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
 
 # Copy the Nginx configuration file from the parent folder
-COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./.devcontainer/nginx.conf /etc/nginx/nginx.conf
 
 ENV NODE_ENV=development
 ENV DB_HOST=mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net
