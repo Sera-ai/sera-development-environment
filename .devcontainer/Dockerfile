@@ -17,7 +17,8 @@ RUN luarocks install lua-resty-http \
     && luarocks install lua-resty-string \
     && luarocks install lua-resty-core \
     && luarocks install lua-resty-lrucache \
-    && luarocks install lua-cjson
+    && luarocks install lua-cjson \
+    && luarocks install lua-resty-mongol
 
 # Install Node.js and npm
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
@@ -59,6 +60,7 @@ RUN mkdir -p /etc/nginx/certs \
 
 # Copy the Nginx configuration template
 COPY ./.devcontainer/test.lua /etc/nginx/lua-scripts/test.lua
+COPY ./.devcontainer/lua-scripts/ /etc/nginx/
 
 # Expose ports
 EXPOSE 80 443 12010 12030 12040 12000 12050

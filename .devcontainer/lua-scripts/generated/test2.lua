@@ -45,7 +45,7 @@ local function make_post_request()
         make_get_request(data.resourceId)
     end
 
-    ngx.say(cjson.encode(data)) -- Return the response
+    ngx.say("test2 success") -- Return the response
     ngx.exit(ngx.HTTP_OK)
 end
 
