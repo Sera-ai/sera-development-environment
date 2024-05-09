@@ -9,28 +9,33 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y mongodb-org
 
-# Install dependencies
-RUN apt-get update && apt-get install -y curl xz-utils openssl git libcurl4 nginx gettext
+RUN apt-get update && apt-get install -y gnupg wget curl xz-utils nginx-extras openssl git libcurl4 gettext luarocks
 
-# Download and install Node.js v20.5.1
-RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1
+# Install lua-resty-http
+# Install each required Lua module separately
+RUN luarocks install lua-resty-http \
+    && luarocks install lua-resty-string \
+    && luarocks install lua-resty-core \
+    && luarocks install lua-resty-lrucache \
+    && luarocks install lua-cjson
 
-# Update npm to version 9.8.0
-RUN npm install -g npm@9.8.0 nodemon eslint prettier
+# Install Node.js and npm
+RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
+    && npm install -g npm@9.8.0 nodemon eslint prettier
 
-# Create the MongoDB data directory
+# Create MongoDB data directory
 RUN mkdir -p /data/db
 
-# Set the working directory for the Node app
+# Set working directory for the Node app
 WORKDIR /workspace
 
-# Copy the rest of the application's source code
+# Copy the application's source code
 COPY . .
 
 # Initialize and update submodules
 RUN git submodule update --init --recursive --remote
 
-# Install dependencies in each submodule
+# Install Node.js dependencies for each submodule
 RUN npm install --prefix ./fe_Catalog \
     && npm install --prefix ./be_Builder \
     && npm install --prefix ./be_Socket \
@@ -39,7 +44,7 @@ RUN npm install --prefix ./fe_Catalog \
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
 
-# Set environment variables for certificate generation
+# Environment variables for SSL certificate generation
 ENV SSL_COUNTRY="US"
 ENV SSL_STATE="Florida"
 ENV SSL_LOCALITY="Tampa"
@@ -49,18 +54,16 @@ ENV SSL_COMMON_NAME="localhost"
 # Generate SSL certificates dynamically
 RUN mkdir -p /etc/nginx/certs \
     && openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 \
-        -subj "/C=$SSL_COUNTRY/ST=$SSL_STATE/L=$SSL_LOCALITY/O=$SSL_ORG/CN=$SSL_COMMON_NAME" \
-        -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
+    -subj "/C=$SSL_COUNTRY/ST=$SSL_STATE/L=$SSL_LOCALITY/O=$SSL_ORG/CN=$SSL_COMMON_NAME" \
+    -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
 
-# Copy the Nginx configuration file from the parent folder
+# Copy the Nginx configuration template
+COPY ./.devcontainer/test.lua /etc/nginx/lua-scripts/test.lua
 
-
-COPY ./.devcontainer/nginx.conf /etc/nginx/nginx.conf.template
-
-RUN envsubst < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
-
-ENV NODE_ENV=development
-ENV DB_HOST=mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net
-
-# Expose other ports for your application
+# Expose ports
 EXPOSE 80 443 12010 12030 12040 12000 12050
+
+RUN chmod +x ./.devcontainer/entrypoint.sh ./sera-db-mongo/entrypoint.sh
+
+# Set the new entrypoint
+ENTRYPOINT ["./.devcontainer/entrypoint.sh"]

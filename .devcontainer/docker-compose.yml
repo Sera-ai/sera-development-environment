@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/workspace
     environment:
-      DOMAIN_NAME: ""
+      DOMAIN_NAME: "example.sera"
       BE_ROUTER_PORT: "12000"
       FE_CATALOG_PORT: "12010"
       BE_BUILDER_PORT: "12030"

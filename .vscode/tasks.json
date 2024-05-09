@@ -38,18 +38,6 @@
             }
         },
         {
-            "label": "Start be_Router",
-            "type": "shell",
-            "command": "npm run start",
-            "options": {
-                "cwd": "${workspaceFolder}/be_Router"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            }
-        },
-        {
             "label": "Start be_Sequencer",
             "type": "shell",
             "command": "npm run start",
@@ -67,7 +55,6 @@
                 "Start fe_Catalog",
                 "Start be_Builder",
                 "Start be_Socket",
-                "Start be_Router",
                 "Start be_Sequencer"
             ],
             "dependsOrder": "parallel",
@@ -89,7 +76,6 @@
             "dependsOn": [
                 "Start be_Builder",
                 "Start be_Socket",
-                "Start be_Router",
                 "Start be_Sequencer"
             ],
             "dependsOrder": "parallel",
