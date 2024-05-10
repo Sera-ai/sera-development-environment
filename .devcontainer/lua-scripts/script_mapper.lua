@@ -1,7 +1,7 @@
 -- script_mapper.lua
 local endpoint_to_script = {
     ["localhost:/api/users:GET"] = "test.lua",
-    ["localhost:/api/users2:GET"] = "test2.lua",
+    ["localhost:/api/auth:GET"] = "auth_test.lua",
     -- Add more endpoint-method combinations here...
 }
 

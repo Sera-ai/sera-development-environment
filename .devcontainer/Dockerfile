@@ -27,7 +27,8 @@ RUN luarocks install lua-resty-http \
     && luarocks install lua-resty-string \
     && luarocks install lua-resty-core \
     && luarocks install lua-resty-lrucache \
-    && luarocks install lua-cjson
+    && luarocks install lua-cjson \
+    && luarocks install luasocket
 
 RUN mkdir /usr/local/share/lua/5.1/resty/mongol/ \
     && cp -r /usr/local/openresty/lualib/resty/mongol/ /usr/local/share/lua/5.1/resty/
