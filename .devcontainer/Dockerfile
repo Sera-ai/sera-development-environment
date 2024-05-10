@@ -9,16 +9,28 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y mongodb-org
 
-RUN apt-get update && apt-get install -y gnupg wget curl xz-utils nginx-extras openssl git libcurl4 gettext luarocks
+# Install required dependencies and development packages
+RUN apt-get update \
+    && apt-get install -y gnupg wget curl xz-utils nginx-extras openssl git libcurl4 gettext luarocks luajit software-properties-common build-essential 
 
-# Install lua-resty-http
-# Install each required Lua module separately
+RUN wget -qO - https://openresty.org/package/pubkey.gpg | apt-key add -
+RUN echo "deb http://openresty.org/package/debian buster openresty" | tee /etc/apt/sources.list.d/openresty.list
+
+RUN apt-get update && apt-get install -y openresty
+
+RUN git clone https://github.com/bigplum/lua-resty-mongol.git \
+    && cd lua-resty-mongol \
+    && make install
+
+# Install lua-resty-http and other Lua modules
 RUN luarocks install lua-resty-http \
     && luarocks install lua-resty-string \
     && luarocks install lua-resty-core \
     && luarocks install lua-resty-lrucache \
-    && luarocks install lua-cjson \
-    && luarocks install lua-resty-mongol
+    && luarocks install lua-cjson
+
+RUN mkdir /usr/local/share/lua/5.1/resty/mongol/ \
+    && cp -r /usr/local/openresty/lualib/resty/mongol/ /usr/local/share/lua/5.1/resty/
 
 # Install Node.js and npm
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
@@ -58,9 +70,8 @@ RUN mkdir -p /etc/nginx/certs \
     -subj "/C=$SSL_COUNTRY/ST=$SSL_STATE/L=$SSL_LOCALITY/O=$SSL_ORG/CN=$SSL_COMMON_NAME" \
     -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
 
-# Copy the Nginx configuration template
-COPY ./.devcontainer/test.lua /etc/nginx/lua-scripts/test.lua
-COPY ./.devcontainer/lua-scripts/ /etc/nginx/
+# Copy the Nginx configuration template and Lua scripts
+COPY ./.devcontainer/lua-scripts/ /etc/nginx/lua-scripts/
 
 # Expose ports
 EXPOSE 80 443 12010 12030 12040 12000 12050
