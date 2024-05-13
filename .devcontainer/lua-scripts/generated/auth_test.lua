@@ -2,6 +2,7 @@
 local http = require "resty.http"
 local cjson = require "cjson.safe"
 local auth = require "auth_check"
+local mongo = require "mongo_handler"
 
 -- Define the fictional endpoint and parameters for the POST request
 local endpoint = 'http://127.0.0.1/sera-test-endpoint'
@@ -44,8 +45,13 @@ local function make_post_request()
         ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
     end
 
-    ngx.say("test2 success") -- Return the response
+
+    
+    local mongo_res = mongo.get_admin_settings()
+    ngx.say(mongo_res) -- Return the response
     ngx.exit(ngx.HTTP_OK)
+
+    
 end
 
 make_post_request()

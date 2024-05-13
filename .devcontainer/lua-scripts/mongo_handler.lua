@@ -1,5 +1,4 @@
 -- mongo_handler.lua
-
 -- Function to clean up non-serializable data types and convert ObjectIDs
 local function strip_and_convert_mongo_fields(tbl)
     local result = {}
@@ -36,6 +35,8 @@ local function with_retries(fn, max_retries)
 end
 
 local function get_admin_settings()
+    ngx.log(ngx.ERR, "starting to connect")
+
     local mongo_pool = require "connection_pool"
     local cjson = require "cjson"
 
@@ -64,9 +65,6 @@ local function get_admin_settings()
         return cjson.encode(strip_and_convert_mongo_fields(result))
     end, 3)  -- Retry up to 3 times
 end
-
-
-
 
 
 -- Return the functions to be used externally

@@ -1,3 +1,4 @@
+-- auth_check.lua
 local mime = require "mime"
 
 -- Base64 decoding using LuaSocket's `mime` module
