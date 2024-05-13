@@ -34,7 +34,7 @@ local function with_retries(fn, max_retries)
     return nil, "Failed after " .. max_retries .. " retries"
 end
 
-local function get_admin_settings()
+local function get_settings(collection, query)
     ngx.log(ngx.ERR, "starting to connect")
 
     local mongo_pool = require "connection_pool"
@@ -50,8 +50,8 @@ local function get_admin_settings()
 
         -- Proceed with MongoDB operations
         local db = client:new_db_handle("Sera")
-        local col = db:get_col("sera_settings")
-        local result, err = col:find_one({ user = "admin" })
+        local col = db:get_col(collection)
+        local result, err = col:find_one(query)
         
         if not result then
             ngx.log(ngx.ERR, "MongoDB find error: ", err)
@@ -69,5 +69,5 @@ end
 
 -- Return the functions to be used externally
 return {
-    get_admin_settings = get_admin_settings
+    get_settings = get_settings
 }

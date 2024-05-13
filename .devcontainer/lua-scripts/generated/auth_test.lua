@@ -47,7 +47,7 @@ local function make_post_request()
 
 
     
-    local mongo_res = mongo.get_admin_settings()
+    local mongo_res = mongo.get_settings()
     ngx.say(mongo_res) -- Return the response
     ngx.exit(ngx.HTTP_OK)
 
