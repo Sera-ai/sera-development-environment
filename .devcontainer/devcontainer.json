@@ -32,7 +32,7 @@
         "esbenp.prettier-vscode"
     ],
     "forwardPorts": [12010, 12030, 12040, 12000, 12050, 27017, 6379],
-    "postStartCommand": "bash ./.devcontainer/entrypoint.sh",
+    "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],
     "remoteEnv": {

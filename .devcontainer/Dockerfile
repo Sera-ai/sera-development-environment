@@ -78,6 +78,3 @@ COPY ./.devcontainer/lua-scripts/ /etc/nginx/lua-scripts/
 EXPOSE 80 443 12010 12030 12040 12000 12050
 
 RUN chmod +x ./.devcontainer/entrypoint.sh ./sera-db-mongo/entrypoint.sh
-
-# Set the new entrypoint
-ENTRYPOINT ["./.devcontainer/entrypoint.sh"]
