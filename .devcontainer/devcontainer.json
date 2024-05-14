@@ -31,7 +31,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
-    "forwardPorts": [12010, 12030, 12040, 12000, 12050, 27017, 6379],
+    "forwardPorts": [12000, 12010, 12030, 12040, 12050, 27017, 6379],
     "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],

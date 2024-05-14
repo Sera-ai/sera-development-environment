@@ -10,10 +10,6 @@
 	path = be_Socket
 	url = https://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@github.com/Sera-ai/be_Socket.git
 	branch = main
-[submodule "be_Router"]
-	path = be_Router
-	url = https://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@github.com/Sera-ai/be_Router.git
-	branch = main
 [submodule "be_Sequencer"]
 	path = be_Sequencer
 	url = https://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@github.com/Sera-ai/be_Sequencer.git
