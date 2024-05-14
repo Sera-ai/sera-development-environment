@@ -1,7 +1,7 @@
 -- update_dispatcher.lua
 local cjson = require "cjson.safe"  -- Safe version that handles errors
 
-local function update_mapping()
+local function update_script_map()
     ngx.req.read_body()  -- Explicitly read the POST body
     local body = ngx.req.get_body_data()
     if not body then
@@ -31,5 +31,5 @@ local function update_mapping()
 end
 
 return {
-    update_mapping = update_mapping
+    update_script_map = update_script_map
 }
