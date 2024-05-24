@@ -33,7 +33,6 @@
     ],
     "forwardPorts": [12000, 12010, 12030, 12040, 12050, 27017, 6379],
     "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
-    "postStartCommand": "code --add /etc/nginx",
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],
     "remoteEnv": {
