@@ -72,8 +72,7 @@ RUN mkdir -p /etc/nginx/certs \
     -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt
 
 # Copy the Nginx configuration template and Lua scripts
-COPY ./.devcontainer/lua-scripts/ /etc/nginx/lua-scripts/
-
+RUN ln -s  /workspace/.devcontainer/lua-scripts /etc/nginx/lua-scripts
 RUN ln -s /etc/nginx /workspace/nginx-config
 
 # Expose ports
