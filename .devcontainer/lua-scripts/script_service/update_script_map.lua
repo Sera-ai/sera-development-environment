@@ -11,7 +11,7 @@ local function update_script_map()
     end
 
     local data = cjson.decode(body)
-    if not data or not data.path or not data.filename or not data.document_id then
+    if not data or not data.path or not data.filename or not data.document_id or not data.oas_id then
         ngx.status = ngx.HTTP_BAD_REQUEST
         ngx.say('{"error": "Invalid JSON data"}')
         ngx.exit(ngx.HTTP_BAD_REQUEST)
@@ -19,7 +19,7 @@ local function update_script_map()
 
     -- Fetch the shared dictionary
     local script_mapping = ngx.shared.script_mapping
-    local value = cjson.encode({filename = data.filename, document_id = data.document_id})
+    local value = cjson.encode(data)
     local success, err = script_mapping:set(data.path, value)
     if not success then
         ngx.status = ngx.HTTP_INTERNAL_SERVER_ERROR

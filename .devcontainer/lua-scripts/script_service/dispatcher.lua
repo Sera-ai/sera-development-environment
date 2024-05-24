@@ -40,6 +40,7 @@ local function dispatch()
     local script_name = get_mapping(key)
 
     if script_name then
+        
         -- Retrieve the compiled script function from the cache
         local script_func = script_cache:get(script_name.filename)
 
@@ -55,7 +56,6 @@ local function dispatch()
                 script_cache:set(script_name.filename, script_func)  -- Adjust depending on your Lua environment
             end
         end
-
         -- Execute the appropriate Lua script
         script_func.make_request(script_name)
     else
