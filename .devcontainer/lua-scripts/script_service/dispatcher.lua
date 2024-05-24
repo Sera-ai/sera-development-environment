@@ -57,7 +57,7 @@ local function dispatch()
         end
 
         -- Execute the appropriate Lua script
-        script_func.make_request(script_name.document_id)
+        script_func.make_request(script_name)
     else
         ngx.exit(ngx.HTTP_NOT_FOUND)
     end
