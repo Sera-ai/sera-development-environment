@@ -2,6 +2,7 @@
 local http = require "resty.http"
 local cjson = require "cjson.safe"
 local auth = require "auth_check"
+local oas_check = require "oas_check"
 local mongo = require "mongo_handler"
 
 -- Function to perform the POST request
@@ -21,8 +22,9 @@ local function make_request(data)
             ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
         end
 
+        local oas_res = oas_check.check_oas(oas_data)
         -- Return the "enabled" field in the response
-        ngx.say(oas_data)
+        ngx.say(oas_res)
         ngx.exit(ngx.HTTP_OK)
 
     else
