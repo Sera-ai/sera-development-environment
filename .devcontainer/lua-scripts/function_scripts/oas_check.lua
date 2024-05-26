@@ -69,22 +69,17 @@ end
 -- Main function to check OAS and handle response
 local function check_oas(oas)
     if not oas then
-        ngx.status = ngx.HTTP_INTERNAL_SERVER_ERROR
-        ngx.say("Failed to load OAS")
-        ngx.log(ngx.ERR, "Failed to load OAS")
-        return ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
+        return false, "Failed to load OAS"
     end
 
     local request = get_request_details()
     local valid, error_message = validate_request(oas, request)
 
     if not valid then
-        ngx.status = ngx.HTTP_INTERNAL_SERVER_ERROR
-        ngx.say("Invalid request: " .. error_message)
         ngx.log(ngx.ERR, "Request validation failed: " .. error_message)
-        return ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
+        return false, "Invalid request: " .. error_message
     end
-    
+
     return true
 end
 
