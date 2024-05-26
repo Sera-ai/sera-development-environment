@@ -41,8 +41,6 @@ local function convert_hex_string_to_normal(str)
 end
 
 local function get_settings(collection, query)
-    ngx.log(ngx.ERR, "starting to connect")
-
     local mongo_pool = require "connection_pool"
     local cjson = require "cjson"
 
@@ -74,7 +72,6 @@ local function get_settings(collection, query)
 end
 
 local function get_by_document_id(collection, document_id)
-    ngx.log(ngx.ERR, "starting to connect")
 
     local mongo_pool = require "connection_pool"
     local cjson = require "cjson"
