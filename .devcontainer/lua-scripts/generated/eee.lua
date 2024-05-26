@@ -22,6 +22,7 @@ local function make_request(data)
             ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
         end
 
+        local oas_res = oas_check.check_oas(oas_data)
         -- Return the "enabled" field in the response
 
         local check_oas_res, error_message = oas.check_oas(oas_data_res)
