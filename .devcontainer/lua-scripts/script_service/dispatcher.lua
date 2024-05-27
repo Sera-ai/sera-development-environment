@@ -7,9 +7,8 @@ local function get_mapping(path)
     local script_mapping = ngx.shared.script_mapping
     local value = script_mapping:get(path)
     if not value then
-        ngx.status = ngx.HTTP_NOT_FOUND
-        ngx.say('{"error": "Mapping not found"}')
-        ngx.exit(ngx.HTTP_NOT_FOUND)
+        ngx.log(ngx.ERR, "Mapping not found")
+        return cjson.decode('{"filename": "default.lua"}')
     end
 
     local data = cjson.decode(value)
@@ -45,6 +44,7 @@ local function dispatch()
         local script_func = script_cache:get(script_name.filename)
 
         if not script_func then
+            ngx.log(ngx.ERR, script_name.filename)
             local script_path = "/etc/nginx/lua-scripts/generated/" .. script_name.filename
             local loaded_func, err = loadfile(script_path)
             if not loaded_func then
