@@ -18,7 +18,7 @@ local function log_request(headers, target_url, method, body, res, response_time
     headers = headers or {}
     target_url = target_url or "unknown"
     method = method or "unknown"
-    body = body or ""
+    body = body or {}
 
     -- Safely extract data from the res object
     local res_status = res.status or "unknown"
@@ -31,6 +31,12 @@ local function log_request(headers, target_url, method, body, res, response_time
         method = method,
         response_time = response_time * 100,
         ts = ngx.now(),
+        ts_breakdown = {
+            init = (ngx.var.lua_start_time - ngx.var.nginx_start_time) * 100,
+            dispatch = (ngx.var.proxy_script_start_time - ngx.var.lua_start_time) * 100,
+            lua_script = (ngx.var.proxy_start_time - ngx.var.proxy_script_start_time) * 100,
+            proxy_time = (ngx.var.proxy_finish_time - ngx.var.proxy_start_time) * 100
+        },
         request = {
             headers = headers,
             query = ngx.req.get_uri_args() or {},
@@ -41,7 +47,7 @@ local function log_request(headers, target_url, method, body, res, response_time
             status = res_status,
             statusText = "OK",
             headers = res_headers,
-            data = res_body
+            data = cjson.decode(res_body) or res_body
         }
     })
 
@@ -65,6 +71,8 @@ end
 
 -- Function to perform the request
 local function make_request()
+
+    ngx.var.proxy_script_start_time = ngx.now()
 
     -- Extract the X-Forwarded-For header
     local headers = ngx.req.get_headers()
@@ -95,7 +103,7 @@ local function make_request()
         body = ngx.req.get_body_data()
     end
 
-    local start_time = ngx.now()
+    ngx.var.proxy_start_time = ngx.now()
 
     -- Perform the request
     local res, err = httpc:request_uri(target_url, {
@@ -105,8 +113,9 @@ local function make_request()
         ssl_verify = false -- Add proper certificate verification as needed
     })
 
-    local response_time = ngx.now() - start_time
-
+    ngx.var.proxy_finish_time = ngx.now()
+    
+    local response_time = ngx.var.proxy_finish_time - ngx.var.nginx_start_time
 
     if not res then
         ngx.log(ngx.ERR, 'Error making request: ', err)

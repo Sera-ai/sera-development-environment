@@ -28,6 +28,9 @@ local function get_mapping(path)
 end
 
 local function dispatch()
+    
+    ngx.var.lua_start_time = ngx.now()
+
     local request_host = ngx.var.host
     local request_uri = ngx.var.uri
     local request_method = ngx.var.request_method  -- "GET", "POST", etc.
