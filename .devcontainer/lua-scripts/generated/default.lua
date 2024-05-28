@@ -40,7 +40,6 @@ local function log_request(headers, target_url, method, body, res, response_time
         session_analytics = {
             ip_address = ngx.var.remote_addr,
             user_agent = ngx.var.http_user_agent,
-            request_uri = ngx.var.request_uri,
         },
         request = {
             headers = headers,
