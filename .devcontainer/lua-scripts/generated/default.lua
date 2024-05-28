@@ -1,6 +1,7 @@
 -- Import necessary modules
 local http = require "resty.http"
 local cjson = require "cjson.safe"
+local learning_mode = require "learning_mode"
 local ngx = ngx
 
 -- Connection pool settings
@@ -8,17 +9,25 @@ local httpc = http.new()
 httpc:set_keepalive(60000, 100) -- keep connections alive for 60 seconds, max 100 connections
 
 -- Function to perform the logging
-local function log_request(headers, target_url, method, body, res, response_time)
+local function log_request(res)
     ngx.log(ngx.ERR, "Logging analytics for URL: ", target_url)
+
 
     local log_httpc = http.new()
     log_httpc:set_timeout(1) -- Set a very short timeout
 
+    local response_time = ngx.var.proxy_finish_time - ngx.var.nginx_start_time
+
     -- Ensure all variables are not nil
-    headers = headers or {}
-    target_url = target_url or "unknown"
-    method = method or "unknown"
-    body = body or {}
+    local headers = ngx.req.get_headers() or {}
+    local target_url = headers["X-Forwarded-For"] or "unknown"
+    local method = ngx.var.request_method or "unknown"
+
+    local body = {}
+    if method == "POST" or method == "PUT" or method == "PATCH" then
+        ngx.req.read_body()
+        body = ngx.req.get_body_data()
+    end
 
     -- Safely extract data from the res object
     local res_status = res.status or "unknown"
@@ -119,7 +128,6 @@ local function make_request()
 
     ngx.var.proxy_finish_time = ngx.now()
     
-    local response_time = ngx.var.proxy_finish_time - ngx.var.nginx_start_time
 
     if not res then
         ngx.log(ngx.ERR, 'Error making request: ', err)
@@ -145,7 +153,7 @@ local function make_request()
     ngx.eof()
 
     -- Spawn a worker thread to handle logging asynchronously
-    ngx.thread.spawn(log_request, headers, target_url, method, body, res, response_time)
+    ngx.thread.spawn(learning_mode.log_request, res)
 end
 
 return {
