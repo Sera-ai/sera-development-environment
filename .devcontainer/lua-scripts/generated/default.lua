@@ -29,13 +29,13 @@ local function log_request(headers, target_url, method, body, res, response_time
         hostname = headers["X-Forwarded-For"],
         path = ngx.var.uri or "unknown",
         method = method,
-        response_time = response_time * 100,
+        response_time = ngx.var.request_time * 1000,
         ts = ngx.now(),
         ts_breakdown = {
-            init = (ngx.var.lua_start_time - ngx.var.nginx_start_time) * 100,
-            dispatch = (ngx.var.proxy_script_start_time - ngx.var.lua_start_time) * 100,
-            lua_script = (ngx.var.proxy_start_time - ngx.var.proxy_script_start_time) * 100,
-            proxy_time = (ngx.var.proxy_finish_time - ngx.var.proxy_start_time) * 100
+            init = (ngx.var.lua_start_time - ngx.var.nginx_start_time) * 1000,
+            dispatch = (ngx.var.proxy_script_start_time - ngx.var.lua_start_time) * 1000,
+            lua_script = (ngx.var.proxy_start_time - ngx.var.proxy_script_start_time) * 1000,
+            proxy_time = (ngx.var.proxy_finish_time - ngx.var.proxy_start_time) * 1000
         },
         session_analytics = {
             ip_address = ngx.var.remote_addr,
