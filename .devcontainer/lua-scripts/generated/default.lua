@@ -3,9 +3,68 @@ local http = require "resty.http"
 local cjson = require "cjson.safe"
 local ngx = ngx
 
+-- Connection pool settings
+local httpc = http.new()
+httpc:set_keepalive(60000, 100) -- keep connections alive for 60 seconds, max 100 connections
+
+-- Function to perform the logging
+local function log_request(headers, target_url, method, body, res, response_time)
+    ngx.log(ngx.ERR, "Logging analytics for URL: ", target_url)
+
+    local log_httpc = http.new()
+    log_httpc:set_timeout(1) -- Set a very short timeout
+
+    -- Ensure all variables are not nil
+    headers = headers or {}
+    target_url = target_url or "unknown"
+    method = method or "unknown"
+    body = body or ""
+
+    -- Safely extract data from the res object
+    local res_status = res.status or "unknown"
+    local res_headers = res.headers or {}
+    local res_body = res.body or ""
+
+    local log_body = cjson.encode({
+        hostname = headers["X-Forwarded-For"],
+        path = ngx.var.uri or "unknown",
+        method = method,
+        response_time = response_time * 100,
+        ts = ngx.now(),
+        request = {
+            headers = headers,
+            query = ngx.req.get_uri_args() or {},
+            cookies = ngx.var.cookie or "",
+            body = body
+        },
+        response = {
+            status = res_status,
+            statusText = "OK",
+            headers = res_headers,
+            data = res_body
+        }
+    })
+
+    ngx.log(ngx.ERR, log_body)
+
+    -- Perform the request with a short timeout
+    local log_res, log_err = log_httpc:request_uri("http://127.0.0.1:12050/analytics/new", {
+        method = "POST",
+        headers = {
+            ['Content-Type'] = 'application/json'
+        },
+        body = log_body,
+        ssl_verify = false -- Add proper certificate verification as needed
+    })
+
+    -- Since we set a short timeout, we don't care about the response
+    if not log_res then
+        ngx.log(ngx.ERR, 'Error logging analytics: ', log_err)
+    end
+end
+
 -- Function to perform the request
 local function make_request()
-    local httpc = http.new()
 
     -- Extract the X-Forwarded-For header
     local headers = ngx.req.get_headers()
@@ -36,6 +95,8 @@ local function make_request()
         body = ngx.req.get_body_data()
     end
 
+    local start_time = ngx.now()
+
     -- Perform the request
     local res, err = httpc:request_uri(target_url, {
         method = method,
@@ -44,7 +105,8 @@ local function make_request()
         ssl_verify = false -- Add proper certificate verification as needed
     })
 
-    ngx.log(ngx.ERR, target_url)
+    local response_time = ngx.now() - start_time
+
 
     if not res then
         ngx.log(ngx.ERR, 'Error making request: ', err)
@@ -67,13 +129,10 @@ local function make_request()
     -- Return the response body
     ngx.status = res.status
     ngx.say(res.body)
+    ngx.eof()
 
-    -- Perform logging after response is sent
-    ngx.timer.at(0, function()
-        -- Place your logging/analytics code here
-        ngx.log(ngx.INFO, "Logging analytics for URL: ", target_url)
-        -- Example: log to a file, send to an external service, etc.
-    end)
+    -- Spawn a worker thread to handle logging asynchronously
+    ngx.thread.spawn(log_request, headers, target_url, method, body, res, response_time)
 end
 
 return {

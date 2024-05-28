@@ -8,7 +8,8 @@ local function get_request_details()
     return {
         method = ngx.req.get_method(),
         path = ngx.var.uri,
-        args = ngx.req.get_uri_args(),
+        query = ngx.req.get_uri_args(),
+        cookies = ngx.var.cookie,
         headers = headers
     }
 end
@@ -42,7 +43,7 @@ local function validate_request(oas, request)
     for key, param in pairs(required_params) do
         if param.required then
             if param["in"] == "query" then
-                if not request.args[param.name] then
+                if not request.query[param.name] then
                     return false, "Required query parameter '" .. param.name .. "' not found"
                 end
             elseif param["in"] == "header" then
@@ -56,7 +57,7 @@ local function validate_request(oas, request)
                     return false, "Required path parameter '" .. param.name .. "' not found"
                 end
             elseif param["in"] == "cookie" then
-                if not ngx.var.cookie[param.name] then
+                if not request.cookies[param.name] then
                     return false, "Required cookie parameter '" .. param.name .. "' not found"
                 end
             end

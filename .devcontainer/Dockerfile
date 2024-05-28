@@ -74,6 +74,10 @@ RUN mkdir -p /etc/nginx/certs \
 # Copy the Nginx configuration template and Lua scripts
 RUN ln -s  /workspace/.devcontainer/lua-scripts /etc/nginx/lua-scripts
 RUN ln -s /etc/nginx /workspace/nginx-config
+# Create symbolic links to the models directory in each /src folder
+RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Builder/src/models \
+    && ln -s /workspace/sera-db-mongo/models /workspace/be_Socket/src/models \
+    && ln -s /workspace/sera-db-mongo/models /workspace/be_Sequencer/src/models
 
 # Expose ports
 EXPOSE 80 443 12010 12030 12040 12000 12050
