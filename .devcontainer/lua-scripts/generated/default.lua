@@ -23,7 +23,7 @@ local function log_request(headers, target_url, method, body, res, response_time
     -- Safely extract data from the res object
     local res_status = res.status or "unknown"
     local res_headers = res.headers or {}
-    local res_body = res.body or ""
+    local res_body = res.body or {}
 
     local log_body = cjson.encode({
         hostname = headers["X-Forwarded-For"],
@@ -34,8 +34,8 @@ local function log_request(headers, target_url, method, body, res, response_time
         request = {
             headers = headers,
             query = ngx.req.get_uri_args() or {},
-            cookies = ngx.var.cookie or "",
-            body = body
+            cookies = ngx.var.cookie or {},
+            body = cjson.decode(body) or body
         },
         response = {
             status = res_status,
