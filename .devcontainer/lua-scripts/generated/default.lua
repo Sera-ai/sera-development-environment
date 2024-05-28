@@ -37,6 +37,11 @@ local function log_request(headers, target_url, method, body, res, response_time
             lua_script = (ngx.var.proxy_start_time - ngx.var.proxy_script_start_time) * 100,
             proxy_time = (ngx.var.proxy_finish_time - ngx.var.proxy_start_time) * 100
         },
+        session_analytics = {
+            ip_address = ngx.var.remote_addr,
+            user_agent = ngx.var.http_user_agent,
+            request_uri = ngx.var.request_uri,
+        },
         request = {
             headers = headers,
             query = ngx.req.get_uri_args() or {},
