@@ -67,6 +67,34 @@ local function validate_request(oas, request)
     return true
 end
 
+-- Function to validate the response against the OAS
+local function validate_response(oas, response)
+    local path_spec = oas.paths[ngx.var.uri]
+    if not path_spec then
+        return false, "No path found in OAS for the given URI"
+    end
+
+    local method_spec = path_spec[ngx.req.get_method():lower()]
+    if not method_spec then
+        return false, "No method found in OAS for the given URI and method"
+    end
+
+    local responses = method_spec.responses
+    if not responses then
+        return false, "No responses found in OAS for the given URI and method"
+    end
+
+    local response_spec = responses[tostring(response.status)]
+    if not response_spec then
+        return false, "No response specification found in OAS for the given status code"
+    end
+
+    -- Additional validation logic can be added here, e.g., checking headers, body content, etc.
+    
+    return true
+end
+
+
 -- Main function to check OAS and handle response
 local function check_oas(oas)
     if not oas then
@@ -86,5 +114,6 @@ end
 
 -- Return the check_oas function for other uses if needed
 return {
-    check_oas = check_oas
+    check_oas = check_oas,
+    validate_response = validate_response
 }

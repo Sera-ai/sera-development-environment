@@ -41,6 +41,21 @@ local function dispatch()
     -- Get the appropriate script name using the mapper and cache mechanism
     local script_name = get_mapping(key)
 
+    if script_name and script_name.filename == "default.lua" then
+        local x_forwarded_for = ngx.req.get_headers()["X-Forwarded-For"]
+        if x_forwarded_for then
+            local hostname = x_forwarded_for:match("^https?://([^/]+)")
+
+            local test_key = hostname .. ":" .. request_uri .. ":" .. request_method
+
+            local test_script_name = get_mapping(test_key)
+
+            if test_script_name then
+                script_name = test_script_name
+            end
+        end
+    end
+
     if script_name then
         
         -- Retrieve the compiled script function from the cache

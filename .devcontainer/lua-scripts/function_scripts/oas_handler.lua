@@ -24,6 +24,10 @@ local function handle_oas(oas_id, host_data)
         ngx.say(error_message)
         ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
     end
+    
+    if oas_data_res then
+        ngx.var.oas_data = cjson.encode(oas_data_res)
+    end
 
     return true
 end
