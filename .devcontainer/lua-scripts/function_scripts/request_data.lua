@@ -33,8 +33,25 @@ local function get_request_body(method)
 end
 
 
+local function mergeTables(t1, t2)
+    local mergedTable = {}
+    -- Copy all key-value pairs from the first table
+    for k, v in pairs(t1) do
+        if type(v) ~= "function" then
+            mergedTable[k] = v
+        end
+    end
+    -- Copy key-value pairs from the second table only if the key does not exist in the first table and the value is not a function
+    for k, v in pairs(t2) do
+        if mergedTable[k] == nil and type(v) ~= "function" then
+            mergedTable[k] = v
+        end
+    end
+    return mergedTable
+end
 
 return {
     get_request_body = get_request_body,
-    extract_headers_and_url = extract_headers_and_url
+    extract_headers_and_url = extract_headers_and_url,
+    mergeTables = mergeTables
 }

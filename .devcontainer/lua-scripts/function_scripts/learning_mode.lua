@@ -5,7 +5,6 @@ local ngx = ngx
 
 -- Function to perform the logging
 local function log_request(res)
-    ngx.log(ngx.ERR, "Logging analytics for URL: ", target_url)
 
 
     local log_httpc = http.new()
@@ -17,6 +16,9 @@ local function log_request(res)
     local headers = ngx.req.get_headers() or {}
     local target_url = headers["X-Forwarded-For"] or "unknown"
     local method = ngx.var.request_method or "unknown"
+
+    ngx.log(ngx.ERR, "Logging analytics for URL: ", target_url)
+
 
     local body = {}
     if method == "POST" or method == "PUT" or method == "PATCH" then

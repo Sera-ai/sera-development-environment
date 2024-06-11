@@ -20,6 +20,8 @@ local function update_script_map()
     -- Fetch the shared dictionary
     local script_mapping = ngx.shared.script_mapping
     local value = cjson.encode(data)
+    value = string.gsub(value, "\\", "")
+
     local success, err = script_mapping:set(data.path, value)
     if not success then
         ngx.status = ngx.HTTP_INTERNAL_SERVER_ERROR

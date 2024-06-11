@@ -1,1 +1,7 @@
 nginx-config
+
+# Ignore all files in mydir
+.devcontainer/lua-scripts/generated/*
+
+# Un-ignore the specific file in mydir
+!.devcontainer/lua-scripts/generated/default.lua
