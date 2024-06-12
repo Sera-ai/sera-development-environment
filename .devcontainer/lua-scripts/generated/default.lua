@@ -56,6 +56,10 @@ local function make_request()
         ssl_verify = false -- Add proper certificate verification as needed
     })
 
+    if err then
+        ngx.log(ngx.ERR, err)
+    end
+
     ngx.var.proxy_finish_time = ngx.now()
 
     handle_response(res)
