@@ -1,9 +1,17 @@
 local ngx = ngx
 
 -- Function to extract headers and target URL
-local function extract_headers_and_url()
+local function extract_headers_and_url(given_url)
     local headers = ngx.req.get_headers()
-    local target_url = headers["X-Forwarded-For"]
+    local target_url
+
+    if given_url then
+        target_url = given_url
+    end
+    
+    if not given_url then
+        target_url = headers["X-Forwarded-For"]
+    end
 
     if not target_url then
         ngx.log(ngx.ERR, 'No X-Forwarded-For header specified')

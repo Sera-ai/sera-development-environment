@@ -4,18 +4,22 @@ local cjson = require "cjson.safe"
 local ngx = ngx
 
 -- Function to perform the logging
-local function log_request(res)
+local function log_request(res, host)
 
 
     local log_httpc = http.new()
-    log_httpc:set_timeout(1) -- Set a very short timeout
+    log_httpc:set_timeout(10000) -- Set a very short timeout
 
     local response_time = ngx.var.proxy_finish_time - ngx.var.nginx_start_time
 
     -- Ensure all variables are not nil
     local headers = ngx.req.get_headers() or {}
-    local target_url = headers["X-Forwarded-For"] or "unknown"
+    local target_url = headers["X-Forwarded-For"] or host
     local method = ngx.var.request_method or "unknown"
+
+    if string.upper(method) == "OPTIONS" then
+        return
+    end
 
     ngx.log(ngx.ERR, "Logging analytics for URL: ", target_url)
 
@@ -32,7 +36,7 @@ local function log_request(res)
     local res_body = res.body or {}
 
     local log_body = cjson.encode({
-        hostname = headers["X-Forwarded-For"],
+        hostname = target_url,
         path = ngx.var.uri or "unknown",
         method = method,
         response_time = ngx.var.request_time * 1000,
