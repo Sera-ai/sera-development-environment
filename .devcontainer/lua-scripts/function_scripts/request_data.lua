@@ -58,8 +58,21 @@ local function mergeTables(t1, t2)
     return mergedTable
 end
 
+local function update_json_values(json, updates)
+    if type(json) == "table" then
+        for k, v in pairs(json) do
+            if type(v) == "table" then
+                update_json_values(v, updates)
+            elseif updates[k] then
+                json[k] = updates[k]
+            end
+        end
+    end
+end
+
 return {
     get_request_body = get_request_body,
     extract_headers_and_url = extract_headers_and_url,
-    mergeTables = mergeTables
+    mergeTables = mergeTables,
+    update_json_values = update_json_values
 }
