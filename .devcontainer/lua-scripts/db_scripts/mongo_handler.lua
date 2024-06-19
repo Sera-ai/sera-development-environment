@@ -58,9 +58,8 @@ local function get_settings(collection, query)
         local result, err = col:find_one(query)
         
         if not result then
-            ngx.log(ngx.ERR, "MongoDB find error: ", err)
             mongo_pool.release_connection(client)
-            return ngx.exit(ngx.HTTP_NOT_FOUND)
+            return nil, "MongoDB find error"
         end
 
         -- Release the connection back to the pool

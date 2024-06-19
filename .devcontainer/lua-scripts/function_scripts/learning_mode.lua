@@ -3,6 +3,25 @@ local http = require "resty.http"
 local cjson = require "cjson.safe"
 local ngx = ngx
 
+local function extract_hostname(url)
+    local patterns = {
+        "https://([%w%.%-]+:%d+)", -- Matches https://hostname:port
+        "https://([%w%.%-]+)",     -- Matches https://hostname
+        "http://([%w%.%-]+:%d+)",  -- Matches http://hostname:port
+        "http://([%w%.%-]+)",      -- Matches http://hostname
+        "^([%w%.%-]+)$"            -- Matches IP or hostname without protocol
+    }
+
+    for _, pattern in ipairs(patterns) do
+        local hostname = url:match(pattern)
+        if hostname then
+            return hostname
+        end
+    end
+
+    return url -- Fallback in case no pattern matches
+end
+
 -- Function to perform the logging
 local function log_request(res, host)
 
@@ -36,7 +55,7 @@ local function log_request(res, host)
     local res_body = res.body or {}
 
     local log_body = cjson.encode({
-        hostname = target_url,
+        hostname = extract_hostname(target_url),
         path = ngx.var.uri or "unknown",
         method = method,
         response_time = ngx.var.request_time * 1000,

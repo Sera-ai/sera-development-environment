@@ -49,8 +49,6 @@ local function make_request()
     local query = { hostname = ngx.var.host }
     local sera_hosts_json, err = mongo_handler.get_settings("sera_hosts", query)
 
-    ngx.log(ngx.ERR, "SERA HOST DATA: " .. sera_hosts_json)
-
     if err then
         ngx.log(ngx.ERR, err)
     end
