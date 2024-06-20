@@ -23,6 +23,7 @@ local function handle_response(res, host)
         ngx.log(ngx.ERR, 'Request failed with status: ', res.status)
         ngx.status = res.status
         ngx.say(res.body)
+        ngx.thread.spawn(learning_mode.log_request, res, host)
         return ngx.exit(res.status)
     end
 
