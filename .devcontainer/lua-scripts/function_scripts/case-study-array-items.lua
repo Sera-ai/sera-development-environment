@@ -50,17 +50,6 @@ local function send_response(sera_res, res)
     
 end
 
-local function update_json_values(data, replacements)
-    if type(data) == "table" then
-        for key, value in pairs(data) do
-            if type(value) == "table" then
-                update_json_values(value, replacements)
-            else
-                data[key] = replacements[key] or value
-            end
-        end
-    end
-end
 
 local function sera_response_middleware(res, requestDetails)
     local response_body = res.body
@@ -102,11 +91,11 @@ local function sera_response_middleware(res, requestDetails)
         if #response_json > 0 then
             -- Handle JSON array case
             for i, obj in ipairs(response_json) do
-                update_json_values(obj, replacement_values)
+                request_data.update_json_values(obj, replacement_values)
             end
         else
             -- Handle JSON object case
-            update_json_values(response_json, replacement_values)
+            request_data.update_json_values(response_json, replacement_values)
         end
     end
 
