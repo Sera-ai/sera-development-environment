@@ -58,17 +58,27 @@ local function mergeTables(t1, t2)
     return mergedTable
 end
 
-local function update_json_values(json, updates)
+local function update_json_values(json, updates, path)
+    path = path or ""
     if type(json) == "table" then
         for k, v in pairs(json) do
+            local current_path = path .. "." .. k
             if type(v) == "table" then
-                update_json_values(v, updates)
+                update_json_values(v, updates, current_path)
             elseif updates[k] then
-                json[k] = updates[k]
+                if type(updates[k]) == "function" then
+                    ngx.log(ngx.ERR, "Attempting to set a function for key: " .. current_path)
+                else
+                    ngx.log(ngx.ERR, "Setting key: " .. current_path .. " to value: " .. tostring(updates[k]))
+                    json[k] = updates[k]
+                end
             end
         end
+    else
+        ngx.log(ngx.ERR, "json is not a table at path: " .. path)
     end
 end
+
 
 return {
     get_request_body = get_request_body,
