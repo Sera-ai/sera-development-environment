@@ -14,6 +14,10 @@
 	path = be_Sequencer
 	url = https://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@github.com/Sera-ai/be_Sequencer.git
 	branch = main
+[submodule "be_Processor"]
+	path = be_Processor
+	url = https://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@github.com/Sera-ai/be_Processor.git
+	branch = main
 [submodule "sera-db-mongo"]
 	path = sera-db-mongo
 	url = https://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@github.com/Sera-ai/sera-db-mongo.git
