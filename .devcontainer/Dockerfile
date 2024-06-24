@@ -54,7 +54,6 @@ RUN npm install --prefix ./fe_Catalog \
     && npm install --prefix ./be_Builder \
     && npm install --prefix ./be_Socket \
     && npm install --prefix ./be_Sequencer \
-    && npm install --prefix ./be_Processor \
     && npm install mongoose --no-optional --prefix ./sera-db-mongo
 
 # Clean up the apt cache by removing /var/lib/apt/lists
@@ -81,7 +80,6 @@ RUN ln -s /etc/nginx /workspace/nginx-config
 RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Builder/src/models
 RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Socket/src/models
 RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Sequencer/src/models
-RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Processor/src/models
 
 
 # Expose ports
