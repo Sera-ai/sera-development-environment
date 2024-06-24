@@ -6,6 +6,3 @@ nginx-config
 # Un-ignore the specific file in mydir
 !.devcontainer/lua-scripts/generated/default.lua
 
-# Ignore all files in the logs directory
-.logs/*
-!.logs/
