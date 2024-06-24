@@ -11,7 +11,7 @@ RUN apt-get update \
 
 # Install required dependencies and development packages
 RUN apt-get update \
-    && apt-get install -y gnupg wget curl xz-utils nginx-extras openssl git libcurl4 gettext luarocks luajit software-properties-common build-essential 
+    && apt-get install -y gnupg wget curl xz-utils nginx-extras openssl git libcurl4 gettext luarocks luajit software-properties-common moreutils build-essential 
 
 RUN wget -qO - https://openresty.org/package/pubkey.gpg | apt-key add -
 RUN echo "deb http://openresty.org/package/debian buster openresty" | tee /etc/apt/sources.list.d/openresty.list
