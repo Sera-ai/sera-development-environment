@@ -23,6 +23,7 @@
         "BE_BUILDER_PORT": "12030",
         "BE_SOCKET_PORT": "12040",
         "BE_SEQUENCER_PORT": "12050",
+        "BE_PROCESSOR_PORT": "12060",
         "DB_HOST": "mongodb://localhost:27017"
     },
     "settings": { 
@@ -32,7 +33,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
-    "forwardPorts": [12000, 12010, 12030, 12040, 12050, 27017, 6379],
+    "forwardPorts": [12000, 12010, 12030, 12040, 12050, 12060, 27017, 6379],
     "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
     "shutdownAction": "stopCompose",
     "runServices": ["app", "mongo"],

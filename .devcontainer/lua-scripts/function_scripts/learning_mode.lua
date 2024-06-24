@@ -87,7 +87,7 @@ local function log_request(res, host)
     ngx.log(ngx.ERR, log_body)
 
     -- Perform the request with a short timeout
-    local log_res, log_err = log_httpc:request_uri("http://127.0.0.1:12050/analytics/new", {
+    local log_res, log_err = log_httpc:request_uri("http://127.0.0.1:12060/analytics/new", {
         method = "POST",
         headers = {
             ['Content-Type'] = 'application/json'

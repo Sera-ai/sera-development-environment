@@ -12,6 +12,7 @@ services:
       BE_BUILDER_PORT: "12030"
       BE_SOCKET_PORT: "12040"
       BE_SEQUENCER_PORT: "12050"
+      BE_PROCESSOR_PORT": "12060"
       GITHUB_TOKEN: "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"
     ports:
       - "12010:12010"
@@ -19,6 +20,7 @@ services:
       - "12040:12040"
       - "12000:12000"
       - "12050:12050"
+      - "12060:12060"
     networks:
       - sera_internal_network
     extra_hosts:

@@ -16,7 +16,7 @@
         {
             "label": "Start be_Builder",
             "type": "shell",
-            "command": "npm run start",
+            "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Builder"
             },
@@ -28,7 +28,7 @@
         {
             "label": "Start be_Socket",
             "type": "shell",
-            "command": "npm run start",
+            "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Socket"
             },
@@ -40,9 +40,21 @@
         {
             "label": "Start be_Sequencer",
             "type": "shell",
-            "command": "npm run start",
+            "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Sequencer"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Start be_Processor",
+            "type": "shell",
+            "command": "nodemon",
+            "options": {
+                "cwd": "${workspaceFolder}/be_Processor"
             },
             "presentation": {
                 "reveal": "always",
@@ -55,7 +67,8 @@
                 "Start fe_Catalog",
                 "Start be_Builder",
                 "Start be_Socket",
-                "Start be_Sequencer"
+                "Start be_Sequencer",
+                "Start be_Processor"
             ],
             "dependsOrder": "parallel",
             "problemMatcher": [],
@@ -76,7 +89,8 @@
             "dependsOn": [
                 "Start be_Builder",
                 "Start be_Socket",
-                "Start be_Sequencer"
+                "Start be_Sequencer",
+                "Start be_Processor"
             ],
             "dependsOrder": "parallel",
             "problemMatcher": []
