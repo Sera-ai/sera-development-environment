@@ -43,6 +43,9 @@ RUN mkdir -p /data/db
 # Set working directory for the Node app
 WORKDIR /workspace
 
+RUN mkdir /workspace/.logs
+
+
 # Copy the application's source code
 COPY . .
 
