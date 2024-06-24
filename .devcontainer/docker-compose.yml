@@ -23,5 +23,6 @@ services:
       - sera_internal_network
     extra_hosts:
       - "local.sera:127.0.0.1"
+      - "manage.sera:127.0.0.1"
       - "test.sera:127.0.0.1"
       - "dns.sera:127.0.0.1"

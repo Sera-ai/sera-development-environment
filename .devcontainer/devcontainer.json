@@ -13,7 +13,8 @@
     "runArgs": [
         "--add-host=local.sera:127.0.0.1",
         "--add-host=test.sera:127.0.0.1",
-        "--add-host=dns.sera:127.0.0.1"
+        "--add-host=dns.sera:127.0.0.1",
+        "--add-host=manage.sera:127.0.0.1"
     ],
     "containerEnv": {
         "DOMAIN_NAME": "example.sera",
