@@ -90,4 +90,8 @@ RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Processor/src/models
 # Expose ports
 EXPOSE 80 443 12010 12030 12040 12000 12050
 
+# Convert CRLF to LF using sed
+RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh
+RUN sed -i 's/\r$//' ./sera-db-mongo/entrypoint.sh
+
 RUN chmod +x ./.devcontainer/entrypoint.sh ./sera-db-mongo/entrypoint.sh
