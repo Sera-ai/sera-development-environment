@@ -1,0 +1,5 @@
+2024/07/01 19:51:06 | WebSocket connection established
+2024/07/01 19:51:06 | Message received from server: { type: 'connectSuccessful', id: '4:0.0.0.0:12040' }
+2024/07/01 19:51:06 | Message received from server: { type: 'connectSuccessful', id: '4:0.0.0.0:12040' }
+2024/07/01 19:51:06 | Database Connected
+2024/07/01 19:51:06 | Builder Started at 12030
