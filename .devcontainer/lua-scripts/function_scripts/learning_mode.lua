@@ -49,6 +49,69 @@ local function log_request(res, host)
         body = ngx.req.get_body_data()
     end
 
+    local function is_header_auth()
+        return headers["X-Auth-Token"] ~= nil
+    end
+
+    local function is_oauth()
+        local auth_header = headers["Authorization"]
+        if auth_header then
+            -- Convert both to lower case for case-insensitive comparison
+            auth_header = auth_header:lower()
+            return auth_header:find("bearer ") == 1
+        end
+        return false
+    end
+
+    local function is_api_key()
+        -- Check for a custom header that you use for API keys
+        return headers["X-Api-Key"] ~= nil
+    end
+
+    local function is_saml()
+        ngx.req.read_body()
+        local body_data = ngx.req.get_body_data()
+        if not body_data then
+            return false
+        end
+        return body_data:find("<samlp:AuthnRequest") or body_data:find("<samlp:Response")
+    end
+
+    local function is_jwt(token)
+        -- Check if the token has three parts separated by dots
+        local parts = {}
+        for part in string.gmatch(token, "[^.]+") do
+            table.insert(parts, part)
+        end
+        return #parts == 3
+    end
+
+    local auth_type
+
+    if is_header_auth() then
+        auth_type = "Header Authentication"
+    elseif is_oauth() then
+        local auth_header = headers["Authorization"]
+        auth_header = auth_header:lower()
+
+        local token = auth_header:match("bearer%s+(.+)")
+        if token then
+            if is_jwt(token) then
+                auth_type = "JWT"
+            else
+                auth_type = "OAuth (Bearer Token)"
+            end
+        else
+            auth_type = "Unknown Bearer Token"
+        end
+    elseif is_saml() then
+        auth_type = "SAML"
+    elseif is_api_key() then
+        auth_type = "API Key"
+    else
+        auth_type = nil
+    end
+
     -- Safely extract data from the res object
     local res_status = res.status or "unknown"
     local res_headers = res.headers or {}
@@ -66,9 +129,23 @@ local function log_request(res, host)
             lua_script = (ngx.var.proxy_start_time - ngx.var.proxy_script_start_time) * 1000,
             proxy_time = (ngx.var.proxy_finish_time - ngx.var.proxy_start_time) * 1000
         },
+        ssl_analytics = {
+            protocol = ngx.var.ssl_protocol,
+            cipher = ngx.var.ssl_cipher,
+            client_cert = ngx.var.ssl_client_cert,
+            client_raw_cert = ngx.var.ssl_client_raw_cert,
+            client_serial = ngx.var.ssl_client_serial,
+            client_s_dn = ngx.var.ssl_client_s_dn,
+            client_i_dn = ngx.var.ssl_client_i_dn,
+            client_fingerprint = ngx.var.ssl_client_fingerprint,
+            client_verify = ngx.var.ssl_client_verify,
+            session_id = ngx.var.ssl_session_id,
+            session_reused = ngx.var.ssl_session_reused
+        },
         session_analytics = {
             ip_address = ngx.var.remote_addr,
             user_agent = ngx.var.http_user_agent,
+            auth_type = auth_type,
         },
         request = {
             headers = headers,
