@@ -46,8 +46,12 @@ RUN apt-get update && \
     apt-get install -y docker-ce-cli
 
 # Install k3s
-RUN curl -sfL https://get.k3s.io | sh -
+# Install k3s without enabling the service
+RUN curl -sfL https://get.k3s.io | INSTALL_K3S_SKIP_ENABLE=true sh -
 
+    # Create a script to start k3s manually
+RUN echo -e '#!/bin/sh\n/usr/local/bin/k3s server' > /usr/local/bin/start-k3s.sh && chmod +x /usr/local/bin/start-k3s.sh
+    
 # Install kubectl
 RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x ./kubectl && \
@@ -74,7 +78,7 @@ RUN git submodule update --init --recursive --remote
 
 
 #Global node_modules
-COPY /workspace/.devcontainer/package.json /workspace/node_modules/package.json
+COPY .devcontainer/package.json /workspace/node_modules/package.json
 RUN npm install --prefix ./node_modules
 
 # Create a shared node_modules volume
