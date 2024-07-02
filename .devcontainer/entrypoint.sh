@@ -1,20 +1,27 @@
 #!/bin/bash
-set -e
 
-# Move to the parent directory containing sera-db-cloning.sh
-cd "$(dirname "$0")/.."
+# Initialize k3s
+sudo k3s server &
 
-# Run the MongoDB cloning script
-echo "Running MongoDB cloning..."
-echo "$PWD"
-sed -i 's/\r$//' ./sera-db-mongo/entrypoint.sh
-./sera-db-mongo/entrypoint.sh
+# Wait for k3s to be ready
+sleep 30
 
-# Replace variables in Nginx configuration and start Nginx
-echo "Configuring Nginx..."
-envsubst < ./.devcontainer/nginx.conf > /etc/nginx/nginx.conf
-sed -i 's/___/\$/g' /etc/nginx/nginx.conf
+# Deploy submodule1 to k3s
+kubectl apply -f /workspace/be_Builder/k8s/deployment.yaml
+kubectl apply -f /workspace/be_Builder/k8s/service.yaml
 
-# Start Nginx in foreground
-echo "Starting Nginx..."
-exec nginx -g 'daemon off;'
+# Deploy submodule1 to k3s
+kubectl apply -f /workspace/be_Sequencer/k8s/deployment.yaml
+kubectl apply -f /workspace/be_Sequencer/k8s/service.yaml
+
+# Deploy submodule1 to k3s
+kubectl apply -f /workspace/be_Socket/k8s/deployment.yaml
+kubectl apply -f /workspace/be_Socket/k8s/service.yaml
+
+# Deploy submodule1 to k3s
+kubectl apply -f /workspace/be_Processor/k8s/deployment.yaml
+kubectl apply -f /workspace/be_Processor/k8s/service.yaml
+
+# Deploy submodule1 to k3s
+kubectl apply -f /workspace/fe_Catalog/k8s/deployment.yaml
+kubectl apply -f /workspace/fe_Catalog/k8s/service.yaml

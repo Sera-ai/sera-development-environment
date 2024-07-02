@@ -26,20 +26,40 @@
         "BE_PROCESSOR_PORT": "12060",
         "DB_HOST": "mongodb://localhost:27017"
     },
-    "settings": { 
+    "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-node-azure-pack",
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
     ],
-    "forwardPorts": [12000, 12010, 12030, 12040, 12050, 12060, 27017, 6379],
+    "forwardPorts": [
+        12000,
+        12010,
+        12030,
+        12040,
+        12050,
+        12060,
+        27017,
+        6379
+    ],
     "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
     "shutdownAction": "stopCompose",
-    "runServices": ["app", "mongo"],
+    "runServices": [
+        "app",
+        "mongo"
+    ],
+    "runArgs": [
+        "--privileged",
+        "--volume", "/var/run/docker.sock:/var/run/docker.sock"
+    ],
     "remoteEnv": {
         "GITHUB_TOKEN": "${GITHUB_TOKEN}"
     },
+    "remoteUser": "vscode",
     "portsAttributes": {
         "12000": {
             "label": "Router: 12000",

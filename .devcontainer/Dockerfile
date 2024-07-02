@@ -37,6 +37,22 @@ RUN mkdir /usr/local/share/lua/5.1/resty/mongol/ \
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
     && npm install -g npm@9.8.0 nodemon eslint prettier
 
+# Install Docker
+RUN apt-get update && \
+    apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common && \
+    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && \
+    apt-get update && \
+    apt-get install -y docker-ce-cli
+
+# Install k3s
+RUN curl -sfL https://get.k3s.io | sh -
+
+# Install kubectl
+RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && \
+    chmod +x ./kubectl && \
+    mv ./kubectl /usr/local/bin/kubectl
+
 # Create MongoDB data directory
 RUN mkdir -p /data/db
 
@@ -45,6 +61,10 @@ WORKDIR /workspace
 
 RUN mkdir /workspace/.logs
 
+#Global node_modules
+RUN mkdir /workspace/node_modules
+COPY /workspace/.devcontainer/package.json /workspace/node_modules/package.json
+RUN npm install --prefix ./node_modules
 
 # Copy the application's source code
 COPY . .
@@ -52,13 +72,32 @@ COPY . .
 # Initialize and update submodules
 RUN git submodule update --init --recursive --remote
 
-# Install Node.js dependencies for each submodule
-RUN npm install --prefix ./fe_Catalog \
-    && npm install --prefix ./be_Builder \
-    && npm install --prefix ./be_Socket \
-    && npm install --prefix ./be_Sequencer \
-    && npm install --prefix ./be_Processor \
-    && npm install mongoose --no-optional --prefix ./sera-db-mongo
+# Create a shared node_modules volume
+VOLUME [ "/workspace/node_modules" ]
+VOLUME [ "/workspace/sera-db-mongo/models" ]
+VOLUME [ "/workspace/.devcontainer/lua-scripts" ]
+
+
+# Build Docker images for each submodule
+# Submodule1
+WORKDIR /workspace/be_Socket
+RUN docker build -t backend_socket:latest .
+
+# Submodule2
+WORKDIR /workspace/be_Sequencer
+RUN docker build -t backend_sequencer:latest .
+
+# Submodule2
+WORKDIR /workspace/be_Processor
+RUN docker build -t backend_processor:latest .
+
+# Submodule2
+WORKDIR /workspace/be_Builder
+RUN docker build -t backend_builder:latest .
+
+# Submodule2
+WORKDIR /workspace/fe_Catalog
+RUN docker build -t frontend_catalog:latest .
 
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
@@ -80,11 +119,6 @@ RUN mkdir -p /etc/nginx/certs \
 RUN ln -s  /workspace/.devcontainer/lua-scripts /etc/nginx/lua-scripts
 RUN rm -rf /etc/nginx/conf.d && ln -s /workspace/.devcontainer/conf.d /etc/nginx/conf.d
 RUN ln -s /etc/nginx /workspace/nginx-config
-# Create symbolic links to the models directory in each /src folder
-RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Builder/src/models
-RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Socket/src/models
-RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Sequencer/src/models
-RUN ln -s /workspace/sera-db-mongo/models /workspace/be_Processor/src/models
 
 
 # Expose ports
