@@ -59,6 +59,7 @@ RUN mkdir -p /data/db
 # Set working directory for the Node app
 WORKDIR /workspace
 
+RUN mkdir /workspace/node_modules
 RUN mkdir /workspace/.logs
 
 
@@ -66,13 +67,15 @@ RUN mkdir /workspace/.logs
 # Copy the application's source code
 COPY . .
 
-#Global node_modules
-RUN mkdir /workspace/node_modules
-COPY /workspace/.devcontainer/package.json /workspace/node_modules/package.json
-RUN npm install --prefix ./node_modules
+
 
 # Initialize and update submodules
 RUN git submodule update --init --recursive --remote
+
+
+#Global node_modules
+COPY /workspace/.devcontainer/package.json /workspace/node_modules/package.json
+RUN npm install --prefix ./node_modules
 
 # Create a shared node_modules volume
 VOLUME [ "/workspace/node_modules" ]
