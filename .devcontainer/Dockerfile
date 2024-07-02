@@ -35,7 +35,7 @@ RUN mkdir /usr/local/share/lua/5.1/resty/mongol/ \
 
 # Install Node.js and npm
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
-    && npm install -g npm@9.8.0 nodemon eslint prettier
+    && npm install -g npm@10.8.1 nodemon eslint prettier
 
 # Install Docker
 RUN apt-get update && \
@@ -79,6 +79,8 @@ RUN git submodule update --init --recursive --remote
 
 #Global node_modules
 COPY .devcontainer/package.json /workspace/node_modules/package.json
+# Preinstall esbuild to ensure it's correctly installed
+RUN npm install esbuild --prefix ./node_modules
 RUN npm install --prefix ./node_modules
 
 # Create a shared node_modules volume
