@@ -7,10 +7,6 @@
             "command": "npm run dev",
             "options": {
                 "cwd": "${workspaceFolder}/fe_Catalog"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         },
         {
@@ -19,10 +15,6 @@
             "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Builder"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         },
         {
@@ -31,10 +23,6 @@
             "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Socket"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         },
         {
@@ -43,10 +31,6 @@
             "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Sequencer"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         },
         {
@@ -55,10 +39,6 @@
             "command": "nodemon",
             "options": {
                 "cwd": "${workspaceFolder}/be_Processor"
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         },
         {
@@ -72,9 +52,6 @@
             ],
             "dependsOrder": "parallel",
             "problemMatcher": [],
-            "runOptions": {
-                "runOn": "folderOpen"
-            }
         },
         {
             "label": "Start Front-end",

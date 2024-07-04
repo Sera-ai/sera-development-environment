@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  backend_builder:
+    image: backend_builder
+    build:
+      context: ../be_Builder
+      dockerfile: Dockerfile
+    volumes:
+      - node_modules:/workspace/node_modules
+    depends_on:
+      - workspace
+
+  backend_socket:
+    image: backend_socket
+    build:
+      context: ../be_Socket
+      dockerfile: Dockerfile
+    volumes:
+      - node_modules:/workspace/node_modules
+    depends_on:
+      - workspace
+
+volumes:
+  node_modules:
+    external: true
