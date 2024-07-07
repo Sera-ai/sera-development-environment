@@ -1,6 +1,15 @@
 version: '3.7'
 
 services:
+
+  frontend_catalog:
+    image: frontend_catalog
+    build:
+      context: ../fe_Catalog
+      dockerfile: Dockerfile
+    depends_on:
+      - workspace
+
   backend_builder:
     image: backend_builder
     build:
@@ -15,6 +24,26 @@ services:
     image: backend_socket
     build:
       context: ../be_Socket
+      dockerfile: Dockerfile
+    volumes:
+      - node_modules:/workspace/node_modules
+    depends_on:
+      - workspace
+
+  backend_sequencer:
+    image: backend_sequencer
+    build:
+      context: ../be_Sequencer
+      dockerfile: Dockerfile
+    volumes:
+      - node_modules:/workspace/node_modules
+    depends_on:
+      - workspace
+
+  backend_processor:
+    image: backend_processor
+    build:
+      context: ../be_Processor
       dockerfile: Dockerfile
     volumes:
       - node_modules:/workspace/node_modules

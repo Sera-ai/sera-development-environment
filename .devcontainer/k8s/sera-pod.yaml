@@ -43,6 +43,13 @@ spec:
         - name: mongodb-data
           mountPath: /data/db
   containers:
+  - name: sera-frontend-catalog
+    image: frontend_catalog:latest
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sh", "-c"]
+    args: ["npm start"]
+    ports:
+    - containerPort: 5173
   - name: sera-backend-builder
     image: backend_builder:latest
     volumeMounts:
@@ -70,6 +77,36 @@ spec:
     args: ["npm start"]
     ports:
     - containerPort: 12040
+    envFrom:
+      - configMapRef:
+          name: sera-env-vars
+  - name: sera-backend-sequencer
+    image: backend_sequencer:latest
+    volumeMounts:
+      - mountPath: /workspace/node_modules
+        name: node-modules
+      - mountPath: /workspace/src/models
+        name: sera-models
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sh", "-c"]
+    args: ["npm start"]
+    ports:
+    - containerPort: 12050
+    envFrom:
+      - configMapRef:
+          name: sera-env-vars
+  - name: sera-backend-processor
+    image: backend_processor:latest
+    volumeMounts:
+      - mountPath: /workspace/node_modules
+        name: node-modules
+      - mountPath: /workspace/src/models
+        name: sera-models
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/sh", "-c"]
+    args: ["npm start"]
+    ports:
+    - containerPort: 12060
     envFrom:
       - configMapRef:
           name: sera-env-vars

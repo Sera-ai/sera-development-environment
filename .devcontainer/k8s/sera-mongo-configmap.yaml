@@ -33,19 +33,25 @@ data:
 
     # Check if the replica set is already initialized
     echo "Checking if the replica set is already initialized..."
-    REPLICA_SET_STATUS=$(mongosh --quiet --eval "rs.status().ok")
+    REPLICA_SET_STATUS=$(mongosh --eval "rs.status().ok" 2>&1 || true)
 
-    if [ "$REPLICA_SET_STATUS" -eq 0 ]; then
+    if echo "$REPLICA_SET_STATUS" | grep -q "no replset config has been received"; then
         echo "Initializing the replica set..."
-        mongosh --eval "rs.initiate()"
+        INITIATE_OUTPUT=$(mongosh --eval "rs.initiate()" 2>&1)
+        echo "$INITIATE_OUTPUT"
 
         # Wait for the replica set to be fully initialized
         until mongosh --eval "rs.status()" | grep -q "stateStr"; do
             echo "Waiting for replica set to initialize..."
             sleep 2
         done
-    else
+
+        echo "Replica set initialized."
+    elif echo "$REPLICA_SET_STATUS" | grep -q "1"; then
         echo "Replica set already initialized."
+    else
+        echo "Error checking replica set status: $REPLICA_SET_STATUS"
+        exit 1
     fi
 
     # Dump data from the external MongoDB instance
