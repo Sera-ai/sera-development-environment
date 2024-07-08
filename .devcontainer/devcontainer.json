@@ -1,13 +1,11 @@
 {
     "name": "Sera AI Microservices Development Environment",
     "dockerComposeFile": [
-        "docker-compose.workspace.yml",
-        "docker-compose.sera.yml"
+        "docker-compose.workspace.yml"
     ],
     "service": "workspace",
     "runServices": [
-        "workspace",
-        "backend_builder"
+        "workspace"
     ],
     "mounts": [
         "source=${localEnv:USERPROFILE}\\.kube\\config,target=/root/.kube/config,type=bind,consistency=cached"

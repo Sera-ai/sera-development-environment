@@ -7,9 +7,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/workspace
-      - node_modules:/workspace/node_modules
+      # - node_modules:/workspace/node_modules
     command: tail -f /dev/null  # Keeps the container running
 
-volumes:
-  node_modules:
-    name: node_modules
+# volumes:
+#   node_modules:
+#     name: node_modules
