@@ -1,11 +1,11 @@
 ## Create
 kubectl apply -f ./.devcontainer/k8s/
-kubectl describe pod sera-pod -n default
+kubectl describe pod sera-pod -n sera-namespace
 
 ## Remove
-kubectl delete pod sera-pod -n default
-kubectl delete pvc --all -n default
-kubectl delete pv --all -n default
+kubectl delete pod sera-pod -n sera-namespace
+kubectl delete pvc --all -n sera-namespace
+kubectl delete pv --all -n sera-namespace
 
 ## Debug
 kubectl run -i --tty --rm debug --image=busybox --restart=Never -- sh

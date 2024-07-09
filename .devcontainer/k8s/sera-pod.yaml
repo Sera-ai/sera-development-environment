@@ -2,9 +2,15 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sera-pod
+  namespace: sera-namespace
   labels:
     app: sera-app
 spec:
+  hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "backend.sera"
+    - "dashboard.sera"
   volumes:
     - name: node-modules
       persistentVolumeClaim:
@@ -50,6 +56,13 @@ spec:
     args: ["npm start"]
     ports:
     - containerPort: 5173
+  - name: sera-router
+    image: backend_router:latest
+    imagePullPolicy: IfNotPresent
+    command: ["openresty"]
+    args: ["-g", "daemon off;", "-c", "/etc/nginx/nginx.conf"]
+    ports:
+    - containerPort: 12000
   - name: sera-backend-builder
     image: backend_builder:latest
     volumeMounts:
