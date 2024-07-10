@@ -1,3 +1,9 @@
+[submodule "sera-artifacts"]
+	path = sera-artifacts
+	url = https://github.com/Sera-ai/sera-artifacts
+[submodule "sera-nginx"]
+	path = sera-nginx
+	url = https://github.com/Sera-ai/sera-nginx
 [submodule "sera-frontend"]
 	path = sera-frontend
 	url = https://github.com/Sera-ai/sera-frontend.git
@@ -16,9 +22,3 @@
 [submodule "sera-mongodb"]
 	path = sera-mongodb
 	url = https://github.com/Sera-ai/sera-mongodb.git
-[submodule "sera-artifacts"]
-	path = sera-artifacts
-	url = https://github.com/Sera-ai/sera-artifacts
-[submodule "sera-nginx"]
-	path = sera-nginx
-	url = https://github.com/Sera-ai/sera-nginx
