@@ -1,24 +1,32 @@
 [submodule "sera-artifacts"]
 	path = sera-artifacts
 	url = https://github.com/Sera-ai/sera-artifacts
+	branch = main
 [submodule "sera-nginx"]
 	path = sera-nginx
 	url = https://github.com/Sera-ai/sera-nginx
+	branch = main
 [submodule "sera-frontend"]
 	path = sera-frontend
 	url = https://github.com/Sera-ai/sera-frontend.git
+	branch = main
 [submodule "sera-backend-core"]
 	path = sera-backend-core
 	url = https://github.com/Sera-ai/sera-backend-core.git
+	branch = main
 [submodule "sera-backend-socket"]
 	path = sera-backend-socket
 	url = https://github.com/Sera-ai/sera-backend-socket.git
+	branch = main
 [submodule "sera-backend-sequencer"]
 	path = sera-backend-sequencer
 	url = https://github.com/Sera-ai/sera-backend-sequencer.git
+	branch = main
 [submodule "sera-backend-processor"]
 	path = sera-backend-processor
 	url = https://github.com/Sera-ai/sera-backend-processor.git
+	branch = main
 [submodule "sera-mongodb"]
 	path = sera-mongodb
 	url = https://github.com/Sera-ai/sera-mongodb.git
+	branch = main
