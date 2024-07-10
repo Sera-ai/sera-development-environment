@@ -27,7 +27,7 @@ kubectl delete ingress --all -n sera-namespace
 kubectl delete resourcequota --all -n sera-namespace
 kubectl delete limitrange --all -n sera-namespace
 kubectl delete hpa --all -n sera-namespace
-kubectl apply -f ../k8s/
+kubectl apply -f ./k8s/
 
 
 
