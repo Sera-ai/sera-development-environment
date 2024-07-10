@@ -1,24 +1,24 @@
-[submodule "fe_Catalog"]
-	path = fe_Catalog
-	url = https://github.com/Sera-ai/fe_Catalog.git
+[submodule "sera-frontend"]
+	path = sera-frontend
+	url = https://github.com/Sera-ai/sera-frontend.git
 	branch = main
-[submodule "be_Builder"]
-	path = be_Builder
-	url = https://github.com/Sera-ai/be_Builder.git
+[submodule "sera-backend"]
+	path = sera-backend
+	url = https://github.com/Sera-ai/sera-backend.git
 	branch = main
-[submodule "be_Socket"]
-	path = be_Socket
-	url = https://github.com/Sera-ai/be_Socket.git
+[submodule "sera-backend-socket"]
+	path = sera-backend-socket
+	url = https://github.com/Sera-ai/sera-backend-socket.git
 	branch = main
-[submodule "be_Sequencer"]
-	path = be_Sequencer
-	url = https://github.com/Sera-ai/be_Sequencer.git
+[submodule "sera-backend-sequencer"]
+	path = sera-backend-sequencer
+	url = https://github.com/Sera-ai/sera-backend-sequencer.git
 	branch = main
-[submodule "be_Processor"]
-	path = be_Processor
-	url = https://github.com/Sera-ai/be_Processor.git
+[submodule "sera-backend-processor"]
+	path = sera-backend-processor
+	url = https://github.com/Sera-ai/sera-backend-processor.git
 	branch = main
-[submodule "sera-db-mongo"]
-	path = sera-db-mongo
-	url = https://github.com/Sera-ai/sera-db-mongo.git
+[submodule "sera-mongodb"]
+	path = sera-mongodb
+	url = https://github.com/Sera-ai/sera-mongodb.git
 	branch = main
