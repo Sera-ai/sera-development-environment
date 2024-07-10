@@ -1,0 +1,127 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sera-deployment
+  namespace: sera-namespace
+  labels:
+    app: sera-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sera-app
+  template:
+    metadata:
+      labels:
+        app: sera-app
+    spec:
+      hostAliases:
+        - ip: "127.0.0.1"
+          hostnames:
+            - "backend.sera"
+            - "dashboard.sera"
+      volumes:
+        - name: node-modules
+          persistentVolumeClaim:
+            claimName: sera-node-modules-pvc
+        - name: sera-models
+          persistentVolumeClaim:
+            claimName: sera-models-pvc
+        - name: mongodb-data
+          persistentVolumeClaim:
+            claimName: sera-mongodb-pvc
+        - name: lua-scripts
+          persistentVolumeClaim:
+            claimName: sera-lua-scripts-pvc
+      initContainers:
+        - name: wait-for-mongo
+          image: busybox
+          command:
+            - /bin/sh
+            - -c
+            - |
+              until nslookup sera-mongo-statefulset-0.sera-mongodb.sera-namespace.svc.cluster.local
+              do
+                echo "Waiting for MongoDB to be ready..."
+                sleep 2
+              done
+      containers:
+        - name: sera-frontend-catalog
+          image: frontend_catalog:latest
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          args: ["npm start"]
+          ports:
+            - containerPort: 5173
+        - name: sera-router
+          image: backend_router:latest
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: lua-scripts
+              mountPath: /etc/nginx/lua-scripts
+          command: ["openresty"]
+          args: ["-g", "daemon off;", "-c", "/etc/nginx/nginx.conf"]
+          ports:
+            - containerPort: 12000
+        - name: sera-backend-builder
+          image: backend_builder:latest
+          volumeMounts:
+            - name: node-modules
+              mountPath: /workspace/node_modules
+            - name: sera-models
+              mountPath: /workspace/src/models
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          args: ["npm start"]
+          ports:
+            - containerPort: 12030
+          envFrom:
+            - configMapRef:
+                name: sera-env-vars
+        - name: sera-backend-socket
+          image: backend_socket:latest
+          volumeMounts:
+            - name: node-modules
+              mountPath: /workspace/node_modules
+            - name: sera-models
+              mountPath: /workspace/src/models
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          args: ["npm start"]
+          ports:
+            - containerPort: 12040
+          envFrom:
+            - configMapRef:
+                name: sera-env-vars
+        - name: sera-backend-sequencer
+          image: backend_sequencer:latest
+          volumeMounts:
+            - name: node-modules
+              mountPath: /workspace/node_modules
+            - name: sera-models
+              mountPath: /workspace/src/models
+            - name: lua-scripts
+              mountPath: /workspace/src/lua-scripts
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          args: ["npm start"]
+          ports:
+            - containerPort: 12050
+          envFrom:
+            - configMapRef:
+                name: sera-env-vars
+        - name: sera-backend-processor
+          image: backend_processor:latest
+          volumeMounts:
+            - name: node-modules
+              mountPath: /workspace/node_modules
+            - name: sera-models
+              mountPath: /workspace/src/models
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          args: ["npm start"]
+          ports:
+            - containerPort: 12060
+          envFrom:
+            - configMapRef:
+                name: sera-env-vars

@@ -8,11 +8,16 @@ local idle_timeout = 60000  -- 60 seconds
 
 -- Function to create a new MongoDB connection
 local function create_connection()
-    local client = mongo.Client("mongodb://127.0.0.1:27017")
+    local client = mongo.Client("mongodb://sera-mongodb.sera-namespace.svc.cluster.local:27017")
 
     if not client then
-        ngx.log(ngx.ERR, "Failed to connect to MongoDB: ", err)
+        local err = "Failed to connect to MongoDB"
+        ngx.log(ngx.ERR, err)
         return nil, err
+    end
+
+    if client then
+        ngx.log(ngx.ERR, "MONGO CONNECTED")
     end
 
     return { client = client, timestamp = ngx.now() }
@@ -39,15 +44,17 @@ function _M.get_connection()
         local connection = table.remove(pool)
         -- Check if the connection is still alive
         if is_connection_alive(connection) then
-            return connection.client
+            return connection.client, nil
         else
             -- If the connection is not alive, create a new one
-            return create_connection().client
+            local conn, err = create_connection()
+            return conn and conn.client or nil, err
         end
     end
 
     -- Create a new connection if the pool is empty
-    return create_connection().client
+    local conn, err = create_connection()
+    return conn and conn.client or nil, err
 end
 
 -- Function to return a connection to the pool

@@ -10,7 +10,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: manual
   hostPath:
-    path: "/mnt/node_modules"
+    path: "/mnt/sera/node_modules"
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -24,12 +24,12 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: manual
   hostPath:
-    path: "/mnt/sera_models"
+    path: "/mnt/sera/sera_models"
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mongodb-pv
+  name: sera-mongodb-pv
 spec:
   capacity:
     storage: 1Gi
@@ -38,4 +38,18 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: manual
   hostPath:
-    path: "/mnt/data/mongodb"
+    path: "/mnt/sera/mongodb"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: sera-lua-scripts-pv
+spec:
+  capacity:
+    storage: 100Mi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: manual
+  hostPath:
+    path: "/mnt/sera/lua-scripts"

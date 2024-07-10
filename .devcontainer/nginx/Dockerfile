@@ -21,7 +21,7 @@ RUN luarocks install lua-resty-http \
     && luarocks install lua-cjson \
     && luarocks install luasocket \
     && luarocks install lua-resty-openssl 
-    # && luarocks install lua-mongo 
+# && luarocks install lua-mongo 
 
 
 RUN wget https://luarocks.org/manifests/neoxic/lua-mongo-1.2.3-2.src.rock
@@ -41,7 +41,6 @@ RUN mkdir /workspace/.logs
 # Copy the application's source code
 COPY . .
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY lua-scripts /etc/nginx/lua-scripts
 RUN rm -rf /etc/nginx/conf.d
 COPY conf.d /etc/nginx/conf.d
 

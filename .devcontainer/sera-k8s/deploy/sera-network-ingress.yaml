@@ -17,6 +17,6 @@ spec:
   ingressClassName: nginx
   defaultBackend:
     service:
-      name: sera-service
+      name: sera-clusterip
       port:
         number: 443

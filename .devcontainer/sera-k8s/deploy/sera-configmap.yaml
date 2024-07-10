@@ -11,7 +11,7 @@ data:
   BE_SOCKET_PORT: "12040"
   BE_SEQUENCER_PORT: "12050"
   BE_PROCESSOR_PORT: "12060"
-  DB_HOST: "mongodb://localhost:27017"
+  DB_HOST: "mongodb://sera-mongo-statefulset-0.sera-mongodb.sera-namespace.svc.cluster.local:27017"
 ---
 apiVersion: v1
 kind: ConfigMap

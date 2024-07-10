@@ -1,0 +1,90 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sera-mongo-statefulset
+  namespace: sera-namespace
+spec:
+  serviceName: sera-mongodb
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sera-mongodb
+  template:
+    metadata:
+      labels:
+        app: sera-mongodb
+    spec:
+      volumes:
+        - name: mongo-init-scripts
+          configMap:
+            name: sera-mongo-init-scripts
+            items:
+              - key: entrypoint.sh
+                path: entrypoint.sh
+        - name: mongodb-data
+          persistentVolumeClaim:
+            claimName: sera-mongodb-pvc
+      containers:
+        - name: mongo
+          image: mongo:latest
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: mongodb-data
+              mountPath: /data/db
+          command:
+            - /bin/sh
+            - -c
+            - |
+              #!/bin/bash
+              DB_NAME="Sera"
+              HOST="sera-mongo-statefulset-0.sera-mongodb.sera-namespace.svc.cluster.local"
+              PORT="27017"
+
+              # Start MongoDB
+              mongod --bind_ip_all &
+
+              # Wait for MongoDB to start
+              echo "Waiting for MongoDB to start..."
+              until mongosh --host localhost --port $PORT --eval "db.adminCommand('ping')" &>/dev/null; do
+                echo -n "."
+                sleep 1
+              done
+              echo "MongoDB started."
+
+
+
+              # Check if the database exists
+              RESULT=$(mongosh --quiet --eval 'use Sera; var collections = db.getCollectionNames(); collections.length > 0 ? "true" : "false";')
+
+              if [ "$RESULT" = "false" ]; then
+                echo "Database '$DB_NAME' exists."
+              else
+                echo "$RESULT"
+                echo "Database '$DB_NAME' does not exist. Cloning from external source."
+                mongodump --uri="mongodb+srv://sera-user:4048WWDfkhORZ0Qo@sera.kloehqy.mongodb.net" --out="/data/dump"
+                mongorestore --drop --dir="/data/dump"
+              fi
+
+              # Initialize the replica set
+              mongosh --quiet --host localhost --port $PORT <<EOF
+              rs.initiate(
+                {
+                  _id: "rs0",
+                  members: [
+                    { _id: 0, host: "$HOST:$PORT" }
+                  ]
+                }
+              )
+              EOF
+
+              # Wait for replica set to initialize
+              echo "Waiting for replica set to initialize..."
+              until mongosh --host localhost --port $PORT --eval "rs.status().myState === 1" &>/dev/null; do
+                echo -n "."
+                sleep 1
+              done
+              echo "Replica set initialized."
+
+              # Keep the script running to prevent container exit
+              tail -f /dev/null

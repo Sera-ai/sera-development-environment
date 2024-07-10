@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cleanup-mongodb-data
+  namespace: sera-namespace
+spec:
+  template:
+    spec:
+      containers:
+        - name: cleanup
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args: ["rm -rf /mnt/sera/mongodb/*"]
+          volumeMounts:
+            - name: mongodb-data
+              mountPath: /mnt/sera/mongodb
+        - name: cleanup2
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args: ["rm -rf /mnt/sera/lua-scripts/*"]
+          volumeMounts:
+            - name: lua-scripts
+              mountPath: /mnt/sera/lua-scripts
+      restartPolicy: Never
+      volumes:
+        - name: mongodb-data
+          hostPath:
+            path: /mnt/sera/mongodb
+        - name: lua-scripts
+          hostPath:
+            path: /mnt/sera/lua-scripts
+  backoffLimit: 1
