@@ -2,7 +2,6 @@
 FROM debian:buster-slim
 USER root
 
-
 #####################################################################################################################
 #Install Dependencies
 
@@ -72,8 +71,8 @@ RUN git submodule update --init --recursive --remote
 RUN npm install --prefix ./sera-frontend
 # Download the node_modules.tar.gz and extract it into each submodule
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
-    && mkdir -p ./sera-backend-builder/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend/node_modules \
+    && mkdir -p ./sera-backend-core/node_modules \
+    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-core/node_modules \
     && mkdir -p ./sera-backend-socket/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-socket/node_modules \
     && mkdir -p ./sera-backend-sequencer/node_modules \
@@ -108,7 +107,7 @@ RUN ln -s  /workspace/sera-artifacts/sera-nginx-scripts /etc/nginx/lua-scripts
 RUN rm -rf /etc/nginx/conf.d && ln -s /workspace/sera-nginx/conf.d /etc/nginx/conf.d
 RUN ln -s /etc/nginx /workspace/nginx-config
 # Create symbolic links to the models directory in each /src folder
-RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend/src/models
+RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-core/src/models
 RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-socket/src/models
 RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-sequencer/src/models
 RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-processor/src/models
