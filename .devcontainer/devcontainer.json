@@ -1,7 +1,8 @@
 {
     "name": "Sera AI Microservices Development Environment",
     "dockerComposeFile": [
-        "docker-compose.workspace.yml"
+        "./sera-docker/docker-compose.workspace.yml",
+        "./sera-docker/docker-compose.sera.yml"
     ],
     "service": "workspace",
     "runServices": [

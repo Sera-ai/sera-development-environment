@@ -1,24 +1,24 @@
 [submodule "fe_Catalog"]
 	path = fe_Catalog
 	url = https://github.com/Sera-ai/fe_Catalog.git
-	branch = k8s-test
+	branch = main
 [submodule "be_Builder"]
 	path = be_Builder
 	url = https://github.com/Sera-ai/be_Builder.git
-	branch = k8s-test
+	branch = main
 [submodule "be_Socket"]
 	path = be_Socket
 	url = https://github.com/Sera-ai/be_Socket.git
-	branch = k8s-test
+	branch = main
 [submodule "be_Sequencer"]
 	path = be_Sequencer
 	url = https://github.com/Sera-ai/be_Sequencer.git
-	branch = k8s-test
+	branch = main
 [submodule "be_Processor"]
 	path = be_Processor
 	url = https://github.com/Sera-ai/be_Processor.git
-	branch = k8s-test
+	branch = main
 [submodule "sera-db-mongo"]
 	path = sera-db-mongo
 	url = https://github.com/Sera-ai/sera-db-mongo.git
-	branch = k8s-test
+	branch = main
