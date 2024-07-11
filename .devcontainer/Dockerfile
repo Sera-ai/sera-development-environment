@@ -120,7 +120,7 @@ RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backe
 #####################################################################################################################
 
 # Expose ports
-EXPOSE 80 443 12010 12030 12040 12000 12050
+EXPOSE 80 443 12000 5173 12030 12040 12050
 
 # Convert CRLF to LF using sed
 RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh

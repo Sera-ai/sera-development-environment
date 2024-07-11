@@ -27,21 +27,23 @@
         "--add-host=test.sera:127.0.0.1",
         "--add-host=dns.sera:127.0.0.1",
         "--add-host=manage.sera:127.0.0.1",
+        "--add-host=dashboard.sera:127.0.0.1",
+        "--add-host=backend.sera:127.0.0.1",
         "--add-host=sera-mongodb.sera-namespace.svc.cluster.local:127.0.0.1"
     ],
     "forwardPorts": [
-        5176,
+        5173,
         12010,
         12030,
         12040,
         12050,
         12060,
-        27017,
+        27017
     ],
     "containerEnv": {
         "DOMAIN_NAME": "example.sera",
-        "BE_ROUTER_PORT": "5176",
-        "FE_CATALOG_PORT": "12010",
+        "FE_CATALOG_PORT": "5173",
+        "BE_ROUTER_PORT": "12000",
         "BE_BUILDER_PORT": "12030",
         "BE_SOCKET_PORT": "12040",
         "BE_SEQUENCER_PORT": "12050",
@@ -49,8 +51,8 @@
         "DB_HOST": "mongodb://localhost:27017"
     },
     "portsAttributes": {
-        "5176": {
-            "label": "Router: 5176",
+        "12000": {
+            "label": "Router: 12000",
             "protocol": "https"
         }
     }
