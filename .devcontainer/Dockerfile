@@ -107,10 +107,15 @@ RUN ln -s  /workspace/sera-artifacts/sera-nginx-scripts /etc/nginx/lua-scripts
 RUN rm -rf /etc/nginx/conf.d && ln -s /workspace/sera-nginx/conf.d /etc/nginx/conf.d
 RUN ln -s /etc/nginx /workspace/nginx-config
 # Create symbolic links to the models directory in each /src folder
-RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-core/src/models
-RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-socket/src/models
-RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-sequencer/src/models
-RUN ln -s /workspace/sera-artifacts/sera-mongodb-scripts /workspace/sera-backend-processor/src/models
+RUN mkdir -p /workspace/sera-backend-core/src/models/
+RUN mkdir -p /workspace/sera-backend-socket/src/models/
+RUN mkdir -p /workspace/sera-backend-sequencer/src/models/
+RUN mkdir -p /workspace/sera-backend-processor/src/models/
+
+RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-core/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-socket/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-sequencer/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-processor/src/models/
 
 #####################################################################################################################
 
