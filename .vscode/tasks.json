@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "npm run dev",
             "options": {
-                "cwd": "${workspaceFolder}/fe_Catalog"
+                "cwd": "${workspaceFolder}/sera-frontend"
             }
         },
         {
@@ -14,7 +14,7 @@
             "type": "shell",
             "command": "nodemon",
             "options": {
-                "cwd": "${workspaceFolder}/be_Builder"
+                "cwd": "${workspaceFolder}/sera-backend-core"
             }
         },
         {
@@ -22,7 +22,7 @@
             "type": "shell",
             "command": "nodemon",
             "options": {
-                "cwd": "${workspaceFolder}/be_Socket"
+                "cwd": "${workspaceFolder}/sera-backend-socket"
             }
         },
         {
@@ -30,7 +30,7 @@
             "type": "shell",
             "command": "nodemon",
             "options": {
-                "cwd": "${workspaceFolder}/be_Sequencer"
+                "cwd": "${workspaceFolder}/sera-backend-sequencer"
             }
         },
         {
@@ -38,7 +38,7 @@
             "type": "shell",
             "command": "nodemon",
             "options": {
-                "cwd": "${workspaceFolder}/be_Processor"
+                "cwd": "${workspaceFolder}/sera-backend-processor"
             }
         },
         {
