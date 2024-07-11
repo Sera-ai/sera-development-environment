@@ -84,6 +84,25 @@ RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_
     
 #####################################################################################################################
 
+# Install CoreDNS
+RUN wget https://github.com/coredns/coredns/releases/download/v1.11.1/coredns_1.11.1_linux_amd64.tgz
+RUN tar -xvzf coredns_1.11.1_linux_amd64.tgz
+RUN rm coredns_1.11.1_linux_amd64.tgz
+# Move the CoreDNS binary to /usr/local/bin and set executable permissions
+RUN mv coredns /usr/local/bin/coredns \
+    && chmod +x /usr/local/bin/coredns
+    
+#####################################################################################################################
+
+# Install etcd
+RUN curl -L https://github.com/etcd-io/etcd/releases/latest/download/etcd-linux-amd64.tar.gz -o etcd-linux-amd64.tar.gz
+RUN tar -xzvf etcd-linux-amd64.tar.gz
+RUN rm etcd-linux-amd64.tar.gz
+RUN mv etcd-linux-amd64/etcd /usr/local/bin/ \
+    && etcd-linux-amd64/etcdctl /usr/local/bin/
+
+#####################################################################################################################
+
 # Clean up the apt cache by removing /var/lib/apt/lists
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -103,7 +122,7 @@ RUN mkdir -p /etc/nginx/certs \
 #####################################################################################################################
 
 # Copy the Nginx configuration template and Lua scripts
-RUN ln -s  /workspace/sera-artifacts/sera-nginx-scripts /etc/nginx/lua-scripts
+RUN ln -s  /workspace/sera-artifacts/sera-nginx /etc/nginx/lua-scripts
 RUN rm -rf /etc/nginx/conf.d && ln -s /workspace/sera-nginx/conf.d /etc/nginx/conf.d
 RUN ln -s /etc/nginx /workspace/nginx-config
 # Create symbolic links to the models directory in each /src folder
@@ -112,10 +131,10 @@ RUN mkdir -p /workspace/sera-backend-socket/src/models/
 RUN mkdir -p /workspace/sera-backend-sequencer/src/models/
 RUN mkdir -p /workspace/sera-backend-processor/src/models/
 
-RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-core/src/models/
-RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-socket/src/models/
-RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-sequencer/src/models/
-RUN cp -r /workspace/sera-artifacts/sera-mongodb-scripts/* /workspace/sera-backend-processor/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-core/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-socket/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-sequencer/src/models/
+RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-processor/src/models/
 
 #####################################################################################################################
 
