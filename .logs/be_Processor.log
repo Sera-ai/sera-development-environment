@@ -1,1 +1,2896 @@
-2024/07/01 19:50:42 | Sequencer Started at 12060
+2024/07/12 17:36:46 | Sequencer Started at 12060
+2024/07/12 17:36:51 | backend.sera
+2024/07/12 17:36:51 | backend.sera
+2024/07/12 17:36:51 | {
+2024/07/12 17:36:51 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:36:51 |   openapi: '3.0.1',
+2024/07/12 17:36:51 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:36:51 |   paths: {
+2024/07/12 17:36:51 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/host': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:36:51 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:36:51 |   }
+2024/07/12 17:36:51 | }
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | {
+2024/07/12 17:36:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:36:52 |   openapi: '3.0.1',
+2024/07/12 17:36:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:36:52 |   paths: {
+2024/07/12 17:36:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:36:52 |   }
+2024/07/12 17:36:52 | }
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | {
+2024/07/12 17:36:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:36:52 |   openapi: '3.0.1',
+2024/07/12 17:36:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:36:52 |   paths: {
+2024/07/12 17:36:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:36:52 |   }
+2024/07/12 17:36:52 | }
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | {
+2024/07/12 17:36:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:36:52 |   openapi: '3.0.1',
+2024/07/12 17:36:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:36:52 |   paths: {
+2024/07/12 17:36:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:36:52 |   }
+2024/07/12 17:36:52 | }
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | backend.sera
+2024/07/12 17:36:52 | {
+2024/07/12 17:36:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:36:52 |   openapi: '3.0.1',
+2024/07/12 17:36:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:36:52 |   paths: {
+2024/07/12 17:36:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:36:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:36:52 |   }
+2024/07/12 17:36:52 | }
+2024/07/12 17:39:29 | github.com
+2024/07/12 17:39:29 | github.com
+2024/07/12 17:39:29 | github.com
+2024/07/12 17:41:48 | backend.sera
+2024/07/12 17:41:48 | backend.sera
+2024/07/12 17:41:48 | {
+2024/07/12 17:41:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:48 |   openapi: '3.0.1',
+2024/07/12 17:41:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:48 |   paths: {
+2024/07/12 17:41:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:48 |   }
+2024/07/12 17:41:48 | }
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | {
+2024/07/12 17:41:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:49 |   openapi: '3.0.1',
+2024/07/12 17:41:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:49 |   paths: {
+2024/07/12 17:41:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:49 |   }
+2024/07/12 17:41:49 | }
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | {
+2024/07/12 17:41:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:49 |   openapi: '3.0.1',
+2024/07/12 17:41:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:49 |   paths: {
+2024/07/12 17:41:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:49 |   }
+2024/07/12 17:41:49 | }
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | backend.sera
+2024/07/12 17:41:49 | {
+2024/07/12 17:41:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:49 |   openapi: '3.0.1',
+2024/07/12 17:41:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:49 |   paths: {
+2024/07/12 17:41:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:49 |   }
+2024/07/12 17:41:49 | }
+2024/07/12 17:41:50 | backend.sera
+2024/07/12 17:41:50 | backend.sera
+2024/07/12 17:41:50 | {
+2024/07/12 17:41:50 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:50 |   openapi: '3.0.1',
+2024/07/12 17:41:50 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:50 |   paths: {
+2024/07/12 17:41:50 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:50 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:50 |   }
+2024/07/12 17:41:50 | }
+2024/07/12 17:41:51 | backend.sera
+2024/07/12 17:41:51 | backend.sera
+2024/07/12 17:41:51 | {
+2024/07/12 17:41:51 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:51 |   openapi: '3.0.1',
+2024/07/12 17:41:51 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:51 |   paths: {
+2024/07/12 17:41:51 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:51 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:51 |   }
+2024/07/12 17:41:51 | }
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | {
+2024/07/12 17:41:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:52 |   openapi: '3.0.1',
+2024/07/12 17:41:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:52 |   paths: {
+2024/07/12 17:41:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:52 |   }
+2024/07/12 17:41:52 | }
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | {
+2024/07/12 17:41:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:52 |   openapi: '3.0.1',
+2024/07/12 17:41:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:52 |   paths: {
+2024/07/12 17:41:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:52 |   }
+2024/07/12 17:41:52 | }
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | {
+2024/07/12 17:41:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:52 |   openapi: '3.0.1',
+2024/07/12 17:41:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:52 |   paths: {
+2024/07/12 17:41:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:52 |   }
+2024/07/12 17:41:52 | }
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | backend.sera
+2024/07/12 17:41:52 | {
+2024/07/12 17:41:52 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:52 |   openapi: '3.0.1',
+2024/07/12 17:41:52 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:52 |   paths: {
+2024/07/12 17:41:52 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:52 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:52 |   }
+2024/07/12 17:41:52 | }
+2024/07/12 17:41:53 | backend.sera
+2024/07/12 17:41:53 | backend.sera
+2024/07/12 17:41:53 | {
+2024/07/12 17:41:53 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:53 |   openapi: '3.0.1',
+2024/07/12 17:41:53 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:53 |   paths: {
+2024/07/12 17:41:53 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:53 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:53 |   }
+2024/07/12 17:41:53 | }
+2024/07/12 17:41:55 | backend.sera
+2024/07/12 17:41:55 | backend.sera
+2024/07/12 17:41:55 | {
+2024/07/12 17:41:55 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:55 |   openapi: '3.0.1',
+2024/07/12 17:41:55 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:55 |   paths: {
+2024/07/12 17:41:55 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:55 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:55 |   }
+2024/07/12 17:41:55 | }
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | {
+2024/07/12 17:41:56 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:56 |   openapi: '3.0.1',
+2024/07/12 17:41:56 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:56 |   paths: {
+2024/07/12 17:41:56 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:56 |   }
+2024/07/12 17:41:56 | }
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | {
+2024/07/12 17:41:56 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:56 |   openapi: '3.0.1',
+2024/07/12 17:41:56 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:56 |   paths: {
+2024/07/12 17:41:56 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:56 |   }
+2024/07/12 17:41:56 | }
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | {
+2024/07/12 17:41:56 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:56 |   openapi: '3.0.1',
+2024/07/12 17:41:56 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:56 |   paths: {
+2024/07/12 17:41:56 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:56 |   }
+2024/07/12 17:41:56 | }
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | {
+2024/07/12 17:41:56 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:56 |   openapi: '3.0.1',
+2024/07/12 17:41:56 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:56 |   paths: {
+2024/07/12 17:41:56 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:56 |   }
+2024/07/12 17:41:56 | }
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | backend.sera
+2024/07/12 17:41:56 | {
+2024/07/12 17:41:56 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:56 |   openapi: '3.0.1',
+2024/07/12 17:41:56 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:56 |   paths: {
+2024/07/12 17:41:56 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:56 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:56 |   }
+2024/07/12 17:41:56 | }
+2024/07/12 17:41:57 | backend.sera
+2024/07/12 17:41:57 | backend.sera
+2024/07/12 17:41:57 | {
+2024/07/12 17:41:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:57 |   openapi: '3.0.1',
+2024/07/12 17:41:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:57 |   paths: {
+2024/07/12 17:41:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:57 |   }
+2024/07/12 17:41:57 | }
+2024/07/12 17:41:57 | backend.sera
+2024/07/12 17:41:57 | backend.sera
+2024/07/12 17:41:57 | {
+2024/07/12 17:41:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:41:57 |   openapi: '3.0.1',
+2024/07/12 17:41:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:41:57 |   paths: {
+2024/07/12 17:41:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/host': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:41:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:41:57 |   }
+2024/07/12 17:41:57 | }
+2024/07/12 17:42:11 | backend.sera
+2024/07/12 17:42:11 | backend.sera
+2024/07/12 17:42:11 | {
+2024/07/12 17:42:11 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:11 |   openapi: '3.0.1',
+2024/07/12 17:42:11 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:11 |   paths: {
+2024/07/12 17:42:11 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:11 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:11 |   }
+2024/07/12 17:42:11 | }
+2024/07/12 17:42:12 | backend.sera
+2024/07/12 17:42:12 | backend.sera
+2024/07/12 17:42:12 | {
+2024/07/12 17:42:12 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:12 |   openapi: '3.0.1',
+2024/07/12 17:42:12 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:12 |   paths: {
+2024/07/12 17:42:12 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:12 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:12 |   }
+2024/07/12 17:42:12 | }
+2024/07/12 17:42:33 | httpbin.org
+2024/07/12 17:42:33 | httpbin.org
+2024/07/12 17:42:33 | {
+2024/07/12 17:42:33 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 17:42:33 |   openapi: '3.0.1',
+2024/07/12 17:42:33 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:33 |   paths: { '/': { get: [Object] } }
+2024/07/12 17:42:33 | }
+2024/07/12 17:42:42 | backend.sera
+2024/07/12 17:42:42 | backend.sera
+2024/07/12 17:42:42 | {
+2024/07/12 17:42:42 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:42 |   openapi: '3.0.1',
+2024/07/12 17:42:42 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:42 |   paths: {
+2024/07/12 17:42:42 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:42 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:42 |   }
+2024/07/12 17:42:42 | }
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | {
+2024/07/12 17:42:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:43 |   openapi: '3.0.1',
+2024/07/12 17:42:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:43 |   paths: {
+2024/07/12 17:42:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:43 |   }
+2024/07/12 17:42:43 | }
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | {
+2024/07/12 17:42:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:43 |   openapi: '3.0.1',
+2024/07/12 17:42:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:43 |   paths: {
+2024/07/12 17:42:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:43 |   }
+2024/07/12 17:42:43 | }
+2024/07/12 17:42:43 | {
+2024/07/12 17:42:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:43 |   openapi: '3.0.1',
+2024/07/12 17:42:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:43 |   paths: {
+2024/07/12 17:42:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:43 |   }
+2024/07/12 17:42:43 | }
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | {
+2024/07/12 17:42:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:43 |   openapi: '3.0.1',
+2024/07/12 17:42:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:43 |   paths: {
+2024/07/12 17:42:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:43 |   }
+2024/07/12 17:42:43 | }
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | backend.sera
+2024/07/12 17:42:43 | {
+2024/07/12 17:42:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:43 |   openapi: '3.0.1',
+2024/07/12 17:42:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:43 |   paths: {
+2024/07/12 17:42:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:43 |   }
+2024/07/12 17:42:43 | }
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | backend.sera
+2024/07/12 17:42:44 | {
+2024/07/12 17:42:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:44 |   openapi: '3.0.1',
+2024/07/12 17:42:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:44 |   paths: {
+2024/07/12 17:42:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:44 |   }
+2024/07/12 17:42:44 | }
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | {
+2024/07/12 17:42:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:45 |   openapi: '3.0.1',
+2024/07/12 17:42:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:45 |   paths: {
+2024/07/12 17:42:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:45 |   }
+2024/07/12 17:42:45 | }
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | {
+2024/07/12 17:42:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:45 |   openapi: '3.0.1',
+2024/07/12 17:42:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:45 |   paths: {
+2024/07/12 17:42:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:45 |   }
+2024/07/12 17:42:45 | }
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | {
+2024/07/12 17:42:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:45 |   openapi: '3.0.1',
+2024/07/12 17:42:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:45 |   paths: {
+2024/07/12 17:42:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:45 |   }
+2024/07/12 17:42:45 | }
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | {
+2024/07/12 17:42:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:45 |   openapi: '3.0.1',
+2024/07/12 17:42:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:45 |   paths: {
+2024/07/12 17:42:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:45 |   }
+2024/07/12 17:42:45 | }
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | backend.sera
+2024/07/12 17:42:45 | {
+2024/07/12 17:42:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:45 |   openapi: '3.0.1',
+2024/07/12 17:42:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:45 |   paths: {
+2024/07/12 17:42:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:45 |   }
+2024/07/12 17:42:45 | }
+2024/07/12 17:42:47 | backend.sera
+2024/07/12 17:42:47 | backend.sera
+2024/07/12 17:42:47 | {
+2024/07/12 17:42:47 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:47 |   openapi: '3.0.1',
+2024/07/12 17:42:47 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:47 |   paths: {
+2024/07/12 17:42:47 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:47 |   }
+2024/07/12 17:42:47 | }
+2024/07/12 17:42:47 | backend.sera
+2024/07/12 17:42:47 | backend.sera
+2024/07/12 17:42:47 | {
+2024/07/12 17:42:47 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:47 |   openapi: '3.0.1',
+2024/07/12 17:42:47 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:47 |   paths: {
+2024/07/12 17:42:47 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:47 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:47 |   }
+2024/07/12 17:42:47 | }
+2024/07/12 17:42:48 | backend.sera
+2024/07/12 17:42:48 | backend.sera
+2024/07/12 17:42:48 | {
+2024/07/12 17:42:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:48 |   openapi: '3.0.1',
+2024/07/12 17:42:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:48 |   paths: {
+2024/07/12 17:42:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:48 |   }
+2024/07/12 17:42:48 | }
+2024/07/12 17:42:48 | backend.sera
+2024/07/12 17:42:48 | backend.sera
+2024/07/12 17:42:48 | {
+2024/07/12 17:42:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:48 |   openapi: '3.0.1',
+2024/07/12 17:42:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:48 |   paths: {
+2024/07/12 17:42:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:48 |   }
+2024/07/12 17:42:48 | }
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | backend.sera
+2024/07/12 17:42:49 | {
+2024/07/12 17:42:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:49 |   openapi: '3.0.1',
+2024/07/12 17:42:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:49 |   paths: {
+2024/07/12 17:42:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:49 |   }
+2024/07/12 17:42:49 | }
+2024/07/12 17:42:54 | backend.sera
+2024/07/12 17:42:54 | backend.sera
+2024/07/12 17:42:54 | {
+2024/07/12 17:42:54 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:42:54 |   openapi: '3.0.1',
+2024/07/12 17:42:54 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:42:54 |   paths: {
+2024/07/12 17:42:54 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/host': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:42:54 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:42:54 |   }
+2024/07/12 17:42:54 | }
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | {
+2024/07/12 17:47:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:47:09 |   openapi: '3.0.1',
+2024/07/12 17:47:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:47:09 |   paths: {
+2024/07/12 17:47:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:47:09 |   }
+2024/07/12 17:47:09 | }
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | {
+2024/07/12 17:47:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:47:09 |   openapi: '3.0.1',
+2024/07/12 17:47:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:47:09 |   paths: {
+2024/07/12 17:47:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:47:09 |   }
+2024/07/12 17:47:09 | }
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | {
+2024/07/12 17:47:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:47:09 |   openapi: '3.0.1',
+2024/07/12 17:47:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:47:09 |   paths: {
+2024/07/12 17:47:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:47:09 |   }
+2024/07/12 17:47:09 | }
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | backend.sera
+2024/07/12 17:47:09 | {
+2024/07/12 17:47:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:47:09 |   openapi: '3.0.1',
+2024/07/12 17:47:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:47:09 |   paths: {
+2024/07/12 17:47:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:47:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:47:09 |   }
+2024/07/12 17:47:09 | }
+2024/07/12 17:47:10 | backend.sera
+2024/07/12 17:47:10 | backend.sera
+2024/07/12 17:47:10 | {
+2024/07/12 17:47:10 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:47:10 |   openapi: '3.0.1',
+2024/07/12 17:47:10 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:47:10 |   paths: {
+2024/07/12 17:47:10 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/host': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:47:10 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:47:10 |   }
+2024/07/12 17:47:10 | }
+2024/07/12 17:48:54 | postman-echo.com
+2024/07/12 17:48:54 | postman-echo.com
+2024/07/12 17:48:54 | postman-echo.com
+2024/07/12 17:49:30 | jsonplaceholder.typicode.com
+2024/07/12 17:49:30 | jsonplaceholder.typicode.com
+2024/07/12 17:49:30 | jsonplaceholder.typicode.com
+2024/07/12 17:49:37 | www.mocky.io
+2024/07/12 17:49:37 | mocky.io
+2024/07/12 17:49:37 | mocky.io
+2024/07/12 17:49:43 | postman-echo.com
+2024/07/12 17:49:43 | postman-echo.com
+2024/07/12 17:49:43 | {
+2024/07/12 17:49:43 |   servers: [ { url: 'postman-echo.com' } ],
+2024/07/12 17:49:43 |   openapi: '3.0.1',
+2024/07/12 17:49:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:49:43 |   paths: { '/get': { get: [Object] } }
+2024/07/12 17:49:43 | }
+2024/07/12 17:49:46 | postman-echo.com
+2024/07/12 17:49:46 | postman-echo.com
+2024/07/12 17:49:46 | {
+2024/07/12 17:49:46 |   servers: [ { url: 'postman-echo.com' } ],
+2024/07/12 17:49:46 |   openapi: '3.0.1',
+2024/07/12 17:49:46 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:49:46 |   paths: { '/get': { get: [Object] } }
+2024/07/12 17:49:46 | }
+2024/07/12 17:49:49 | fakejson.com
+2024/07/12 17:49:49 | fakejson.com
+2024/07/12 17:49:49 | fakejson.com
+2024/07/12 17:50:29 | httpbin.org
+2024/07/12 17:50:29 | httpbin.org
+2024/07/12 17:50:29 | {
+2024/07/12 17:50:29 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 17:50:29 |   openapi: '3.0.1',
+2024/07/12 17:50:29 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:29 |   paths: { '/': { get: [Object] }, '/response-headers': { get: [Object] } }
+2024/07/12 17:50:29 | }
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | {
+2024/07/12 17:50:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:41 |   openapi: '3.0.1',
+2024/07/12 17:50:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:41 |   paths: {
+2024/07/12 17:50:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:41 |   }
+2024/07/12 17:50:41 | }
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | {
+2024/07/12 17:50:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:41 |   openapi: '3.0.1',
+2024/07/12 17:50:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:41 |   paths: {
+2024/07/12 17:50:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:41 |   }
+2024/07/12 17:50:41 | }
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | {
+2024/07/12 17:50:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:41 |   openapi: '3.0.1',
+2024/07/12 17:50:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:41 |   paths: {
+2024/07/12 17:50:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:41 |   }
+2024/07/12 17:50:41 | }
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | {
+2024/07/12 17:50:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:41 |   openapi: '3.0.1',
+2024/07/12 17:50:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:41 |   paths: {
+2024/07/12 17:50:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:41 |   }
+2024/07/12 17:50:41 | }
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | backend.sera
+2024/07/12 17:50:41 | {
+2024/07/12 17:50:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:41 |   openapi: '3.0.1',
+2024/07/12 17:50:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:41 |   paths: {
+2024/07/12 17:50:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:41 |   }
+2024/07/12 17:50:41 | }
+2024/07/12 17:50:42 | httpbin.org
+2024/07/12 17:50:42 | httpbin.org
+2024/07/12 17:50:42 | {
+2024/07/12 17:50:42 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 17:50:42 |   openapi: '3.0.1',
+2024/07/12 17:50:42 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:42 |   paths: {
+2024/07/12 17:50:42 |     '/': { get: [Object] },
+2024/07/12 17:50:42 |     '/response-headers': { get: [Object] },
+2024/07/12 17:50:42 |     '/get': { get: [Object] }
+2024/07/12 17:50:42 |   }
+2024/07/12 17:50:42 | }
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | {
+2024/07/12 17:50:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:48 |   openapi: '3.0.1',
+2024/07/12 17:50:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:48 |   paths: {
+2024/07/12 17:50:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:48 |   }
+2024/07/12 17:50:48 | }
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | {
+2024/07/12 17:50:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:48 |   openapi: '3.0.1',
+2024/07/12 17:50:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:48 |   paths: {
+2024/07/12 17:50:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:48 |   }
+2024/07/12 17:50:48 | }
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | {
+2024/07/12 17:50:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:48 |   openapi: '3.0.1',
+2024/07/12 17:50:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:48 |   paths: {
+2024/07/12 17:50:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:48 |   }
+2024/07/12 17:50:48 | }
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | backend.sera
+2024/07/12 17:50:48 | {
+2024/07/12 17:50:48 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:48 |   openapi: '3.0.1',
+2024/07/12 17:50:48 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:48 |   paths: {
+2024/07/12 17:50:48 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:48 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:48 |   }
+2024/07/12 17:50:48 | }
+2024/07/12 17:50:49 | backend.sera
+2024/07/12 17:50:49 | backend.sera
+2024/07/12 17:50:49 | {
+2024/07/12 17:50:49 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 17:50:49 |   openapi: '3.0.1',
+2024/07/12 17:50:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 17:50:49 |   paths: {
+2024/07/12 17:50:49 |     '/manage/playbook': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/host': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/analytics': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/usage': { get: [Object] },
+2024/07/12 17:50:49 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 17:50:49 |   }
+2024/07/12 17:50:49 | }
+2024/07/12 18:05:43 | backend.sera
+2024/07/12 18:05:43 | backend.sera
+2024/07/12 18:05:43 | {
+2024/07/12 18:05:43 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:43 |   openapi: '3.0.1',
+2024/07/12 18:05:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:43 |   paths: {
+2024/07/12 18:05:43 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:43 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:43 |   }
+2024/07/12 18:05:43 | }
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | {
+2024/07/12 18:05:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:44 |   openapi: '3.0.1',
+2024/07/12 18:05:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:44 |   paths: {
+2024/07/12 18:05:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:44 |   }
+2024/07/12 18:05:44 | }
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | {
+2024/07/12 18:05:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:44 |   openapi: '3.0.1',
+2024/07/12 18:05:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:44 |   paths: {
+2024/07/12 18:05:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:44 |   }
+2024/07/12 18:05:44 | }
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | {
+2024/07/12 18:05:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:44 |   openapi: '3.0.1',
+2024/07/12 18:05:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:44 |   paths: {
+2024/07/12 18:05:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:44 |   }
+2024/07/12 18:05:44 | }
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | backend.sera
+2024/07/12 18:05:44 | {
+2024/07/12 18:05:44 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:44 |   openapi: '3.0.1',
+2024/07/12 18:05:44 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:44 |   paths: {
+2024/07/12 18:05:44 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:44 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:44 |   }
+2024/07/12 18:05:44 | }
+2024/07/12 18:05:45 | backend.sera
+2024/07/12 18:05:45 | backend.sera
+2024/07/12 18:05:45 | {
+2024/07/12 18:05:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:05:45 |   openapi: '3.0.1',
+2024/07/12 18:05:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:05:45 |   paths: {
+2024/07/12 18:05:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/host': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:05:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:05:45 |   }
+2024/07/12 18:05:45 | }
+2024/07/12 18:06:07 | backend.sera
+2024/07/12 18:06:07 | backend.sera
+2024/07/12 18:06:07 | {
+2024/07/12 18:06:07 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:07 |   openapi: '3.0.1',
+2024/07/12 18:06:07 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:07 |   paths: {
+2024/07/12 18:06:07 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:07 |   }
+2024/07/12 18:06:07 | }
+2024/07/12 18:06:07 | backend.sera
+2024/07/12 18:06:07 | backend.sera
+2024/07/12 18:06:07 | {
+2024/07/12 18:06:07 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:07 |   openapi: '3.0.1',
+2024/07/12 18:06:07 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:07 |   paths: {
+2024/07/12 18:06:07 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:07 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:07 |   }
+2024/07/12 18:06:07 | }
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | {
+2024/07/12 18:06:08 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:08 |   openapi: '3.0.1',
+2024/07/12 18:06:08 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:08 |   paths: {
+2024/07/12 18:06:08 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:08 |   }
+2024/07/12 18:06:08 | }
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | {
+2024/07/12 18:06:08 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:08 |   openapi: '3.0.1',
+2024/07/12 18:06:08 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:08 |   paths: {
+2024/07/12 18:06:08 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:08 |   }
+2024/07/12 18:06:08 | }
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | {
+2024/07/12 18:06:08 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:08 |   openapi: '3.0.1',
+2024/07/12 18:06:08 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:08 |   paths: {
+2024/07/12 18:06:08 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:08 |   }
+2024/07/12 18:06:08 | }
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | backend.sera
+2024/07/12 18:06:08 | {
+2024/07/12 18:06:08 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:08 |   openapi: '3.0.1',
+2024/07/12 18:06:08 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:08 |   paths: {
+2024/07/12 18:06:08 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:08 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:08 |   }
+2024/07/12 18:06:08 | }
+2024/07/12 18:06:29 | backend.sera
+2024/07/12 18:06:29 | backend.sera
+2024/07/12 18:06:29 | {
+2024/07/12 18:06:29 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:29 |   openapi: '3.0.1',
+2024/07/12 18:06:29 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:29 |   paths: {
+2024/07/12 18:06:29 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:29 |   }
+2024/07/12 18:06:29 | }
+2024/07/12 18:06:29 | backend.sera
+2024/07/12 18:06:29 | backend.sera
+2024/07/12 18:06:29 | {
+2024/07/12 18:06:29 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:29 |   openapi: '3.0.1',
+2024/07/12 18:06:29 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:29 |   paths: {
+2024/07/12 18:06:29 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:29 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:29 |   }
+2024/07/12 18:06:29 | }
+2024/07/12 18:06:32 | backend.sera
+2024/07/12 18:06:32 | backend.sera
+2024/07/12 18:06:32 | {
+2024/07/12 18:06:32 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:32 |   openapi: '3.0.1',
+2024/07/12 18:06:32 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:32 |   paths: {
+2024/07/12 18:06:32 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:32 |   }
+2024/07/12 18:06:32 | }
+2024/07/12 18:06:32 | backend.sera
+2024/07/12 18:06:32 | backend.sera
+2024/07/12 18:06:32 | {
+2024/07/12 18:06:32 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:32 |   openapi: '3.0.1',
+2024/07/12 18:06:32 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:32 |   paths: {
+2024/07/12 18:06:32 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:32 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:32 |   }
+2024/07/12 18:06:32 | }
+2024/07/12 18:06:33 | backend.sera
+2024/07/12 18:06:33 | backend.sera
+2024/07/12 18:06:33 | {
+2024/07/12 18:06:33 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:33 |   openapi: '3.0.1',
+2024/07/12 18:06:33 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:33 |   paths: {
+2024/07/12 18:06:33 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:33 |   }
+2024/07/12 18:06:33 | }
+2024/07/12 18:06:33 | backend.sera
+2024/07/12 18:06:33 | backend.sera
+2024/07/12 18:06:33 | {
+2024/07/12 18:06:33 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:33 |   openapi: '3.0.1',
+2024/07/12 18:06:33 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:33 |   paths: {
+2024/07/12 18:06:33 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:33 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:33 |   }
+2024/07/12 18:06:33 | }
+2024/07/12 18:06:38 | backend.sera
+2024/07/12 18:06:38 | backend.sera
+2024/07/12 18:06:38 | {
+2024/07/12 18:06:38 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:38 |   openapi: '3.0.1',
+2024/07/12 18:06:38 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:38 |   paths: {
+2024/07/12 18:06:38 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:38 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:38 |   }
+2024/07/12 18:06:38 | }
+2024/07/12 18:06:39 | backend.sera
+2024/07/12 18:06:39 | backend.sera
+2024/07/12 18:06:39 | {
+2024/07/12 18:06:39 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:39 |   openapi: '3.0.1',
+2024/07/12 18:06:39 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:39 |   paths: {
+2024/07/12 18:06:39 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:39 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:39 |   }
+2024/07/12 18:06:39 | }
+2024/07/12 18:06:41 | backend.sera
+2024/07/12 18:06:41 | backend.sera
+2024/07/12 18:06:41 | {
+2024/07/12 18:06:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:41 |   openapi: '3.0.1',
+2024/07/12 18:06:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:41 |   paths: {
+2024/07/12 18:06:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:41 |   }
+2024/07/12 18:06:41 | }
+2024/07/12 18:06:41 | backend.sera
+2024/07/12 18:06:41 | backend.sera
+2024/07/12 18:06:41 | {
+2024/07/12 18:06:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:41 |   openapi: '3.0.1',
+2024/07/12 18:06:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:41 |   paths: {
+2024/07/12 18:06:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:41 |   }
+2024/07/12 18:06:41 | }
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | {
+2024/07/12 18:06:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:45 |   openapi: '3.0.1',
+2024/07/12 18:06:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:45 |   paths: {
+2024/07/12 18:06:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:45 |   }
+2024/07/12 18:06:45 | }
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | {
+2024/07/12 18:06:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:45 |   openapi: '3.0.1',
+2024/07/12 18:06:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:45 |   paths: {
+2024/07/12 18:06:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:45 |   }
+2024/07/12 18:06:45 | }
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | backend.sera
+2024/07/12 18:06:45 | {
+2024/07/12 18:06:45 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:45 |   openapi: '3.0.1',
+2024/07/12 18:06:45 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:45 |   paths: {
+2024/07/12 18:06:45 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:45 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:45 |   }
+2024/07/12 18:06:45 | }
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | {
+2024/07/12 18:06:46 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:46 |   openapi: '3.0.1',
+2024/07/12 18:06:46 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:46 |   paths: {
+2024/07/12 18:06:46 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:46 |   }
+2024/07/12 18:06:46 | }
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | {
+2024/07/12 18:06:46 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:46 |   openapi: '3.0.1',
+2024/07/12 18:06:46 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:46 |   paths: {
+2024/07/12 18:06:46 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:46 |   }
+2024/07/12 18:06:46 | }
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | {
+2024/07/12 18:06:46 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:46 |   openapi: '3.0.1',
+2024/07/12 18:06:46 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:46 |   paths: {
+2024/07/12 18:06:46 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:46 |   }
+2024/07/12 18:06:46 | }
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | backend.sera
+2024/07/12 18:06:46 | {
+2024/07/12 18:06:46 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:46 |   openapi: '3.0.1',
+2024/07/12 18:06:46 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:46 |   paths: {
+2024/07/12 18:06:46 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:46 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:46 |   }
+2024/07/12 18:06:46 | }
+2024/07/12 18:06:50 | backend.sera
+2024/07/12 18:06:50 | backend.sera
+2024/07/12 18:06:50 | {
+2024/07/12 18:06:50 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:50 |   openapi: '3.0.1',
+2024/07/12 18:06:50 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:50 |   paths: {
+2024/07/12 18:06:50 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:50 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:50 |   }
+2024/07/12 18:06:50 | }
+2024/07/12 18:06:53 | backend.sera
+2024/07/12 18:06:53 | backend.sera
+2024/07/12 18:06:53 | {
+2024/07/12 18:06:53 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:06:53 |   openapi: '3.0.1',
+2024/07/12 18:06:53 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:06:53 |   paths: {
+2024/07/12 18:06:53 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/host': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:06:53 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:06:53 |   }
+2024/07/12 18:06:53 | }
+2024/07/12 18:16:09 | backend.sera
+2024/07/12 18:16:09 | backend.sera
+2024/07/12 18:16:09 | {
+2024/07/12 18:16:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:16:09 |   openapi: '3.0.1',
+2024/07/12 18:16:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:16:09 |   paths: {
+2024/07/12 18:16:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/host': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:16:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:16:09 |   }
+2024/07/12 18:16:09 | }
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | {
+2024/07/12 18:16:10 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:16:10 |   openapi: '3.0.1',
+2024/07/12 18:16:10 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:16:10 |   paths: {
+2024/07/12 18:16:10 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:16:10 |   }
+2024/07/12 18:16:10 | }
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | {
+2024/07/12 18:16:10 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:16:10 |   openapi: '3.0.1',
+2024/07/12 18:16:10 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:16:10 |   paths: {
+2024/07/12 18:16:10 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:16:10 |   }
+2024/07/12 18:16:10 | }
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | {
+2024/07/12 18:16:10 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:16:10 |   openapi: '3.0.1',
+2024/07/12 18:16:10 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:16:10 |   paths: {
+2024/07/12 18:16:10 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:16:10 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:16:10 |   }
+2024/07/12 18:16:10 | }
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:10 | backend.sera
+2024/07/12 18:16:11 | {
+2024/07/12 18:16:11 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 18:16:11 |   openapi: '3.0.1',
+2024/07/12 18:16:11 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 18:16:11 |   paths: {
+2024/07/12 18:16:11 |     '/manage/playbook': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/host': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/analytics': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/usage': { get: [Object] },
+2024/07/12 18:16:11 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 18:16:11 |   }
+2024/07/12 18:16:11 | }
+2024/07/12 19:28:20 | httpbin.org
+2024/07/12 19:28:20 | httpbin.org
+2024/07/12 19:28:20 | {
+2024/07/12 19:28:20 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 19:28:20 |   openapi: '3.0.1',
+2024/07/12 19:28:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:20 |   paths: {
+2024/07/12 19:28:20 |     '/': { get: [Object] },
+2024/07/12 19:28:20 |     '/response-headers': { get: [Object] },
+2024/07/12 19:28:20 |     '/get': { get: [Object] },
+2024/07/12 19:28:20 |     '/post': { post: [Object] }
+2024/07/12 19:28:20 |   }
+2024/07/12 19:28:20 | }
+2024/07/12 19:28:26 | backend.sera
+2024/07/12 19:28:26 | backend.sera
+2024/07/12 19:28:26 | {
+2024/07/12 19:28:26 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:28:26 |   openapi: '3.0.1',
+2024/07/12 19:28:26 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:26 |   paths: {
+2024/07/12 19:28:26 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/host': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:28:26 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:28:26 |   }
+2024/07/12 19:28:26 | }
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | {
+2024/07/12 19:28:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:28:27 |   openapi: '3.0.1',
+2024/07/12 19:28:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:27 |   paths: {
+2024/07/12 19:28:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:28:27 |   }
+2024/07/12 19:28:27 | }
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | {
+2024/07/12 19:28:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:28:27 |   openapi: '3.0.1',
+2024/07/12 19:28:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:27 |   paths: {
+2024/07/12 19:28:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:28:27 |   }
+2024/07/12 19:28:27 | }
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | {
+2024/07/12 19:28:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:28:27 |   openapi: '3.0.1',
+2024/07/12 19:28:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:27 |   paths: {
+2024/07/12 19:28:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:28:27 |   }
+2024/07/12 19:28:27 | }
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | backend.sera
+2024/07/12 19:28:27 | {
+2024/07/12 19:28:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:28:27 |   openapi: '3.0.1',
+2024/07/12 19:28:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:28:27 |   paths: {
+2024/07/12 19:28:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:28:27 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:28:27 |   }
+2024/07/12 19:28:27 | }
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | {
+2024/07/12 19:38:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:38:58 |   openapi: '3.0.1',
+2024/07/12 19:38:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:38:58 |   paths: {
+2024/07/12 19:38:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:38:58 |   }
+2024/07/12 19:38:58 | }
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | {
+2024/07/12 19:38:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:38:58 |   openapi: '3.0.1',
+2024/07/12 19:38:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:38:58 |   paths: {
+2024/07/12 19:38:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:38:58 |   }
+2024/07/12 19:38:58 | }
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | {
+2024/07/12 19:38:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:38:58 |   openapi: '3.0.1',
+2024/07/12 19:38:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:38:58 |   paths: {
+2024/07/12 19:38:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:38:58 |   }
+2024/07/12 19:38:58 | }
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | {
+2024/07/12 19:38:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:38:58 |   openapi: '3.0.1',
+2024/07/12 19:38:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:38:58 |   paths: {
+2024/07/12 19:38:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:38:58 |   }
+2024/07/12 19:38:58 | }
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | backend.sera
+2024/07/12 19:38:58 | {
+2024/07/12 19:38:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:38:58 |   openapi: '3.0.1',
+2024/07/12 19:38:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:38:58 |   paths: {
+2024/07/12 19:38:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:38:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:38:58 |   }
+2024/07/12 19:38:58 | }
+2024/07/12 19:41:43 | httpbin.org
+2024/07/12 19:41:43 | httpbin.org
+2024/07/12 19:41:43 | {
+2024/07/12 19:41:43 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 19:41:43 |   openapi: '3.0.1',
+2024/07/12 19:41:43 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:41:43 |   paths: {
+2024/07/12 19:41:43 |     '/': { get: [Object] },
+2024/07/12 19:41:43 |     '/response-headers': { get: [Object] },
+2024/07/12 19:41:43 |     '/get': { get: [Object] },
+2024/07/12 19:41:43 |     '/post': { post: [Object] }
+2024/07/12 19:41:43 |   }
+2024/07/12 19:41:43 | }
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | {
+2024/07/12 19:50:25 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:50:25 |   openapi: '3.0.1',
+2024/07/12 19:50:25 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:50:25 |   paths: {
+2024/07/12 19:50:25 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:50:25 |   }
+2024/07/12 19:50:25 | }
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | {
+2024/07/12 19:50:25 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:50:25 |   openapi: '3.0.1',
+2024/07/12 19:50:25 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:50:25 |   paths: {
+2024/07/12 19:50:25 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:50:25 |   }
+2024/07/12 19:50:25 | }
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | {
+2024/07/12 19:50:25 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:50:25 |   openapi: '3.0.1',
+2024/07/12 19:50:25 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:50:25 |   paths: {
+2024/07/12 19:50:25 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:50:25 |   }
+2024/07/12 19:50:25 | }
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | backend.sera
+2024/07/12 19:50:25 | {
+2024/07/12 19:50:25 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:50:25 |   openapi: '3.0.1',
+2024/07/12 19:50:25 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:50:25 |   paths: {
+2024/07/12 19:50:25 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:50:25 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:50:25 |   }
+2024/07/12 19:50:25 | }
+2024/07/12 19:50:26 | backend.sera
+2024/07/12 19:50:26 | backend.sera
+2024/07/12 19:50:26 | {
+2024/07/12 19:50:26 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:50:26 |   openapi: '3.0.1',
+2024/07/12 19:50:26 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:50:26 |   paths: {
+2024/07/12 19:50:26 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/host': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:50:26 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:50:26 |   }
+2024/07/12 19:50:26 | }
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | {
+2024/07/12 19:53:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:53:57 |   openapi: '3.0.1',
+2024/07/12 19:53:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:53:57 |   paths: {
+2024/07/12 19:53:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:53:57 |   }
+2024/07/12 19:53:57 | }
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | {
+2024/07/12 19:53:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:53:57 |   openapi: '3.0.1',
+2024/07/12 19:53:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:53:57 |   paths: {
+2024/07/12 19:53:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:53:57 |   }
+2024/07/12 19:53:57 | }
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | {
+2024/07/12 19:53:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:53:57 |   openapi: '3.0.1',
+2024/07/12 19:53:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:53:57 |   paths: {
+2024/07/12 19:53:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:53:57 |   }
+2024/07/12 19:53:57 | }
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | backend.sera
+2024/07/12 19:53:57 | {
+2024/07/12 19:53:57 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:53:57 |   openapi: '3.0.1',
+2024/07/12 19:53:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:53:57 |   paths: {
+2024/07/12 19:53:57 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:53:57 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:53:57 |   }
+2024/07/12 19:53:57 | }
+2024/07/12 19:53:58 | backend.sera
+2024/07/12 19:53:58 | backend.sera
+2024/07/12 19:53:58 | {
+2024/07/12 19:53:58 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:53:58 |   openapi: '3.0.1',
+2024/07/12 19:53:58 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:53:58 |   paths: {
+2024/07/12 19:53:58 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/host': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:53:58 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:53:58 |   }
+2024/07/12 19:53:58 | }
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | {
+2024/07/12 19:59:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:59:09 |   openapi: '3.0.1',
+2024/07/12 19:59:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:59:09 |   paths: {
+2024/07/12 19:59:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:59:09 |   }
+2024/07/12 19:59:09 | }
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | {
+2024/07/12 19:59:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:59:09 |   openapi: '3.0.1',
+2024/07/12 19:59:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:59:09 |   paths: {
+2024/07/12 19:59:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:59:09 |   }
+2024/07/12 19:59:09 | }
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | {
+2024/07/12 19:59:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:59:09 |   openapi: '3.0.1',
+2024/07/12 19:59:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:59:09 |   paths: {
+2024/07/12 19:59:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:59:09 |   }
+2024/07/12 19:59:09 | }
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | {
+2024/07/12 19:59:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:59:09 |   openapi: '3.0.1',
+2024/07/12 19:59:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:59:09 |   paths: {
+2024/07/12 19:59:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:59:09 |   }
+2024/07/12 19:59:09 | }
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | backend.sera
+2024/07/12 19:59:09 | {
+2024/07/12 19:59:09 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 19:59:09 |   openapi: '3.0.1',
+2024/07/12 19:59:09 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 19:59:09 |   paths: {
+2024/07/12 19:59:09 |     '/manage/playbook': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/analytics': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/usage': { get: [Object] },
+2024/07/12 19:59:09 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 19:59:09 |   }
+2024/07/12 19:59:09 | }
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | {
+2024/07/12 20:02:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:02:41 |   openapi: '3.0.1',
+2024/07/12 20:02:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:02:41 |   paths: {
+2024/07/12 20:02:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:02:41 |   }
+2024/07/12 20:02:41 | }
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | {
+2024/07/12 20:02:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:02:41 |   openapi: '3.0.1',
+2024/07/12 20:02:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:02:41 |   paths: {
+2024/07/12 20:02:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:02:41 |   }
+2024/07/12 20:02:41 | }
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | {
+2024/07/12 20:02:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:02:41 |   openapi: '3.0.1',
+2024/07/12 20:02:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:02:41 |   paths: {
+2024/07/12 20:02:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:02:41 |   }
+2024/07/12 20:02:41 | }
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | backend.sera
+2024/07/12 20:02:41 | {
+2024/07/12 20:02:41 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:02:41 |   openapi: '3.0.1',
+2024/07/12 20:02:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:02:41 |   paths: {
+2024/07/12 20:02:41 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:02:41 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:02:41 |   }
+2024/07/12 20:02:41 | }
+2024/07/12 20:02:42 | backend.sera
+2024/07/12 20:02:42 | backend.sera
+2024/07/12 20:02:42 | {
+2024/07/12 20:02:42 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:02:42 |   openapi: '3.0.1',
+2024/07/12 20:02:42 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:02:42 |   paths: {
+2024/07/12 20:02:42 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/host': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:02:42 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:02:42 |   }
+2024/07/12 20:02:42 | }
+2024/07/12 20:03:31 | httpbin.org
+2024/07/12 20:03:31 | httpbin.org
+2024/07/12 20:03:31 | {
+2024/07/12 20:03:31 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:03:31 |   openapi: '3.0.1',
+2024/07/12 20:03:31 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:03:31 |   paths: {
+2024/07/12 20:03:31 |     '/': { get: [Object] },
+2024/07/12 20:03:31 |     '/response-headers': { get: [Object] },
+2024/07/12 20:03:31 |     '/get': { get: [Object] },
+2024/07/12 20:03:31 |     '/post': { post: [Object] }
+2024/07/12 20:03:31 |   }
+2024/07/12 20:03:31 | }
+2024/07/12 20:06:15 | httpbin.org
+2024/07/12 20:06:15 | httpbin.org
+2024/07/12 20:06:15 | {
+2024/07/12 20:06:15 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:06:15 |   openapi: '3.0.1',
+2024/07/12 20:06:15 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:06:15 |   paths: {
+2024/07/12 20:06:15 |     '/': { get: [Object] },
+2024/07/12 20:06:15 |     '/response-headers': { get: [Object] },
+2024/07/12 20:06:15 |     '/get': { get: [Object] },
+2024/07/12 20:06:15 |     '/post': { post: [Object] }
+2024/07/12 20:06:15 |   }
+2024/07/12 20:06:15 | }
+2024/07/12 20:09:25 | httpbin.org
+2024/07/12 20:09:25 | httpbin.org
+2024/07/12 20:09:25 | {
+2024/07/12 20:09:25 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:09:25 |   openapi: '3.0.1',
+2024/07/12 20:09:25 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:09:25 |   paths: {
+2024/07/12 20:09:25 |     '/': { get: [Object] },
+2024/07/12 20:09:25 |     '/response-headers': { get: [Object] },
+2024/07/12 20:09:25 |     '/get': { get: [Object] },
+2024/07/12 20:09:25 |     '/post': { post: [Object] }
+2024/07/12 20:09:25 |   }
+2024/07/12 20:09:25 | }
+2024/07/12 20:15:37 | httpbin.org
+2024/07/12 20:15:37 | httpbin.org
+2024/07/12 20:15:37 | {
+2024/07/12 20:15:37 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:15:37 |   openapi: '3.0.1',
+2024/07/12 20:15:37 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:15:37 |   paths: {
+2024/07/12 20:15:37 |     '/': { get: [Object] },
+2024/07/12 20:15:37 |     '/response-headers': { get: [Object] },
+2024/07/12 20:15:37 |     '/get': { get: [Object] },
+2024/07/12 20:15:37 |     '/post': { post: [Object] }
+2024/07/12 20:15:37 |   }
+2024/07/12 20:15:37 | }
+2024/07/12 20:18:49 | httpbin.org
+2024/07/12 20:18:49 | httpbin.org
+2024/07/12 20:18:49 | {
+2024/07/12 20:18:49 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:18:49 |   openapi: '3.0.1',
+2024/07/12 20:18:49 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:18:49 |   paths: {
+2024/07/12 20:18:49 |     '/': { get: [Object] },
+2024/07/12 20:18:49 |     '/response-headers': { get: [Object] },
+2024/07/12 20:18:49 |     '/get': { get: [Object] },
+2024/07/12 20:18:49 |     '/post': { post: [Object] }
+2024/07/12 20:18:49 |   }
+2024/07/12 20:18:49 | }
+2024/07/12 20:27:57 | httpbin.org
+2024/07/12 20:27:57 | httpbin.org
+2024/07/12 20:27:57 | {
+2024/07/12 20:27:57 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:27:57 |   openapi: '3.0.1',
+2024/07/12 20:27:57 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:27:57 |   paths: {
+2024/07/12 20:27:57 |     '/': { get: [Object] },
+2024/07/12 20:27:57 |     '/response-headers': { get: [Object] },
+2024/07/12 20:27:57 |     '/get': { get: [Object] },
+2024/07/12 20:27:57 |     '/post': { post: [Object] }
+2024/07/12 20:27:57 |   }
+2024/07/12 20:27:57 | }
+2024/07/12 20:32:26 | httpbin.org
+2024/07/12 20:32:26 | httpbin.org
+2024/07/12 20:32:26 | {
+2024/07/12 20:32:26 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:32:26 |   openapi: '3.0.1',
+2024/07/12 20:32:26 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:32:26 |   paths: {
+2024/07/12 20:32:26 |     '/': { get: [Object] },
+2024/07/12 20:32:26 |     '/response-headers': { get: [Object] },
+2024/07/12 20:32:26 |     '/get': { get: [Object] },
+2024/07/12 20:32:26 |     '/post': { post: [Object] }
+2024/07/12 20:32:26 |   }
+2024/07/12 20:32:26 | }
+2024/07/12 20:32:28 | backend.sera
+2024/07/12 20:32:28 | backend.sera
+2024/07/12 20:32:28 | {
+2024/07/12 20:32:28 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:32:28 |   openapi: '3.0.1',
+2024/07/12 20:32:28 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:32:28 |   paths: {
+2024/07/12 20:32:28 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/host': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:32:28 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:32:28 |   }
+2024/07/12 20:32:28 | }
+2024/07/12 20:40:17 | backend.sera
+2024/07/12 20:40:17 | backend.sera
+2024/07/12 20:40:17 | {
+2024/07/12 20:40:17 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:17 |   openapi: '3.0.1',
+2024/07/12 20:40:17 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:17 |   paths: {
+2024/07/12 20:40:17 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:17 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:17 |   }
+2024/07/12 20:40:17 | }
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | {
+2024/07/12 20:40:18 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:18 |   openapi: '3.0.1',
+2024/07/12 20:40:18 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:18 |   paths: {
+2024/07/12 20:40:18 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:18 |   }
+2024/07/12 20:40:18 | }
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | {
+2024/07/12 20:40:18 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:18 |   openapi: '3.0.1',
+2024/07/12 20:40:18 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:18 |   paths: {
+2024/07/12 20:40:18 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:18 |   }
+2024/07/12 20:40:18 | }
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | backend.sera
+2024/07/12 20:40:18 | {
+2024/07/12 20:40:18 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:18 |   openapi: '3.0.1',
+2024/07/12 20:40:18 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:18 |   paths: {
+2024/07/12 20:40:18 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:18 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:18 |   }
+2024/07/12 20:40:18 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | backend.sera
+2024/07/12 20:40:19 | {
+2024/07/12 20:40:19 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:19 |   openapi: '3.0.1',
+2024/07/12 20:40:19 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:19 |   paths: {
+2024/07/12 20:40:19 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:19 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:19 |   }
+2024/07/12 20:40:19 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | backend.sera
+2024/07/12 20:40:20 | {
+2024/07/12 20:40:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:40:20 |   openapi: '3.0.1',
+2024/07/12 20:40:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:40:20 |   paths: {
+2024/07/12 20:40:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:40:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:40:20 |   }
+2024/07/12 20:40:20 | }
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | {
+2024/07/12 20:46:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:20 |   openapi: '3.0.1',
+2024/07/12 20:46:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:20 |   paths: {
+2024/07/12 20:46:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:20 |   }
+2024/07/12 20:46:20 | }
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | {
+2024/07/12 20:46:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:20 |   openapi: '3.0.1',
+2024/07/12 20:46:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:20 |   paths: {
+2024/07/12 20:46:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:20 |   }
+2024/07/12 20:46:20 | }
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | {
+2024/07/12 20:46:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:20 |   openapi: '3.0.1',
+2024/07/12 20:46:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:20 |   paths: {
+2024/07/12 20:46:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:20 |   }
+2024/07/12 20:46:20 | }
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | backend.sera
+2024/07/12 20:46:20 | {
+2024/07/12 20:46:20 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:20 |   openapi: '3.0.1',
+2024/07/12 20:46:20 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:20 |   paths: {
+2024/07/12 20:46:20 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:20 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:20 |   }
+2024/07/12 20:46:20 | }
+2024/07/12 20:46:21 | backend.sera
+2024/07/12 20:46:21 | backend.sera
+2024/07/12 20:46:21 | {
+2024/07/12 20:46:21 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:21 |   openapi: '3.0.1',
+2024/07/12 20:46:21 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:21 |   paths: {
+2024/07/12 20:46:21 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:21 |   }
+2024/07/12 20:46:21 | }
+2024/07/12 20:46:21 | backend.sera
+2024/07/12 20:46:21 | backend.sera
+2024/07/12 20:46:21 | {
+2024/07/12 20:46:21 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:21 |   openapi: '3.0.1',
+2024/07/12 20:46:21 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:21 |   paths: {
+2024/07/12 20:46:21 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:21 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:21 |   }
+2024/07/12 20:46:21 | }
+2024/07/12 20:46:22 | backend.sera
+2024/07/12 20:46:22 | backend.sera
+2024/07/12 20:46:22 | {
+2024/07/12 20:46:22 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:22 |   openapi: '3.0.1',
+2024/07/12 20:46:22 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:22 |   paths: {
+2024/07/12 20:46:22 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:22 |     '/manage/hostdata': { get: [Object] }
+2024/07/12 20:46:22 |   }
+2024/07/12 20:46:22 | }
+2024/07/12 20:46:24 | backend.sera
+2024/07/12 20:46:24 | backend.sera
+2024/07/12 20:46:24 | {
+2024/07/12 20:46:24 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:24 |   openapi: '3.0.1',
+2024/07/12 20:46:24 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:24 |   paths: {
+2024/07/12 20:46:24 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/endpoint/builder': { get: [Object] }
+2024/07/12 20:46:24 |   }
+2024/07/12 20:46:24 | }
+2024/07/12 20:46:24 | backend.sera
+2024/07/12 20:46:24 | backend.sera
+2024/07/12 20:46:24 | {
+2024/07/12 20:46:24 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:24 |   openapi: '3.0.1',
+2024/07/12 20:46:24 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:24 |   paths: {
+2024/07/12 20:46:24 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/endpoint': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:24 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:24 |   }
+2024/07/12 20:46:24 | }
+2024/07/12 20:46:26 | backend.sera
+2024/07/12 20:46:26 | backend.sera
+2024/07/12 20:46:26 | {
+2024/07/12 20:46:26 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:26 |   openapi: '3.0.1',
+2024/07/12 20:46:26 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:26 |   paths: {
+2024/07/12 20:46:26 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:26 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:26 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:26 |   }
+2024/07/12 20:46:26 | }
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | {
+2024/07/12 20:46:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:27 |   openapi: '3.0.1',
+2024/07/12 20:46:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:27 |   paths: {
+2024/07/12 20:46:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:27 |   }
+2024/07/12 20:46:27 | }
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | {
+2024/07/12 20:46:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:27 |   openapi: '3.0.1',
+2024/07/12 20:46:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:27 |   paths: {
+2024/07/12 20:46:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:27 |   }
+2024/07/12 20:46:27 | }
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | {
+2024/07/12 20:46:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:27 |   openapi: '3.0.1',
+2024/07/12 20:46:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:27 |   paths: {
+2024/07/12 20:46:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:27 |   }
+2024/07/12 20:46:27 | }
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | backend.sera
+2024/07/12 20:46:27 | {
+2024/07/12 20:46:27 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:27 |   openapi: '3.0.1',
+2024/07/12 20:46:27 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:27 |   paths: {
+2024/07/12 20:46:27 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:27 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:27 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:27 |   }
+2024/07/12 20:46:27 | }
+2024/07/12 20:46:35 | backend.sera
+2024/07/12 20:46:35 | backend.sera
+2024/07/12 20:46:35 | {
+2024/07/12 20:46:35 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:35 |   openapi: '3.0.1',
+2024/07/12 20:46:35 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:35 |   paths: {
+2024/07/12 20:46:35 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:35 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:35 |     '/manage/builder/create': { post: [Object] }
+2024/07/12 20:46:35 |   }
+2024/07/12 20:46:35 | }
+2024/07/12 20:46:37 | backend.sera
+2024/07/12 20:46:37 | backend.sera
+2024/07/12 20:46:37 | {
+2024/07/12 20:46:37 |   servers: [ { url: 'backend.sera' } ],
+2024/07/12 20:46:37 |   openapi: '3.0.1',
+2024/07/12 20:46:37 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:37 |   paths: {
+2024/07/12 20:46:37 |     '/manage/playbook': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/host': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/endpoint': { get: [Object], post: [Object] },
+2024/07/12 20:46:37 |     '/manage/host/oas': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/analytics': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/usage': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/hostdata': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/endpoint/builder': { get: [Object] },
+2024/07/12 20:46:37 |     '/manage/builder/create': { post: [Object] },
+2024/07/12 20:46:37 |     '/manage/endpoint/edge': { post: [Object] }
+2024/07/12 20:46:37 |   }
+2024/07/12 20:46:37 | }
+2024/07/12 20:46:41 | httpbin.org
+2024/07/12 20:46:41 | httpbin.org
+2024/07/12 20:46:41 | {
+2024/07/12 20:46:41 |   servers: [ { url: 'httpbin.org' } ],
+2024/07/12 20:46:41 |   openapi: '3.0.1',
+2024/07/12 20:46:41 |   info: { title: 'Minimal API', version: '1.0.0' },
+2024/07/12 20:46:41 |   paths: {
+2024/07/12 20:46:41 |     '/': { get: [Object] },
+2024/07/12 20:46:41 |     '/response-headers': { get: [Object] },
+2024/07/12 20:46:41 |     '/get': { get: [Object] },
+2024/07/12 20:46:41 |     '/post': { post: [Object] }
+2024/07/12 20:46:41 |   }
+2024/07/12 20:46:41 | }
