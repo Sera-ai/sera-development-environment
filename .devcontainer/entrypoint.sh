@@ -14,3 +14,9 @@ sed -i 's/\r$//' ./sera-mongodb/entrypoint.sh
 echo "Configuring Nginx..."
 envsubst < ./sera-nginx/nginx.conf > /etc/nginx/nginx.conf
 ./sera-nginx/entrypoint.sh
+
+export COREDNS_IP=$(hostname -I | awk '{print $1}')
+
+echo "Starting etcd and CoreDNS Services"
+nohup etcd --config-file=./sera-artifacts/sera-coredns/etcd.conf.yml &
+coredns -conf ./sera-artifacts/sera-coredns/Corefile

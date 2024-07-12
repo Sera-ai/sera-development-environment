@@ -95,11 +95,11 @@ RUN mv coredns /usr/local/bin/coredns \
 #####################################################################################################################
 
 # Install etcd
-RUN curl -L https://github.com/etcd-io/etcd/releases/latest/download/etcd-linux-amd64.tar.gz -o etcd-linux-amd64.tar.gz
+RUN curl -L https://github.com/etcd-io/etcd/releases/download/v3.5.14/etcd-v3.5.14-linux-amd64.tar.gz -o etcd-linux-amd64.tar.gz
 RUN tar -xzvf etcd-linux-amd64.tar.gz
 RUN rm etcd-linux-amd64.tar.gz
-RUN mv etcd-linux-amd64/etcd /usr/local/bin/ \
-    && etcd-linux-amd64/etcdctl /usr/local/bin/
+RUN mv etcd-v3.5.14-linux-amd64/etcd /usr/local/bin/ \
+    && mv etcd-v3.5.14-linux-amd64/etcdctl /usr/local/bin/
 
 #####################################################################################################################
 
