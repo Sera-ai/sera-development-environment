@@ -125,6 +125,9 @@ RUN mkdir -p /etc/nginx/certs \
 RUN ln -s  /workspace/sera-artifacts/sera-nginx /etc/nginx/lua-scripts
 RUN ln -s  /workspace/sera-artifacts/sera-nginx /workspace/sera-backend-sequencer/src/lua-scripts
 
+RUN mkdir /workspace/sera-backend-sequencer/src/event-scripts
+RUN ln -s  /workspace/sera-backend-sequencer/src/event-scripts /workspace/sera-backend-processor/src/event-scripts
+
 RUN rm -rf /etc/nginx/conf.d && ln -s /workspace/sera-nginx/conf.d /etc/nginx/conf.d
 RUN ln -s /etc/nginx /workspace/nginx-config
 # Create symbolic links to the models directory in each /src folder
