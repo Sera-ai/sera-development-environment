@@ -1,6 +1,6 @@
 
 # Sera Development Environment
-![DevContainer](https://img.shields.io/badge/DevContainer-Ready-blue?logo=visual-studio-code)  ![CodeSpaces](https://img.shields.io/badge/GitHub-CodeSpaces-blue?logo=github)
+![DevContainer](https://img.shields.io/badge/DevContainer-Ready-blue?logo=visual-studio-code)  ![CodeSpaces](https://img.shields.io/badge/GitHub-CodeSpaces-blue?logo=github) ![Git Submodule](https://img.shields.io/badge/Git-Submodule-blue?logo=git)
 
 ## Overview
 
