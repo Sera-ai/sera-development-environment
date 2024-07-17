@@ -72,7 +72,7 @@ Ensure you have the following installed:
     sera-development-environment/
     ├── .devcontainer/
     │ ├── devcontainer.json
-    │ ├── Dockerfile
+    │ └── Dockerfile
     ├── sera-artifacts/
     ├── sera-backend-core/
     ├── sera-backend-processor/
