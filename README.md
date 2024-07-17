@@ -73,17 +73,15 @@ Ensure you have the following installed:
     ├── .devcontainer/
     │ ├── devcontainer.json
     │ ├── Dockerfile
-    ├── .vscode/
-    ├── [sera-artifacts](https://github.com/Sera-ai/sera-artifacts)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-    ├── [sera-backend-core](https://github.com/Sera-ai/sera-backend-core)/	.	.	.	.	.	.	.	.	.	.	# Example submodule
-    ├── [sera-backend-processor](https://github.com/Sera-ai/sera-backend-processor)/	.	.	.	.	.	# Example submodule
-    ├── [sera-backend-sequencer](https://github.com/Sera-ai/sera-backend-sequencer)/	.	.	.	.	# Example submodule
-    ├── [sera-backend-socket](https://github.com/Sera-ai/sera-backend-socket)/	.	.	.	.	.	.	.	# Example submodule
-    ├── [sera-frontend](https://github.com/Sera-ai/sera-frontend)/	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-    ├── [sera-mongodb](https://github.com/Sera-ai/sera-mongodb)/	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-    ├── [sera-nginx](https://github.com/Sera-ai/sera-nginx)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── sera-artifacts/
+    ├── sera-backend-core/
+    ├── sera-backend-processor/
+    ├── sera-backend-sequencer/
+    ├── sera-backend-socket/
+    ├── sera-frontend/
+    ├── sera-mongodb/
+    ├── sera-nginx/
     ├── .gitmodules
-    ├── .gitignore
     └── README.md
 
 ## Contributing
