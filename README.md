@@ -69,22 +69,22 @@ Ensure you have the following installed:
 
 ## Project Structure
 
-sera-development-environment/
-├── .devcontainer/
-│ ├── devcontainer.json
-│ ├── Dockerfile
-├── .vscode/
-├── [sera-artifacts](https://github.com/Sera-ai/sera-artifacts)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-├── [sera-backend-core](https://github.com/Sera-ai/sera-backend-core)/	.	.	.	.	.	.	.	.	.	.	# Example submodule
-├── [sera-backend-processor](https://github.com/Sera-ai/sera-backend-processor)/	.	.	.	.	.	# Example submodule
-├── [sera-backend-sequencer](https://github.com/Sera-ai/sera-backend-sequencer)/	.	.	.	.	# Example submodule
-├── [sera-backend-socket](https://github.com/Sera-ai/sera-backend-socket)/	.	.	.	.	.	.	.	# Example submodule
-├── [sera-frontend](https://github.com/Sera-ai/sera-frontend)/	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-├── [sera-mongodb](https://github.com/Sera-ai/sera-mongodb)/	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-├── [sera-nginx](https://github.com/Sera-ai/sera-nginx)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
-├── .gitmodules
-├── .gitignore
-└── README.md
+    sera-development-environment/
+    ├── .devcontainer/
+    │ ├── devcontainer.json
+    │ ├── Dockerfile
+    ├── .vscode/
+    ├── [sera-artifacts](https://github.com/Sera-ai/sera-artifacts)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── [sera-backend-core](https://github.com/Sera-ai/sera-backend-core)/	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── [sera-backend-processor](https://github.com/Sera-ai/sera-backend-processor)/	.	.	.	.	.	# Example submodule
+    ├── [sera-backend-sequencer](https://github.com/Sera-ai/sera-backend-sequencer)/	.	.	.	.	# Example submodule
+    ├── [sera-backend-socket](https://github.com/Sera-ai/sera-backend-socket)/	.	.	.	.	.	.	.	# Example submodule
+    ├── [sera-frontend](https://github.com/Sera-ai/sera-frontend)/	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── [sera-mongodb](https://github.com/Sera-ai/sera-mongodb)/	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── [sera-nginx](https://github.com/Sera-ai/sera-nginx)/	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	# Example submodule
+    ├── .gitmodules
+    ├── .gitignore
+    └── README.md
 
 ## Contributing
 
