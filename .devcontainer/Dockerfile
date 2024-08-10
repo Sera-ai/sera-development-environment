@@ -64,7 +64,11 @@ COPY . .
 
 #####################################################################################################################
 # Initialize and update submodules
-
+# Initialize the Git repository
+RUN git init
+RUN git remote add origin https://github.com/Sera-ai/sera-development-environment.git
+RUN git fetch --all
+RUN git checkout main 
 RUN git submodule update --init --recursive --remote
 
 # Install Node.js dependencies for each submodule
@@ -151,6 +155,6 @@ RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-mongodb/entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-nginx/entrypoint.sh
 
-RUN chmod +x ./.devcontainer/entrypoint.sh ./sera-mongodb/entrypoint.sh
+RUN chmod +x ./.devcontainer/entrypoint.sh ./.devcontainer/docker-entrypoint.sh ./sera-mongodb/entrypoint.sh ./sera-nginx/entrypoint.sh
 
-RUN ./.devcontainer/docker-entrypoint.sh
+ENTRYPOINT ["/bin/sh", "-c", "./.devcontainer/entrypoint.sh && ./.devcontainer/docker-entrypoint.sh"]
