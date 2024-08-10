@@ -19,4 +19,8 @@ export COREDNS_IP=$(hostname -I | awk '{print $1}')
 
 echo "Starting etcd and CoreDNS Services"
 nohup etcd --config-file=./sera-artifacts/sera-coredns/etcd.conf.yml &
-coredns -conf ./sera-artifacts/sera-coredns/Corefile
+
+# Run CoreDNS in the background
+nohup coredns -conf ./sera-artifacts/sera-coredns/Corefile &
+
+echo "CoreDNS is running in the background."

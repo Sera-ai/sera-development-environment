@@ -6,7 +6,7 @@
     ],
     "workspaceFolder": "/workspace",
     "build": {
-        "dockerfile": "Dockerfile",
+        "dockerfile": "dev.Dockerfile",
         "context": "..",
         "args": {
             "GITHUB_TOKEN": "${{ secrets.GITHUB_TOKEN }}",

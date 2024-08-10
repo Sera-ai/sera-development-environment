@@ -152,5 +152,3 @@ RUN sed -i 's/\r$//' ./sera-mongodb/entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-nginx/entrypoint.sh
 
 RUN chmod +x ./.devcontainer/entrypoint.sh ./sera-mongodb/entrypoint.sh
-
-RUN ./.devcontainer/docker-entrypoint.sh
