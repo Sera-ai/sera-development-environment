@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo "127.0.0.1 sera-mongodb.sera-namespace.svc.cluster.local" | tee -a /etc/hosts
+echo "127.0.0.1 backend.sera" | tee -a /etc/hosts
 # Function to start a Node.js app
 start_app() {
   local label=$1
