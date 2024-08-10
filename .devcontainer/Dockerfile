@@ -176,5 +176,4 @@ RUN chmod +x ./.devcontainer/entrypoint.sh ./.devcontainer/docker-entrypoint.sh 
 #####################################################################################################################
 
 # Single Container Run Settings
-RUN echo "127.0.0.1 sera-mongodb.sera-namespace.svc.cluster.local" | tee -a /etc/hosts
 ENTRYPOINT ["/bin/sh", "-c", "./.devcontainer/entrypoint.sh && ./.devcontainer/docker-entrypoint.sh"]
