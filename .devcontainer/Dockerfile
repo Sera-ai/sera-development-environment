@@ -71,6 +71,8 @@ RUN git fetch --all
 RUN git checkout main 
 RUN git submodule update --init --recursive --remote
 
+#####################################################################################################################
+
 # Install Node.js dependencies for each submodule
 RUN npm install --prefix ./sera-frontend
 # Download the node_modules.tar.gz and extract it into each submodule
@@ -148,7 +150,21 @@ RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-proce
 #####################################################################################################################
 
 # Expose ports
-EXPOSE 80 443 12000 5173 12030 12040 12050
+EXPOSE 80 443 5173 9876 12000 12030 12040 12050 27017
+
+#####################################################################################################################
+
+#set env vars that are usually set in devcontainer
+ENV DOMAIN_NAME "example.sera"
+ENV FE_CATALOG_PORT "5173"
+ENV BE_ROUTER_PORT "12000"
+ENV BE_BUILDER_PORT "12030"
+ENV BE_SOCKET_PORT "12040"
+ENV BE_SEQUENCER_PORT "12050"
+ENV BE_PROCESSOR_PORT "12060"
+ENV DB_HOST "mongodb://localhost:27017"
+
+#####################################################################################################################
 
 # Convert CRLF to LF using sed
 RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh
@@ -156,5 +172,7 @@ RUN sed -i 's/\r$//' ./sera-mongodb/entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-nginx/entrypoint.sh
 
 RUN chmod +x ./.devcontainer/entrypoint.sh ./.devcontainer/docker-entrypoint.sh ./sera-mongodb/entrypoint.sh ./sera-nginx/entrypoint.sh
+
+#####################################################################################################################
 
 ENTRYPOINT ["/bin/sh", "-c", "./.devcontainer/entrypoint.sh && ./.devcontainer/docker-entrypoint.sh"]
