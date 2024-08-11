@@ -30,3 +30,6 @@
 	path = sera-mongodb
 	url = https://github.com/Sera-ai/sera-mongodb.git
 	branch = main
+[submodule "sera-backend-graphql"]
+	path = sera-backend-graphql
+	url = https://github.com/Sera-ai/sera-backend-graphql.git
