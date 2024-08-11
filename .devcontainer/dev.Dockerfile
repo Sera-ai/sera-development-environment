@@ -79,6 +79,8 @@ RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-sequencer/node_modules \
     && mkdir -p ./sera-backend-processor/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-processor/node_modules \
+    && mkdir -p ./sera-backend-graphql/node_modules \
+    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-graphql/node_modules \
     && mkdir -p ./sera-mongodb/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-mongodb/node_modules
     
