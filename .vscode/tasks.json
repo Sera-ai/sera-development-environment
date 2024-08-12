@@ -42,6 +42,22 @@
             }
         },
         {
+            "label": "Build Standalone Docker Image",
+            "type": "shell",
+            "command": "docker",
+            "options": {
+                "cwd": "build --no-cache -t sera-docker .devcontainer"
+            }
+        },
+        {
+            "label": "Start Docker Image",
+            "type": "shell",
+            "command": "docker",
+            "options": {
+                "cwd": "docker run -d -p 80:80 -p 443:443 -p 9876:9876 -p 27017:27017 sera-docker"
+            }
+        },
+        {
             "label": "Start All Submodules",
             "dependsOn": [
                 "Start fe_Catalog",
