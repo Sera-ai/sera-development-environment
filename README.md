@@ -87,3 +87,11 @@ Ensure you have the following installed:
 ## Contributing
 
 We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) to learn how you can help.
+
+
+## Cheat Sheet Commands
+
+If having ipv6 issues:
+1. enable ipv6 in your sysctl.conf: `sudo nano /etc/sysctl.conf`
+2. edit your docker daemon to support ipv6: `sudo nano /etc/docker/daemon.json`
+3. ensure your iptable is correctly routing the docker ipv6 requests: `sudo nft add rule ip6 nat WSLPOSTROUTING oif "eth0" ip6 saddr 2001:db8:1::/64 counter masquerade`
