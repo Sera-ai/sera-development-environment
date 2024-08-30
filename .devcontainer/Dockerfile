@@ -3,6 +3,16 @@ FROM debian:buster-slim
 USER root
 
 #####################################################################################################################
+# Set working directory for the Node app
+
+WORKDIR /workspace
+RUN mkdir /workspace/.logs
+
+COPY .devcontainer .
+# Copy the application's source code
+COPY . .
+
+#####################################################################################################################
 #Install Dependencies
 
 RUN apt-get update \
@@ -53,14 +63,7 @@ RUN cd lua-mongo-1.2.3-2/lua-mongo/src && \
 RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz | tar -xJ -C /usr/local --strip-components=1 \
     && npm install -g npm@9.8.0 nodemon eslint prettier
 
-#####################################################################################################################
-# Set working directory for the Node app
 
-WORKDIR /workspace
-RUN mkdir /workspace/.logs
-
-# Copy the application's source code
-COPY . .
 
 #####################################################################################################################
 # Initialize and update submodules
