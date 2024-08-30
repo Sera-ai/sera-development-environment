@@ -7,8 +7,9 @@ USER root
 
 WORKDIR /workspace
 RUN mkdir /workspace/.logs
+RUN mkdir /workspace/.devcontainer
 
-COPY .devcontainer .
+COPY .devcontainer /workspace/.devcontainer
 # Copy the application's source code
 COPY . .
 
