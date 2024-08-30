@@ -46,7 +46,7 @@
             "type": "shell",
             "command": "docker",
             "options": {
-                "cwd": "build --no-cache -t sera-docker .devcontainer"
+                "cwd": "build --no-cache -t sera-docker .devcontainer ."
             }
         },
         {
@@ -54,7 +54,7 @@
             "type": "shell",
             "command": "docker",
             "options": {
-                "cwd": "docker run -d -p 80:80 -p 443:443 -p 9876:9876 -p 27017:27017 sera-docker"
+                "cwd": "run -d -p 80:80 -p 443:443 -p 9876:9876 -p 27017:27017 sera-docker"
             }
         },
         {
