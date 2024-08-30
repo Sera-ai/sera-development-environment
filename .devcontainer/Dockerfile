@@ -168,6 +168,7 @@ ENV DB_HOST "mongodb://localhost:27017"
 
 # Convert CRLF to LF using sed
 RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh
+RUN sed -i 's/\r$//' ./.devcontainer/docker-entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-mongodb/entrypoint.sh
 RUN sed -i 's/\r$//' ./sera-nginx/entrypoint.sh
 
@@ -176,4 +177,4 @@ RUN chmod +x ./.devcontainer/entrypoint.sh ./.devcontainer/docker-entrypoint.sh 
 #####################################################################################################################
 
 # Single Container Run Settings
-ENTRYPOINT ["/bin/sh", "-c", "./.devcontainer/entrypoint.sh && ./.devcontainer/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "-c", "/workspace/.devcontainer/entrypoint.sh && /workspace/.devcontainer/docker-entrypoint.sh"]
