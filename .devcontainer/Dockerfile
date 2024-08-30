@@ -65,10 +65,6 @@ COPY . .
 #####################################################################################################################
 # Initialize and update submodules
 # Initialize the Git repository
-RUN git init
-RUN git remote add origin https://github.com/Sera-ai/sera-development-environment.git
-RUN git fetch --all
-RUN git checkout main 
 RUN git submodule update --init --recursive --remote
 
 #####################################################################################################################
