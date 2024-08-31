@@ -28,6 +28,11 @@ Welcome to the **Sera Dev Environment** repository. This project is designed to 
 
 ## Getting Started
 
+One command setup:
+```bash
+docker run -d -p 80:80 -p 443:443 -p 9876:9876 ghcr.io/sera-ai/sera-development-environment
+```
+
 ### Prerequisites
 
 Ensure you have the following installed:
