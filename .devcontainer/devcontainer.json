@@ -32,6 +32,8 @@
         "--add-host=sera-mongodb.sera-namespace.svc.cluster.local:127.0.0.1"
     ],
     "forwardPorts": [
+        80,
+        443,
         5173,
         9876,
         12010,
