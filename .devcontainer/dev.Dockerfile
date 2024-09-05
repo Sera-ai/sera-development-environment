@@ -127,7 +127,7 @@ RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-proce
 #####################################################################################################################
 
 # Expose ports
-EXPOSE 80 443 12000 5173 12030 12040 12050
+EXPOSE 80 443 5173 9876 12000 12030 12040 12050
 
 # Convert CRLF to LF using sed
 RUN sed -i 's/\r$//' ./.devcontainer/entrypoint.sh
