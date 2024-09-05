@@ -88,16 +88,7 @@ RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_
     && mkdir -p ./sera-mongodb/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-mongodb/node_modules
     
-#####################################################################################################################
 
-# Install CoreDNS
-RUN wget https://github.com/coredns/coredns/releases/download/v1.11.1/coredns_1.11.1_linux_amd64.tgz -O /tmp/coredns_1.11.1_linux_amd64.tgz \
-    && tar -xvzf /tmp/coredns_1.11.1_linux_amd64.tgz -C /tmp
-RUN rm /tmp/coredns_1.11.1_linux_amd64.tgz
-# Move the CoreDNS binary to /usr/local/bin and set executable permissions
-RUN mv /tmp/coredns /usr/local/bin/coredns \
-    && chmod +x /usr/local/bin/coredns
-    
 #####################################################################################################################
 
 # Install etcd

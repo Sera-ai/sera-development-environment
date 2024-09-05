@@ -15,12 +15,4 @@ echo "Configuring Nginx..."
 envsubst < ./sera-nginx/nginx.conf > /etc/nginx/nginx.conf
 ./sera-nginx/entrypoint.sh
 
-export COREDNS_IP=$(hostname -I | awk '{print $1}')
-
-echo "Starting etcd and CoreDNS Services"
-nohup etcd --config-file=./sera-artifacts/sera-coredns/etcd.conf.yml &
-
-# Run CoreDNS in the background
-nohup coredns -conf ./sera-artifacts/sera-coredns/Corefile &
-
-echo "CoreDNS is running in the background."
+echo "Sera environment is setup..."

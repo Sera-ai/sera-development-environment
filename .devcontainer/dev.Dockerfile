@@ -82,6 +82,7 @@ RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_
     && mkdir -p ./sera-mongodb/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C ./sera-mongodb/node_modules
     
+RUN npm install jsdoc jsdoc-to-markdown --save-dev
 
 #####################################################################################################################
 
