@@ -29,8 +29,7 @@
         "--add-host=manage.sera:127.0.0.1",
         "--add-host=dashboard.sera:127.0.0.1",
         "--add-host=backend.sera:127.0.0.1",
-        "--add-host=sera-mongodb.sera-namespace.svc.cluster.local:127.0.0.1",
-        "--network=host"
+        "--add-host=sera-mongodb.sera-namespace.svc.cluster.local:127.0.0.1"
     ],
     "forwardPorts": [
         80,
