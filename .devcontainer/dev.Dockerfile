@@ -119,6 +119,7 @@ RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-seque
 RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-processor/src/models/
 
 #####################################################################################################################
+ENV NODE_PATH=/shared-node-modules/node_modules
 
 # Expose ports
 EXPOSE 80 443 5173 9876 12000 12030 12040 12050

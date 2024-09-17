@@ -145,6 +145,7 @@ ENV BE_SOCKET_PORT "12040"
 ENV BE_SEQUENCER_PORT "12050"
 ENV BE_PROCESSOR_PORT "12060"
 ENV DB_HOST "mongodb://localhost:27017"
+ENV NODE_PATH=/shared-node-modules/node_modules
 
 #####################################################################################################################
 
