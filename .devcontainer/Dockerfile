@@ -79,6 +79,7 @@ RUN npm install --prefix ./sera-frontend
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
     && mkdir -p /shared-node-modules \
     && tar -xzf /tmp/node_modules.tar.gz -C /shared-node-modules \
+    $$ wget https://github.com/Sera-ai/sera-artifacts/blob/main/package.json -O /shared-node-modules/package.json \
     && cd /shared-node-modules && npm link \
     && cd /workspace/sera-backend-core && npm link node_modules \
     && cd /workspace/sera-backend-socket && npm link node_modules \
