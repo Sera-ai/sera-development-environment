@@ -2,10 +2,7 @@
 set -e
 
 FLAG_FILE="/var/tmp/flagfile"
-# Ensure the directory exists
-mkdir -p "$(dirname "$FLAG_FILE")"
-# Create the flag file
-touch "$FLAG_FILE"
+
 
 if [ ! -f "$FLAG_FILE" ]; then
     # Initial startup actions
