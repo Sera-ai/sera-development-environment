@@ -1,6 +1,5 @@
 nginx-config
 node_modules
-
 # Ignore all files in mydir
 .devcontainer/lua-scripts/generated/*
 
@@ -9,3 +8,7 @@ node_modules
 
 .logs/*
 
+
+
+package.json
+package-lock.json

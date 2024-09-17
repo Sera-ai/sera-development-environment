@@ -1,6 +1,6 @@
 {
   "devDependencies": {
     "jsdoc": "^4.0.3",
-    "jsdoc-to-markdown": "^9.0.0"
+    "jsdoc-to-markdown": "^9.0.1"
   }
 }

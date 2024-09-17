@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Start fe_Catalog",
+            "label": "Start Frontend",
             "type": "shell",
             "command": "npm run dev",
             "options": {
@@ -10,7 +10,7 @@
             }
         },
         {
-            "label": "Start be_Builder",
+            "label": "Start Backend Core",
             "type": "shell",
             "command": "nodemon",
             "options": {
@@ -18,7 +18,7 @@
             }
         },
         {
-            "label": "Start be_Socket",
+            "label": "Start Backend Socket",
             "type": "shell",
             "command": "nodemon",
             "options": {
@@ -26,7 +26,7 @@
             }
         },
         {
-            "label": "Start be_Sequencer",
+            "label": "Start Backend Sequencer",
             "type": "shell",
             "command": "nodemon",
             "options": {
@@ -34,7 +34,7 @@
             }
         },
         {
-            "label": "Start be_Processor",
+            "label": "Start Backend Processor",
             "type": "shell",
             "command": "nodemon",
             "options": {
@@ -58,44 +58,33 @@
             }
         },
         {
+            "label": "Resume Devcontainer",
+            "type": "shell",
+            "command": "${workspaceFolder}/.devcontainer/resume-devcontainer.sh",
+            "problemMatcher": []
+        },
+        {
             "label": "Start All Submodules",
             "dependsOn": [
-                "Start fe_Catalog",
-                "Start be_Builder",
-                "Start be_Socket",
-                "Start be_Sequencer",
-                "Start be_Processor"
-            ],
-            "dependsOrder": "parallel",
-            "problemMatcher": [],
-        },
-        {
-            "label": "Start Front-end",
-            "dependsOn": [
-                "Start fe_Catalog"
+                "Start Frontend",
+                "Start Backend Core",
+                "Start Backend Socket",
+                "Start Backend Sequencer",
+                "Start Backend Processor"
             ],
             "dependsOrder": "parallel",
             "problemMatcher": []
         },
         {
-            "label": "Start Back-end",
+            "label": "Start Backend",
             "dependsOn": [
-                "Start be_Builder",
-                "Start be_Socket",
-                "Start be_Sequencer",
-                "Start be_Processor"
+                "Start Backend Core",
+                "Start Backend Socket",
+                "Start Backend Sequencer",
+                "Start Backend Processor"
             ],
             "dependsOrder": "parallel",
             "problemMatcher": []
-        },
-        {
-            "type": "npm",
-            "script": "build",
-            "path": "fe_Catalog",
-            "group": "build",
-            "problemMatcher": [],
-            "label": "npm: build - fe_Catalog",
-            "detail": "vite build"
         }
     ]
 }

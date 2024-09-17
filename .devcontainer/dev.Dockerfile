@@ -71,16 +71,13 @@ RUN git submodule update --init --recursive --remote
 RUN npm install --prefix ./sera-frontend
 # Download the node_modules.tar.gz and extract it into each submodule
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
-    && mkdir -p ./sera-backend-core/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-core/node_modules \
-    && mkdir -p ./sera-backend-socket/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-socket/node_modules \
-    && mkdir -p ./sera-backend-sequencer/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-sequencer/node_modules \
-    && mkdir -p ./sera-backend-processor/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-backend-processor/node_modules \
-    && mkdir -p ./sera-mongodb/node_modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C ./sera-mongodb/node_modules
+    && mkdir -p /shared-node-modules \
+    && tar -xzf /tmp/node_modules.tar.gz -C /shared-node-modules \
+    && ln -s /shared-node-modules/node_modules ./sera-backend-core/node_modules \
+    && ln -s /shared-node-modules/node_modules ./sera-backend-socket/node_modules \
+    && ln -s /shared-node-modules/node_modules ./sera-backend-sequencer/node_modules \
+    && ln -s /shared-node-modules/node_modules ./sera-backend-processor/node_modules \
+    && ln -s /shared-node-modules/node_modules ./sera-mongodb/node_modules
     
 RUN npm install jsdoc jsdoc-to-markdown --save-dev
 

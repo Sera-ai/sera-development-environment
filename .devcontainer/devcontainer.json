@@ -21,6 +21,7 @@
         "esbenp.prettier-vscode"
     ],
     "postCreateCommand": "bash ./.devcontainer/entrypoint.sh",
+    "postAttachCommand": "echo 'Running resume check...' && .devcontainer/resume-devcontainer.sh",
     "shutdownAction": "stopCompose",
     "runArgs": [
         "--add-host=local.sera:127.0.0.1",
