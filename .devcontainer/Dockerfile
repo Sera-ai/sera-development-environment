@@ -79,12 +79,11 @@ RUN npm install --prefix ./sera-frontend
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
     && mkdir -p /shared-node-modules \
     && tar -xzf /tmp/node_modules.tar.gz -C /shared-node-modules \
-    && ln -s /shared-node-modules/node_modules ./sera-backend-core/node_modules \
-    && ln -s /shared-node-modules/node_modules ./sera-backend-socket/node_modules \
-    && ln -s /shared-node-modules/node_modules ./sera-backend-sequencer/node_modules \
-    && ln -s /shared-node-modules/node_modules ./sera-backend-processor/node_modules \
-    && ln -s /shared-node-modules/node_modules ./sera-mongodb/node_modules
-    
+    && ln -s /shared-node-modules ./sera-backend-core/node_modules \
+    && ln -s /shared-node-modules ./sera-backend-socket/node_modules \
+    && ln -s /shared-node-modules ./sera-backend-sequencer/node_modules \
+    && ln -s /shared-node-modules ./sera-backend-processor/node_modules \
+    && ln -s /shared-node-modules ./sera-mongodb/node_modules
 
 #####################################################################################################################
 
