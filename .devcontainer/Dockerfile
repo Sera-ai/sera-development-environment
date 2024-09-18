@@ -80,6 +80,10 @@ RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_
     && mkdir -p /shared-node-modules \
     && tar -xzf /tmp/node_modules.tar.gz -C /shared-node-modules
 
+RUN sed -i -e "s|const mime = require('mime');|let mime;\n(async () => {\n  mime = await import('/shared-node-modules/mime/dist/src/index.js');\n  // Use mime as needed in this block or make it available elsewhere\n})();|" \
+    -e "s|const flat\$1 = require('flat');|let flat\$1;\n(async () => {\n  flat\$1 = await import('/shared-node-modules/flat/index.js');\n  // Use flat\$1 as needed in this block or make it available elsewhere\n})();|" \
+    /shared-node-modules/@lykmapipo/common/lib/index.js
+
 #####################################################################################################################
 
 # Install etcd
