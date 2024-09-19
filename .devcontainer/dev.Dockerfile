@@ -72,7 +72,7 @@ RUN npm install --prefix ./sera-frontend
 # Download the node_modules.tar.gz and extract it into each submodule
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
     && mkdir -p /shared-artifacts \
-    && mkdir -p /shared-artifacts/node_modules
+    && mkdir -p /shared-artifacts/node_modules \
     && tar -xzf /tmp/node_modules.tar.gz -C /shared-artifacts/node_modules \
     && ln -s /shared-artifacts/node_modules /workspace/sera-backend-core/node_modules \
     && ln -s /shared-artifacts/node_modules /workspace/sera-backend-processor/node_modules \
