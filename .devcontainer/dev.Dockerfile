@@ -71,16 +71,17 @@ RUN git submodule update --init --recursive --remote
 RUN npm install --prefix ./sera-frontend
 # Download the node_modules.tar.gz and extract it into each submodule
 RUN wget https://github.com/Sera-ai/k8s-Artifacts/releases/download/v1.0.0/node_modules.tar.gz -O /tmp/node_modules.tar.gz \
-    && mkdir -p /shared-node-modules \
-    && tar -xzf /tmp/node_modules.tar.gz -C /shared-node-modules \
-    && ln -s /shared-node-modules /workspace/sera-backend-core/node_modules \
-    && ln -s /shared-node-modules /workspace/sera-backend-processor/node_modules \
-    && ln -s /shared-node-modules /workspace/sera-backend-sequencer/node_modules \
-    && ln -s /shared-node-modules /workspace/sera-backend-socket/node_modules
+    && mkdir -p /shared-artifacts \
+    && mkdir -p /shared-artifacts/node_modules
+    && tar -xzf /tmp/node_modules.tar.gz -C /shared-artifacts/node_modules \
+    && ln -s /shared-artifacts/node_modules /workspace/sera-backend-core/node_modules \
+    && ln -s /shared-artifacts/node_modules /workspace/sera-backend-processor/node_modules \
+    && ln -s /shared-artifacts/node_modules /workspace/sera-backend-sequencer/node_modules \
+    && ln -s /shared-artifacts/node_modules /workspace/sera-backend-socket/node_modules
 
-RUN sed -i -e "s|const mime = require('mime');|let mime;\n(async () => {\n  mime = await import('/shared-node-modules/mime/dist/src/index.js');\n  // Use mime as needed in this block or make it available elsewhere\n})();|" \
-    -e "s|const flat\$1 = require('flat');|let flat\$1;\n(async () => {\n  flat\$1 = await import('/shared-node-modules/flat/index.js');\n  // Use flat\$1 as needed in this block or make it available elsewhere\n})();|" \
-    /shared-node-modules/@lykmapipo/common/lib/index.js
+RUN sed -i -e "s|const mime = require('mime');|let mime;\n(async () => {\n  mime = await import('/shared-artifacts/node_modules/mime/dist/src/index.js');\n  // Use mime as needed in this block or make it available elsewhere\n})();|" \
+    -e "s|const flat\$1 = require('flat');|let flat\$1;\n(async () => {\n  flat\$1 = await import('/shared-artifacts/node_modules/flat/index.js');\n  // Use flat\$1 as needed in this block or make it available elsewhere\n})();|" \
+    /shared-artifacts/node_modules/@lykmapipo/common/lib/index.js
 
 #####################################################################################################################
     
@@ -127,7 +128,7 @@ RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-seque
 RUN cp -r /workspace/sera-artifacts/sera-mongodb/* /workspace/sera-backend-processor/src/models/
 
 #####################################################################################################################
-ENV NODE_PATH=/shared-node-modules
+# ENV NODE_PATH=/shared-node-modules
 
 # Expose ports
 EXPOSE 80 443 5173 9876 12000 12030 12040 12050
